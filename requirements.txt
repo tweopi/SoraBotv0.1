@@ -1,5 +1,0 @@
-aiogram==3.0.0b7
-aiohttp==3.8.4 --only-binary=:all:
-pandas==1.5.3 --only-binary=:all:
-openpyxl==3.1.2
-python-dotenv==1.0.0
