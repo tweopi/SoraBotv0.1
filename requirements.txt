@@ -1,0 +1,4 @@
+aiogram==3.0.0b7
+openpyxl==3.1.2
+pandas==2.0.3  # Более новая стабильная версия
+python-dotenv==1.0.0

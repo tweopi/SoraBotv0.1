@@ -11,6 +11,12 @@ from datetime import datetime
 from io import BytesIO
 from openpyxl import Workbook
 from aiogram.types import BufferedInputFile
+import os
+from dotenv import load_dotenv
+
+# Загрузка токена из переменных окружения
+load_dotenv()
+TOKEN = os.getenv("BOT_TOKEN")
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO)
