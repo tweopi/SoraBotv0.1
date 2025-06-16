@@ -1,7 +1,7 @@
 import logging
 from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters import Command
-from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, FSInputFile
+from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, FSInputFile, ReplyKeyboardRemove
 import sqlite3
 import asyncio
 import os
@@ -71,7 +71,7 @@ def get_main_keyboard():
             [KeyboardButton(text="📦 Добавить товар")],
             [KeyboardButton(text="📊 Посмотреть склад"), KeyboardButton(text="🔍 Поиск товара")],
             [KeyboardButton(text="✏️ Редактировать"), KeyboardButton(text="❌ Удалить товар")],
-            [KeyboardButton(text="📥 Экспорт в Excel")]
+            [KeyboardButton(text="📥 Экспорт в Excel"), KeyboardButton(text="🚨 Проверить остатки")]
         ],
         resize_keyboard=True
     )
@@ -96,7 +96,7 @@ async def add_product_start(message: types.Message):
     user_id = message.from_user.id
     user_states[user_id] = "adding_name"
     user_data[user_id] = {}
-    await message.answer("Введите название товара:")
+    await message.answer("Введите название товара:", reply_markup=ReplyKeyboardRemove())
 
 
 @dp.message(F.text, lambda message: user_states.get(message.from_user.id) == "adding_name")
@@ -142,6 +142,13 @@ async def add_product_final(message: types.Message):
             f"Категория: {category if category else 'не указана'}",
             reply_markup=get_main_keyboard()
         )
+
+        # Проверяем, не добавлен ли товар с низким запасом
+        if user_data[user_id]["quantity"] < 10:
+            await message.answer(
+                f"⚠️ Внимание! Товар '{user_data[user_id]['name']}' добавлен с низким количеством: {user_data[user_id]['quantity']} шт.",
+                reply_markup=get_main_keyboard()
+            )
     except Exception as e:
         logger.error(f"Ошибка при добавлении товара: {e}")
         await message.answer("❌ Произошла ошибка при добавлении товара!", reply_markup=get_main_keyboard())
@@ -150,38 +157,58 @@ async def add_product_final(message: types.Message):
         user_data[user_id] = {}
 
 
-# ===== ПОИСК ТОВАРА =====
+# ===== ПОИСК ТОВАРА (ПОЛНОСТЬЮ ПЕРЕРАБОТАННЫЙ) =====
 @dp.message(F.text == "🔍 Поиск товара")
 async def search_product_start(message: types.Message):
     user_states[message.from_user.id] = "searching"
-    await message.answer("Введите название товара или категории для поиска:")
+    await message.answer("Введите название товара или категории для поиска:", reply_markup=ReplyKeyboardRemove())
 
 
 @dp.message(F.text, lambda message: user_states.get(message.from_user.id) == "searching")
 async def search_product_execute(message: types.Message):
     user_id = message.from_user.id
-    search_term = f"%{message.text}%"
+    search_term = message.text.strip()  # Удаляем лишние пробелы
 
     try:
-        cursor.execute(
-            "SELECT * FROM products WHERE name LIKE ? OR category LIKE ?",
-            (search_term, search_term)
-        )
-        products = cursor.fetchall()
+        # Получаем все товары для локального поиска
+        cursor.execute("SELECT * FROM products")
+        all_products = cursor.fetchall()
 
-        if not products:
-            await message.answer("🔎 Товары не найдены", reply_markup=get_main_keyboard())
+        if not all_products:
+            await message.answer("📭 Склад пуст!", reply_markup=get_main_keyboard())
             user_states[user_id] = None
             return
 
-        response = "🔍 Результаты поиска:\n\n"
-        for product in products:
-            response += (f"🔹 ID: {product[0]}\n"
+        # Фильтруем товары без учета регистра
+        found_products = []
+        for product in all_products:
+            name_match = search_term.lower() in product[1].lower() if product[1] else False
+            category_match = search_term.lower() in product[3].lower() if product[3] else False
+
+            if name_match or category_match:
+                found_products.append(product)
+
+        if not found_products:
+            await message.answer(f"🔎 По запросу '{search_term}' товары не найдены",
+                                 reply_markup=get_main_keyboard())
+            user_states[user_id] = None
+            return
+
+        # Формируем ответ
+        response = f"🔍 Результаты поиска ('{search_term}'):\n\n"
+        for product in found_products:
+            response += (f"{'⚠️' if product[2] < 10 else '🔹'} ID: {product[0]}\n"
                          f"Название: {product[1]}\n"
                          f"Количество: {product[2]}\n"
                          f"Категория: {product[3] if product[3] else 'не указана'}\n\n")
 
-        await message.answer(response, reply_markup=get_main_keyboard())
+        # Разбиваем длинные сообщения
+        if len(response) > 4000:
+            for x in range(0, len(response), 4000):
+                await message.answer(response[x:x + 4000])
+        else:
+            await message.answer(response, reply_markup=get_main_keyboard())
+
     except Exception as e:
         logger.error(f"Ошибка при поиске товара: {e}")
         await message.answer("❌ Произошла ошибка при поиске товара!", reply_markup=get_main_keyboard())
@@ -264,19 +291,13 @@ async def edit_product_selected(message: types.Message):
 @dp.message(F.text == "🖊 Изменить название")
 async def edit_name_handler(message: types.Message):
     user_states[message.from_user.id] = "editing_name"
-    await message.answer("Введите новое название:", reply_markup=ReplyKeyboardMarkup(
-        keyboard=[[KeyboardButton(text="🔙 Отмена")]],
-        resize_keyboard=True
-    ))
+    await message.answer("Введите новое название:", reply_markup=ReplyKeyboardRemove())
 
 
 @dp.message(F.text == "🔢 Изменить количество")
 async def edit_quantity_handler(message: types.Message):
     user_states[message.from_user.id] = "editing_quantity"
-    await message.answer("Введите новое количество:", reply_markup=ReplyKeyboardMarkup(
-        keyboard=[[KeyboardButton(text="🔙 Отмена")]],
-        resize_keyboard=True
-    ))
+    await message.answer("Введите новое количество:", reply_markup=ReplyKeyboardRemove())
 
 
 @dp.message(F.text == "🏷 Изменить категорию")
@@ -284,10 +305,7 @@ async def edit_category_handler(message: types.Message):
     user_states[message.from_user.id] = "editing_category"
     await message.answer(
         "Введите новую категорию или 'удалить' чтобы удалить категорию:",
-        reply_markup=ReplyKeyboardMarkup(
-            keyboard=[[KeyboardButton(text="🔙 Отмена")]],
-            resize_keyboard=True
-        )
+        reply_markup=ReplyKeyboardRemove()
     )
 
 
@@ -312,9 +330,16 @@ async def save_new_quantity(message: types.Message):
         await message.answer("❌ Введите число!")
     else:
         product_id = user_data[message.from_user.id]["edit_id"]
-        cursor.execute("UPDATE products SET quantity = ? WHERE id = ?", (int(message.text), product_id))
+        new_quantity = int(message.text)
+        cursor.execute("UPDATE products SET quantity = ? WHERE id = ?", (new_quantity, product_id))
         conn.commit()
-        await message.answer(f"✅ Количество изменено на: {message.text}", reply_markup=get_main_keyboard())
+
+        response = f"✅ Количество изменено на: {new_quantity}"
+        if new_quantity < 10:
+            product_name = user_data[message.from_user.id]["current_name"]
+            response += f"\n⚠️ Внимание! Товар '{product_name}' теперь имеет низкий запас: {new_quantity} шт."
+
+        await message.answer(response, reply_markup=get_main_keyboard())
     user_states[message.from_user.id] = None
 
 
@@ -402,22 +427,36 @@ async def show_warehouse(message: types.Message):
     user_states[user_id] = None
 
     try:
-        cursor.execute("SELECT * FROM products")
+        # Получаем все товары
+        cursor.execute("SELECT * FROM products ORDER BY quantity ASC")
         products = cursor.fetchall()
 
         if not products:
             await message.answer("📭 Склад пуст!", reply_markup=get_main_keyboard())
             return
 
+        # Получаем товары с низким запасом (меньше 10)
+        cursor.execute("SELECT * FROM products WHERE quantity < 10 ORDER BY quantity ASC")
+        low_stock = cursor.fetchall()
+
         response = "📋 Список товаров:\n\n"
         for product in products:
             response += (
-                f"🔹 ID: {product[0]}\n"
+                f"{'⚠️' if product[2] < 10 else '🔹'} ID: {product[0]}\n"
                 f"Название: {product[1]}\n"
                 f"Количество: {product[2]}\n"
                 f"Категория: {product[3] if product[3] else 'не указана'}\n"
                 f"Добавлен: {product[4]}\n\n"
             )
+
+        # Добавляем предупреждение о низких запасах
+        if low_stock:
+            warning = "🚨 Внимание! Заканчиваются следующие товары:\n\n"
+            for product in low_stock:
+                warning += (
+                    f"▪️ {product[1]} (ID: {product[0]}) - осталось {product[2]} шт.\n"
+                )
+            response = warning + "\n" + response
 
         # Разбиваем сообщение на части, если оно слишком длинное
         max_length = 4000
@@ -429,7 +468,34 @@ async def show_warehouse(message: types.Message):
         await message.answer("❌ Произошла ошибка при получении данных склада!", reply_markup=get_main_keyboard())
 
 
-# ===== ЭКСПОРТ В EXCEL =====
+# ===== КОМАНДА ДЛЯ ПРОВЕРКИ ЗАКАНЧИВАЮЩИХСЯ ТОВАРОВ =====
+@dp.message(F.text == "🚨 Проверить остатки")
+async def check_low_stock(message: types.Message):
+    try:
+        cursor.execute("SELECT * FROM products WHERE quantity < 10 ORDER BY quantity ASC")
+        low_stock = cursor.fetchall()
+
+        if not low_stock:
+            await message.answer("✅ Все товары в достаточном количестве (10+ шт.)", reply_markup=get_main_keyboard())
+            return
+
+        response = "🚨 Товары с низким запасом (<10 шт.):\n\n"
+        for product in low_stock:
+            response += (
+                f"▪️ ID: {product[0]}\n"
+                f"Название: {product[1]}\n"
+                f"Осталось: {product[2]} шт.\n"
+                f"Категория: {product[3] if product[3] else 'не указана'}\n\n"
+            )
+
+        await message.answer(response, reply_markup=get_main_keyboard())
+
+    except Exception as e:
+        logger.error(f"Ошибка при проверке остатков: {e}")
+        await message.answer("❌ Произошла ошибка при проверке остатков!", reply_markup=get_main_keyboard())
+
+
+# ===== ЭКСПОРТ В EXCEL (ПЕРЕРАБОТАННЫЙ) =====
 @dp.message(F.text == "📥 Экспорт в Excel")
 async def export_to_excel(message: types.Message):
     try:
@@ -442,10 +508,10 @@ async def export_to_excel(message: types.Message):
             await message.answer("📭 Склад пуст! Нет данных для экспорта.", reply_markup=get_main_keyboard())
             return
 
-        # Создаем временный файл в памяти
+        # Создаем Excel-файл в памяти
         output = BytesIO()
 
-        # Создаем Excel-файл
+        # Создаем книгу Excel
         workbook = Workbook()
         sheet = workbook.active
         sheet.title = "Склад"
@@ -456,21 +522,30 @@ async def export_to_excel(message: types.Message):
         # Записываем данные
         for row in data:
             sheet.append(row)
+            if row[2] < 10:  # Если количество < 10
+                # Для совместимости пропускаем комментарии
+                pass
 
         # Сохраняем в буфер
         workbook.save(output)
-        output.seek(0)
+        output.seek(0)  # Важно: переводим указатель в начало
 
-        # Формируем имя файла
+        # Подготавливаем файл для отправки
+        file_data = output.getvalue()
         filename = f"склад_{datetime.now().strftime('%Y-%m-%d_%H-%M')}.xlsx"
 
-        # Отправляем файл пользователю
-        await message.answer_document(
-            document=types.BufferedInputFile(output.read(), filename=filename),
-            caption="📊 Экспорт данных склада в Excel"
+        # Создаем объект файла
+        excel_file = BufferedInputFile(
+            file=file_data,
+            filename=filename
         )
 
-        await message.answer("✅ Экспорт успешно завершен!", reply_markup=get_main_keyboard())
+        # Отправляем файл
+        await message.answer_document(
+            document=excel_file,
+            caption="📊 Экспорт данных склада в Excel",
+            reply_markup=get_main_keyboard()
+        )
 
     except Exception as e:
         logger.error(f"Ошибка при экспорте: {str(e)}", exc_info=True)
@@ -479,6 +554,10 @@ async def export_to_excel(message: types.Message):
             f"Ошибка: {str(e)}",
             reply_markup=get_main_keyboard()
         )
+    finally:
+        # Всегда закрываем буфер
+        if 'output' in locals():
+            output.close()
 
 
 # ===== ЗАПУСК БОТА =====
@@ -491,6 +570,12 @@ async def main():
     cursor.execute("SELECT COUNT(*) FROM products")
     count = cursor.fetchone()[0]
     logger.info(f"Количество товаров в базе при запуске: {count}")
+
+    # Проверяем товары с низким запасом при запуске
+    cursor.execute("SELECT COUNT(*) FROM products WHERE quantity < 10")
+    low_stock_count = cursor.fetchone()[0]
+    if low_stock_count > 0:
+        logger.warning(f"Внимание! В базе {low_stock_count} товаров с низким запасом (<10 шт.)")
 
     # Запускаем бота
     await dp.start_polling(bot)
