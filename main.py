@@ -30,10 +30,17 @@ dp = Dispatcher()
 user_states = {}
 user_data = {}
 
-# ===== НАСТРОЙКА БАЗЫ ДАННЫХ =====
+## ===== НАСТРОЙКА БАЗЫ ДАННЫХ =====
 BASE_DIR = Path(__file__).parent
-DB_PATH = BASE_DIR / "SoraClub.db"  # Теперь в корне проекта
-EXPORT_DIR = BASE_DIR / "exports"  # Папка для экспортов
+DB_DIR = BASE_DIR / "database"
+EXPORT_DIR = BASE_DIR / "exports"
+
+# Создаем необходимые директории
+DB_DIR.mkdir(exist_ok=True)
+EXPORT_DIR.mkdir(exist_ok=True)
+
+DB_PATH = DB_DIR / "SoraClub.db"  # База данных теперь в папке /database
+
 
 # Создаем необходимые директории
 EXPORT_DIR.mkdir(exist_ok=True)
