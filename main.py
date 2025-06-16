@@ -70,7 +70,7 @@ cursor.execute('''
 conn.commit()
 
 
-# ===== КЛАВИАТУРЫ =====
+# ===== КЛАВИАТУРА =====
 def get_main_keyboard():
     return ReplyKeyboardMarkup(
         keyboard=[
