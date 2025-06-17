@@ -1,7 +1,8 @@
 import logging
 from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters import Command
-from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, FSInputFile, ReplyKeyboardRemove
+from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, FSInputFile, ReplyKeyboardRemove, InlineKeyboardMarkup, \
+    InlineKeyboardButton
 import sqlite3
 import asyncio
 import os
@@ -13,10 +14,17 @@ from openpyxl import Workbook
 from aiogram.types import BufferedInputFile
 import os
 from dotenv import load_dotenv
+import logging
+import sys
 
 # Загрузка токена из переменных окружения
 load_dotenv()
 TOKEN = os.getenv("BOT_TOKEN")
+
+# Проверка токена
+if not TOKEN:
+    logging.error("Токен бота не найден! Убедитесь, что переменная BOT_TOKEN установлена в .env файле.")
+    sys.exit(1)
 
 # Настройка логирования
 logging.basicConfig(
@@ -30,7 +38,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Инициализация бота
-bot = Bot(token="8143304952:AAHm-ha-Cb2vqOHeOyWGO1B4sdS6wbzBiBQ")
+bot = Bot(token=TOKEN)
 dp = Dispatcher()
 
 # Состояния пользователей
@@ -99,10 +107,16 @@ cursor.execute('''
                    BOOLEAN
                    DEFAULT
                    0,
+                   is_approved
+                   BOOLEAN
+                   DEFAULT
+                   0,
                    added_date
                    TIMESTAMP
                    DEFAULT
-                   CURRENT_TIMESTAMP
+                   CURRENT_TIMESTAMP,
+                   last_action
+                   TIMESTAMP
                )
                ''')
 
@@ -127,6 +141,7 @@ cursor.execute('''
                )
                ''')
 
+# ОБНОВЛЕННАЯ ТАБЛИЦА ОТЧЕТОВ
 cursor.execute('''
                CREATE TABLE IF NOT EXISTS shift_reports
                (
@@ -159,14 +174,18 @@ cursor.execute('''
                    REAL
                    NOT
                    NULL,
-                   hookah
-                   REAL
+                   hookah_count
+                   INTEGER
                    NOT
                    NULL,
                    expenses
                    REAL
                    NOT
                    NULL,
+                   initial_cash
+                   REAL
+                   DEFAULT
+                   4000,
                    balance
                    REAL
                    NOT
@@ -178,6 +197,26 @@ cursor.execute('''
                )
                ''')
 
+# НОВАЯ ТАБЛИЦА ДЛЯ УПРАВЛЕНИЯ УВЕДОМЛЕНИЯМИ
+cursor.execute('''
+               CREATE TABLE IF NOT EXISTS notification_settings
+               (
+                   id
+                   INTEGER
+                   PRIMARY
+                   KEY
+                   AUTOINCREMENT,
+                   notification_type
+                   TEXT
+                   NOT
+                   NULL
+                   UNIQUE,
+                   chat_id
+                   TEXT
+                   NOT
+                   NULL
+               )
+               ''')
 conn.commit()
 
 # ID главного администратора
@@ -194,18 +233,39 @@ def is_registered(user_id):
         return False
 
 
+# Функция для проверки одобрения пользователя
+def is_approved(user_id):
+    if user_id == MAIN_ADMIN_ID:
+        return True
+    try:
+        cursor.execute("SELECT is_approved FROM users WHERE user_id = ?", (user_id,))
+        result = cursor.fetchone()
+        return result and result[0] == 1
+    except Exception as e:
+        logger.error(f"Ошибка проверки одобрения для {user_id}: {e}")
+        return False
+
+
 # Функция для регистрации пользователя
 def register_user(user_id, username, first_name):
     try:
         cursor.execute("SELECT user_id FROM users WHERE user_id = ?", (user_id,))
         if not cursor.fetchone():
-            is_admin = 1 if user_id == MAIN_ADMIN_ID else 0
+            # Для главного администратора всегда одобрен и админ
+            if user_id == MAIN_ADMIN_ID:
+                is_admin_val = 1
+                is_approved_val = 1
+            else:
+                is_admin_val = 0
+                is_approved_val = 0  # По умолчанию не одобрен
+
             cursor.execute(
-                "INSERT INTO users (user_id, username, first_name, is_admin) VALUES (?, ?, ?, ?)",
-                (user_id, username, first_name, is_admin)
+                "INSERT INTO users (user_id, username, first_name, is_admin, is_approved) VALUES (?, ?, ?, ?, ?)",
+                (user_id, username, first_name, is_admin_val, is_approved_val)
             )
             conn.commit()
-            logger.info(f"Зарегистрирован новый пользователь: ID={user_id}, Имя={first_name}, Админ={is_admin}")
+            logger.info(
+                f"Зарегистрирован новый пользователь: ID={user_id}, Имя={first_name}, Админ={is_admin_val}, Одобрен={is_approved_val}")
             return True
         return False
     except Exception as e:
@@ -235,6 +295,20 @@ def is_banned(user_id):
         return False
 
 
+# Функция для получения chat_id для уведомлений
+def get_notification_chat(notification_type: str) -> str:
+    try:
+        cursor.execute(
+            "SELECT chat_id FROM notification_settings WHERE notification_type = ?",
+            (notification_type,)
+        )
+        result = cursor.fetchone()
+        return result[0] if result else None
+    except Exception as e:
+        logger.error(f"Ошибка получения чата для {notification_type}: {e}")
+        return None
+
+
 # Функция для логирования действий
 async def log_action(user_id, action, details=""):
     try:
@@ -245,7 +319,15 @@ async def log_action(user_id, action, details=""):
         conn.commit()
         logger.info(f"Действие пользователя {user_id}: {action} - {details}")
 
-        # Отправляем уведомление главному администратору
+        # Обновляем время последнего действия пользователя
+        update_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        cursor.execute(
+            "UPDATE users SET last_action = ? WHERE user_id = ?",
+            (update_time, user_id)
+        )
+        conn.commit()
+
+        # Отправляем уведомление в настроенный чат или главному администратору
         if user_id != MAIN_ADMIN_ID:
             cursor.execute("SELECT username, first_name FROM users WHERE user_id = ?", (user_id,))
             user_info = cursor.fetchone()
@@ -261,10 +343,12 @@ async def log_action(user_id, action, details=""):
                 f"🕐 Время: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
             )
 
+            # Получаем чат для уведомлений из настроек
+            action_chat_id = get_notification_chat("actions") or MAIN_ADMIN_ID
             try:
-                await bot.send_message(MAIN_ADMIN_ID, notification)
+                await bot.send_message(action_chat_id, notification)
             except Exception as e:
-                logger.error(f"Ошибка отправки уведомления админу: {e}")
+                logger.error(f"Ошибка отправки уведомления: {e}")
     except Exception as e:
         logger.error(f"Ошибка логирования действия: {e}")
 
@@ -300,7 +384,9 @@ def get_admin_keyboard():
     return ReplyKeyboardMarkup(
         keyboard=[
             [KeyboardButton(text="👥 Управление пользователями")],
+            [KeyboardButton(text="🔒 Управление доступом")],
             [KeyboardButton(text="📊 Статистика"), KeyboardButton(text="📋 Логи действий")],
+            [KeyboardButton(text="🔔 Управление уведомлениями")],  # Новая кнопка
             [KeyboardButton(text="🔙 Назад в главное меню")]
         ],
         resize_keyboard=True
@@ -319,6 +405,18 @@ def get_user_management_keyboard():
     )
 
 
+def get_access_management_keyboard():
+    return ReplyKeyboardMarkup(
+        keyboard=[
+            [KeyboardButton(text="👥 Список всех пользователей")],
+            [KeyboardButton(text="✅ Одобрить доступ"), KeyboardButton(text="🚫 Запретить доступ")],
+            [KeyboardButton(text="👀 Показать неодобренных")],
+            [KeyboardButton(text="🔙 Назад в админ-панель")]
+        ],
+        resize_keyboard=True
+    )
+
+
 def get_report_keyboard():
     return ReplyKeyboardMarkup(
         keyboard=[
@@ -331,10 +429,35 @@ def get_report_keyboard():
     )
 
 
+# ===== КЛАВИАТУРА ДЛЯ УПРАВЛЕНИЯ УВЕДОМЛЕНИЯМИ =====
+def get_notification_keyboard():
+    return ReplyKeyboardMarkup(
+        keyboard=[
+            [KeyboardButton(text="👁 Просмотреть настройки")],
+            [KeyboardButton(text="✏️ Установить текущий чат для отчетов")],
+            [KeyboardButton(text="✏️ Установить текущий чат для действий")],
+            [KeyboardButton(text="❓ Как получить ID чата?")],
+            [KeyboardButton(text="🔙 Назад в админ-панель")]
+        ],
+        resize_keyboard=True
+    )
+
+
 # ===== КЛАВИАТУРА ОТМЕНЫ =====
 def get_cancel_keyboard():
     return ReplyKeyboardMarkup(
         keyboard=[[KeyboardButton(text="❌ Отмена")]],
+        resize_keyboard=True
+    )
+
+
+# ===== КЛАВИАТУРА ДЛЯ ПРОПУСКА ПРИ ОБНОВЛЕНИИ ОТЧЕТА =====
+def get_skip_keyboard():
+    return ReplyKeyboardMarkup(
+        keyboard=[
+            [KeyboardButton(text="⏭ Пропустить")],
+            [KeyboardButton(text="❌ Отмена")]
+        ],
         resize_keyboard=True
     )
 
@@ -350,9 +473,16 @@ def access_required(func):
             logger.warning(f"Попытка доступа незарегистрированного пользователя: {user_id}")
             return
 
+        # Проверка бана
         if is_banned(user_id):
             await message.answer("❌ Ваш доступ к боту заблокирован.")
             return
+
+        # Проверка одобрения (главный администратор всегда одобрен)
+        if not is_approved(user_id) and user_id != MAIN_ADMIN_ID:
+            await message.answer("❌ Ваш доступ к боту еще не подтвержден администратором. Ожидайте одобрения.")
+            return
+
         return await func(message)
 
     return wrapper
@@ -370,6 +500,11 @@ def admin_required(func):
         if is_banned(user_id):
             await message.answer("❌ Ваш доступ к боту заблокирован.")
             return
+
+        if not is_approved(user_id) and user_id != MAIN_ADMIN_ID:
+            await message.answer("❌ Ваш доступ к боту еще не подтвержден администратором.")
+            return
+
         if not is_admin(user_id):
             await message.answer("❌ У вас нет прав администратора для выполнения этого действия.")
             return
@@ -388,19 +523,33 @@ async def start(message: types.Message):
     # Автоматическая регистрация главного администратора
     if user_id == MAIN_ADMIN_ID and not is_registered(user_id):
         cursor.execute(
-            "INSERT INTO users (user_id, username, first_name, is_admin) VALUES (?, ?, ?, ?)",
-            (user_id, username, first_name, 1)
+            "INSERT INTO users (user_id, username, first_name, is_admin, is_approved) VALUES (?, ?, ?, ?, ?)",
+            (user_id, username, first_name, 1, 1)
         )
         conn.commit()
         logger.info(f"Главный администратор зарегистрирован: {user_id}")
 
     # Проверяем, зарегистрирован ли пользователь
     if not is_registered(user_id):
+        # Регистрируем нового пользователя
+        register_user(user_id, username, first_name)
         await message.answer(
-            "❌ Вы не зарегистрированы в системе.\n"
-            "Обратитесь к администратору для получения доступа."
+            "✅ Вы успешно зарегистрированы!\n"
+            "⏳ Ожидайте подтверждения доступа администратором."
         )
-        logger.warning(f"Попытка доступа незарегистрированного пользователя: {user_id}")
+        logger.info(f"Зарегистрирован новый пользователь: {user_id}")
+        # Уведомляем администратора
+        admin_notification = (
+            f"👤 Новый пользователь!\n"
+            f"🆔 ID: {user_id}\n"
+            f"👨‍💼 Имя: {first_name}\n"
+            f"📎 Username: @{username}\n\n"
+            f"Для одобрения доступа используйте админ-панель."
+        )
+        try:
+            await bot.send_message(MAIN_ADMIN_ID, admin_notification)
+        except Exception as e:
+            logger.error(f"Ошибка отправки уведомления админу: {e}")
         return
 
     # Проверяем, заблокирован ли пользователь
@@ -408,20 +557,20 @@ async def start(message: types.Message):
         await message.answer("❌ Ваш доступ к боту заблокирован администратором.")
         return
 
-    # Регистрируем пользователя (если это новый пользователь)
-    is_new_user = register_user(user_id, username, first_name)
+    # Проверяем одобрен ли пользователь
+    if not is_approved(user_id) and user_id != MAIN_ADMIN_ID:
+        await message.answer(
+            "❌ Ваш доступ к боту еще не подтвержден.\n"
+            "⏳ Ожидайте одобрения администратором."
+        )
+        return
 
     user_states[user_id] = None
     user_data[user_id] = {}
 
     welcome_text = "🛒 Добро пожаловать в складской бот!\n"
-    if is_new_user:
-        welcome_text += "✅ Вы успешно зарегистрированы!\n"
-        await log_action(user_id, "Новый пользователь", f"Первый запуск бота")
-
-    welcome_text += "Выберите действие из меню ниже:"
-
     await message.answer(welcome_text, reply_markup=get_main_keyboard(user_id))
+    await log_action(user_id, "Запуск бота", "Пользователь вошел в систему")
 
 
 # ===== АДМИН-ПАНЕЛЬ =====
@@ -433,6 +582,678 @@ async def admin_panel(message: types.Message):
         "Выберите действие:",
         reply_markup=get_admin_keyboard()
     )
+
+
+@dp.message(F.text == "🔔 Управление уведомлениями")
+@admin_required
+async def notification_management(message: types.Message):
+    await message.answer(
+        "🔔 Управление уведомлениями\n"
+        "Выберите действие:",
+        reply_markup=get_notification_keyboard()
+    )
+
+
+@dp.message(F.text == "👁 Просмотреть настройки")
+@admin_required
+async def view_notification_settings(message: types.Message):
+    try:
+        cursor.execute("SELECT * FROM notification_settings")
+        settings = cursor.fetchall()
+
+        response = "🔔 Текущие настройки уведомлений:\n\n"
+
+        if not settings:
+            response += "Настроек пока нет."
+        else:
+            for setting in settings:
+                response += f"• Тип: {setting[1]}\n"
+                response += f"  Чат ID: {setting[2]}\n\n"
+
+        await message.answer(response)
+
+    except Exception as e:
+        logger.error(f"Ошибка при получении настроек уведомлений: {e}")
+        await message.answer("❌ Ошибка при получении настроек уведомлений")
+
+
+@dp.message(F.text == "✏️ Установить текущий чат для отчетов")
+@admin_required
+async def set_report_chat_current(message: types.Message):
+    user_id = message.from_user.id
+    chat_id = message.chat.id
+
+    # Проверяем, что бот администратор в этом чате (для групп)
+    if message.chat.type != "private":
+        try:
+            chat_member = await bot.get_chat_member(chat_id, bot.id)
+            if not chat_member.status in ['administrator', 'creator']:
+                await message.answer(
+                    "❌ Бот должен быть администратором в этом чате!\n"
+                    "Пожалуйста, назначьте бота администратором и повторите попытку."
+                )
+                return
+        except Exception as e:
+            logger.error(f"Ошибка проверки прав бота: {e}")
+            await message.answer("❌ Не удалось проверить права бота в этом чате.")
+            return
+
+    try:
+        # Сохраняем или обновляем настройку
+        cursor.execute(
+            "INSERT OR REPLACE INTO notification_settings (notification_type, chat_id) VALUES (?, ?)",
+            ("reports", str(chat_id))
+        )
+        conn.commit()
+
+        await message.answer(
+            f"✅ Чат для отчетов успешно установлен!\n"
+            f"ID чата: {chat_id}\n"
+            f"Все отчеты будут отправляться сюда.",
+            reply_markup=get_notification_keyboard()
+        )
+
+        await log_action(user_id, "Настройка уведомлений",
+                         f"Установлен чат для отчетов: {chat_id}")
+
+    except Exception as e:
+        logger.error(f"Ошибка сохранения настроек уведомлений: {e}")
+        await message.answer("❌ Ошибка сохранения настроек. Попробуйте позже.",
+                             reply_markup=get_notification_keyboard())
+
+
+@dp.message(F.text == "✏️ Установить текущий чат для действий")
+@admin_required
+async def set_action_chat_current(message: types.Message):
+    user_id = message.from_user.id
+    chat_id = message.chat.id
+
+    # Проверяем, что бот администратор в этом чате (для групп)
+    if message.chat.type != "private":
+        try:
+            chat_member = await bot.get_chat_member(chat_id, bot.id)
+            if not chat_member.status in ['administrator', 'creator']:
+                await message.answer(
+                    "❌ Бот должен быть администратором в этом чате!\n"
+                    "Пожалуйста, назначьте бота администратором и повторите попытку."
+                )
+                return
+        except Exception as e:
+            logger.error(f"Ошибка проверки прав бота: {e}")
+            await message.answer("❌ Не удалось проверить права бота в этом чате.")
+            return
+
+    try:
+        # Сохраняем или обновляем настройку
+        cursor.execute(
+            "INSERT OR REPLACE INTO notification_settings (notification_type, chat_id) VALUES (?, ?)",
+            ("actions", str(chat_id))
+        )
+        conn.commit()
+
+        await message.answer(
+            f"✅ Чат для логов действий успешно установлен!\n"
+            f"ID чата: {chat_id}\n"
+            f"Все логи действий будут отправляться сюда.",
+            reply_markup=get_notification_keyboard()
+        )
+
+        await log_action(user_id, "Настройка уведомлений",
+                         f"Установлен чат для действий: {chat_id}")
+
+    except Exception as e:
+        logger.error(f"Ошибка сохранения настроек уведомлений: {e}")
+        await message.answer("❌ Ошибка сохранения настроек. Попробуйте позже.",
+                             reply_markup=get_notification_keyboard())
+
+
+@dp.message(F.text == "❓ Как получить ID чата?")
+@admin_required
+async def how_to_get_chat_id(message: types.Message):
+    help_text = (
+        "ℹ️ Как установить чат для уведомлений:\n\n"
+        "1. Перейдите в нужный чат (группу или канал)\n"
+        "2. Убедитесь, что бот добавлен в этот чат и имеет права администратора\n"
+        "3. В этом чате вызовите команду /id\n"
+        "4. Бот покажет ID этого чата\n\n"
+        "Для установки текущего чата:\n"
+        "- В меню уведомлений выберите:\n"
+        "  • '✏️ Установить текущий чат для отчетов' - для отчетов\n"
+        "  • '✏️ Установить текущий чат для действий' - для логов действий\n\n"
+        "Для установки чата из личных сообщений просто используйте соответствующие кнопки."
+    )
+    await message.answer(help_text)
+
+
+# Команда для получения ID чата
+@dp.message(Command("id"))
+async def get_chat_id(message: types.Message):
+    chat_id = message.chat.id
+    chat_type = message.chat.type
+
+    response = (
+        f"ℹ️ Информация о чате:\n"
+        f"Тип: {'личные сообщения' if chat_type == 'private' else 'группа' if chat_type == 'group' else 'супергруппа' if chat_type == 'supergroup' else 'канал'}\n"
+        f"ID чата: `{chat_id}`\n\n"
+        "Этот ID можно использовать для настройки уведомлений в админ-панели."
+    )
+
+    await message.answer(response, parse_mode="Markdown")
+
+
+@dp.message(F.text == "🔒 Управление доступом")
+@admin_required
+async def access_management(message: types.Message):
+    await message.answer(
+        "🔒 Управление доступом пользователей\n"
+        "Выберите действие:",
+        reply_markup=get_access_management_keyboard()
+    )
+
+
+@dp.message(F.text == "👀 Показать неодобренных")
+@admin_required
+async def show_unapproved_users(message: types.Message):
+    try:
+        cursor.execute("""
+                       SELECT user_id, username, first_name, added_date
+                       FROM users
+                       WHERE is_approved = 0
+                         AND is_banned = 0
+                       ORDER BY added_date DESC
+                       """)
+        users = cursor.fetchall()
+
+        if not users:
+            await message.answer("✅ Все пользователи одобрены или заблокированы.")
+            return
+
+        response = "👥 Пользователи, ожидающие одобрения:\n\n"
+        for user in users:
+            user_id = user[0]
+            username = user[1] or "без username"
+            first_name = user[2] or "Без имени"
+            added_date = user[3]
+
+            response += (
+                f"🆔 ID: {user_id}\n"
+                f"👤 Имя: {first_name}\n"
+                f"📎 @{username}\n"
+                f"📅 Зарегистрирован: {added_date}\n\n"
+            )
+
+        keyboard = InlineKeyboardMarkup(inline_keyboard=[])
+        for user in users:
+            user_id = user[0]
+            keyboard.inline_keyboard.append([
+                InlineKeyboardButton(
+                    text=f"✅ Одобрить {user_id}",
+                    callback_data=f"approve_{user_id}"
+                )
+            ])
+
+        if len(response) > 4000:
+            await message.answer("Список слишком большой, используйте кнопки для управления:")
+            await message.answer("Выберите пользователя для одобрения:", reply_markup=keyboard)
+        else:
+            await message.answer(response, reply_markup=keyboard)
+
+    except Exception as e:
+        logger.error(f"Ошибка при получении списка неодобренных пользователей: {e}")
+        await message.answer("❌ Ошибка при получении списка пользователей.")
+
+
+@dp.message(F.text == "✅ Одобрить доступ")
+@admin_required
+async def approve_access_start(message: types.Message):
+    try:
+        cursor.execute("""
+                       SELECT user_id, username, first_name, added_date
+                       FROM users
+                       WHERE is_approved = 0
+                         AND is_banned = 0
+                       ORDER BY added_date DESC
+                       """)
+        users = cursor.fetchall()
+
+        if not users:
+            await message.answer("✅ Все пользователи уже одобрены.")
+            return
+
+        keyboard = InlineKeyboardMarkup(inline_keyboard=[])
+        for user in users:
+            user_id = user[0]
+            keyboard.inline_keyboard.append([
+                InlineKeyboardButton(
+                    text=f"✅ Одобрить {user_id}",
+                    callback_data=f"approve_{user_id}"
+                )
+            ])
+
+        await message.answer(
+            "👥 Выберите пользователя для одобрения доступа:",
+            reply_markup=keyboard
+        )
+
+    except Exception as e:
+        logger.error(f"Ошибка при получении списка неодобренных пользователей: {e}")
+        await message.answer("❌ Ошибка при получении списка пользователей.")
+
+
+@dp.message(F.text == "🚫 Запретить доступ")
+@admin_required
+async def disapprove_access_start(message: types.Message):
+    try:
+        cursor.execute("""
+                       SELECT user_id, username, first_name, added_date
+                       FROM users
+                       WHERE is_approved = 1
+                         AND is_banned = 0
+                       ORDER BY added_date DESC
+                       """)
+        users = cursor.fetchall()
+
+        if not users:
+            await message.answer("ℹ️ Нет одобренных пользователей для запрета доступа.")
+            return
+
+        keyboard = InlineKeyboardMarkup(inline_keyboard=[])
+        for user in users:
+            user_id = user[0]
+            keyboard.inline_keyboard.append([
+                InlineKeyboardButton(
+                    text=f"🚫 Запретить {user_id}",
+                    callback_data=f"disapprove_{user_id}"
+                )
+            ])
+
+        await message.answer(
+            "👥 Выберите пользователя для запрета доступа:",
+            reply_markup=keyboard
+        )
+
+    except Exception as e:
+        logger.error(f"Ошибка при получении списка одобренных пользователей: {e}")
+        await message.answer("❌ Ошибка при получении списка пользователей.")
+
+
+# Обработчик кнопки одобрения пользователя
+@dp.callback_query(F.data.startswith("approve_"))
+async def handle_approve_user(callback: types.CallbackQuery):
+    try:
+        user_id = int(callback.data.split("_")[1])
+
+        # Обновляем статус пользователя
+        cursor.execute("UPDATE users SET is_approved = 1 WHERE user_id = ?", (user_id,))
+        conn.commit()
+
+        # Получаем информацию о пользователе
+        cursor.execute("SELECT first_name, username FROM users WHERE user_id = ?", (user_id,))
+        user = cursor.fetchone()
+        first_name = user[0] if user and user[0] else "Пользователь"
+        username = user[1] if user and user[1] else "без username"
+
+        # Уведомляем администратора
+        await callback.message.answer(
+            f"✅ Пользователь одобрен!\n"
+            f"👤 {first_name} (@{username})\n"
+            f"🆔 ID: {user_id}"
+        )
+
+        # Уведомляем пользователя
+        try:
+            await bot.send_message(
+                user_id,
+                "🎉 Ваш доступ к боту подтвержден администратором!\n"
+                "Теперь вы можете пользоваться всеми функциями."
+            )
+        except Exception as e:
+            logger.error(f"Не удалось уведомить пользователя {user_id}: {e}")
+
+        # Удаляем сообщение с кнопкой
+        await callback.message.delete()
+        await callback.answer()
+
+        await log_action(callback.from_user.id, "Одобрение пользователя", f"ID: {user_id}")
+
+    except Exception as e:
+        logger.error(f"Ошибка при одобрении пользователя: {e}")
+        await callback.answer("❌ Ошибка при одобрении пользователя")
+
+
+# Обработчик кнопки запрета доступа пользователя
+@dp.callback_query(F.data.startswith("disapprove_"))
+async def handle_disapprove_user(callback: types.CallbackQuery):
+    try:
+        user_id = int(callback.data.split("_")[1])
+
+        # Обновляем статус пользователя
+        cursor.execute("UPDATE users SET is_approved = 0 WHERE user_id = ?", (user_id,))
+        conn.commit()
+
+        # Получаем информацию о пользователе
+        cursor.execute("SELECT first_name, username FROM users WHERE user_id = ?", (user_id,))
+        user = cursor.fetchone()
+        first_name = user[0] if user and user[0] else "Пользователь"
+        username = user[1] if user and user[1] else "без username"
+
+        # Уведомляем администратора
+        await callback.message.answer(
+            f"🚫 Доступ пользователя запрещен!\n"
+            f"👤 {first_name} (@{username})\n"
+            f"🆔 ID: {user_id}"
+        )
+
+        # Уведомляем пользователя
+        try:
+            await bot.send_message(
+                user_id,
+                "🚫 Ваш доступ к боту был отозван администратором.\n"
+                "Для выяснения причин обратитесь к администратору."
+            )
+        except Exception as e:
+            logger.error(f"Не удалось уведомить пользователя {user_id}: {e}")
+
+        # Удаляем сообщение с кнопкой
+        await callback.message.delete()
+        await callback.answer()
+
+        await log_action(callback.from_user.id, "Запрет доступа", f"ID: {user_id}")
+
+    except Exception as e:
+        logger.error(f"Ошибка при запрете доступа: {e}")
+        await callback.answer("❌ Ошибка при запрете доступа")
+
+
+@dp.message(F.text == "👥 Список всех пользователей")
+@admin_required
+async def list_all_users(message: types.Message):
+    try:
+        cursor.execute("""
+                       SELECT user_id, username, first_name, is_admin, is_banned, is_approved, added_date
+                       FROM users
+                       ORDER BY added_date DESC
+                       """)
+        users = cursor.fetchall()
+
+        if not users:
+            await message.answer("👥 Пользователей нет в базе данных.")
+            return
+
+        keyboard = InlineKeyboardMarkup(inline_keyboard=[])
+        for user in users:
+            user_id = user[0]
+            username = user[1] or "без username"
+            first_name = user[2] or "Без имени"
+
+            status = ""
+            if user[3]: status += "👑"  # is_admin
+            if user[4]: status += "🚫"  # is_banned
+            if user[5]:
+                status += "✅"  # is_approved
+            else:
+                status += "⏳"  # не одобрен
+
+            button_text = f"{status} {first_name} (@{username})"
+
+            keyboard.inline_keyboard.append([
+                InlineKeyboardButton(text=button_text, callback_data=f"user_{user_id}")
+            ])
+
+        await message.answer(
+            "👥 Список всех пользователей. Выберите пользователя:",
+            reply_markup=keyboard
+        )
+
+    except Exception as e:
+        logger.error(f"Ошибка при получении списка пользователей: {e}")
+        await message.answer("❌ Ошибка при получении списка пользователей.")
+
+
+# Обработчик выбора пользователя из списка
+@dp.callback_query(F.data.startswith("user_"))
+async def handle_user_selected(callback: types.CallbackQuery):
+    try:
+        user_id = int(callback.data.split("_")[1])
+
+        cursor.execute("""
+                       SELECT user_id,
+                              username,
+                              first_name,
+                              is_admin,
+                              is_banned,
+                              is_approved,
+                              added_date,
+                              last_action
+                       FROM users
+                       WHERE user_id = ?
+                       """, (user_id,))
+        user = cursor.fetchone()
+
+        if not user:
+            await callback.answer("❌ Пользователь не найден")
+            return
+
+        user_id, username, first_name, is_admin, is_banned, is_approved, added_date, last_action = user
+
+        status = []
+        if is_admin:
+            status.append("👑 Администратор")
+        else:
+            status.append("👤 Обычный пользователь")
+
+        if is_banned:
+            status.append("🚫 Заблокирован")
+
+        if is_approved:
+            status.append("✅ Доступ разрешен")
+        else:
+            status.append("⏳ Ожидает одобрения")
+
+        last_action = last_action or "никогда"
+
+        response = (
+            f"👤 Информация о пользователе:\n"
+            f"🆔 ID: {user_id}\n"
+            f"👨‍💼 Имя: {first_name or 'не указано'}\n"
+            f"📎 Username: @{username or 'не указан'}\n"
+            f"📌 Статус: {'; '.join(status)}\n"
+            f"📅 Дата регистрации: {added_date}\n"
+            f"⏱ Последнее действие: {last_action}"
+        )
+
+        keyboard = InlineKeyboardMarkup(inline_keyboard=[])
+
+        if not is_approved:
+            keyboard.inline_keyboard.append([
+                InlineKeyboardButton(text="✅ Одобрить доступ", callback_data=f"approve_{user_id}")
+            ])
+        else:
+            keyboard.inline_keyboard.append([
+                InlineKeyboardButton(text="🚫 Запретить доступ", callback_data=f"disapprove_{user_id}")
+            ])
+
+        if not is_admin and not is_banned:
+            keyboard.inline_keyboard.append([
+                InlineKeyboardButton(text="🚫 Заблокировать", callback_data=f"ban_{user_id}")
+            ])
+        elif is_banned:
+            keyboard.inline_keyboard.append([
+                InlineKeyboardButton(text="✅ Разблокировать", callback_data=f"unban_{user_id}")
+            ])
+
+        if not is_admin:
+            keyboard.inline_keyboard.append([
+                InlineKeyboardButton(text="⚡ Сделать админом", callback_data=f"promote_{user_id}")
+            ])
+        else:
+            keyboard.inline_keyboard.append([
+                InlineKeyboardButton(text="❌ Снять админство", callback_data=f"demote_{user_id}")
+            ])
+
+        await callback.message.answer(response, reply_markup=keyboard)
+        await callback.answer()
+
+    except Exception as e:
+        logger.error(f"Ошибка при обработке выбора пользователя: {e}")
+        await callback.answer("❌ Ошибка при получении информации")
+
+
+@dp.callback_query(F.data.startswith("promote_"))
+async def promote_user_callback(callback: types.CallbackQuery):
+    try:
+        target_user_id = int(callback.data.split("_")[1])
+        admin_id = callback.from_user.id
+
+        if target_user_id == MAIN_ADMIN_ID:
+            await callback.answer("❌ Нельзя изменить статус главного администратора")
+            return
+
+        cursor.execute("UPDATE users SET is_admin = 1 WHERE user_id = ?", (target_user_id,))
+        conn.commit()
+
+        cursor.execute("SELECT first_name, username FROM users WHERE user_id = ?", (target_user_id,))
+        user = cursor.fetchone()
+        first_name = user[0] if user and user[0] else "Пользователь"
+        username = user[1] if user and user[1] else "без username"
+
+        await callback.message.answer(
+            f"⚡ Пользователь назначен администратором!\n"
+            f"👑 {first_name} (@{username})\n"
+            f"🆔 ID: {target_user_id}"
+        )
+
+        try:
+            await bot.send_message(
+                target_user_id,
+                "🎉 Вам предоставлены права администратора!\n"
+                "Теперь вы можете управлять ботом."
+            )
+        except Exception as e:
+            logger.error(f"Не удалось уведомить пользователя {target_user_id}: {e}")
+
+        await callback.answer()
+        await log_action(admin_id, "Назначение администратора", f"ID: {target_user_id}")
+
+    except Exception as e:
+        logger.error(f"Ошибка при назначении администратора: {e}")
+        await callback.answer("❌ Ошибка при назначении администратора")
+
+
+@dp.callback_query(F.data.startswith("demote_"))
+async def demote_user_callback(callback: types.CallbackQuery):
+    try:
+        target_user_id = int(callback.data.split("_")[1])
+        admin_id = callback.from_user.id
+
+        if target_user_id == MAIN_ADMIN_ID:
+            await callback.answer("❌ Нельзя изменить статус главного администратора")
+            return
+
+        cursor.execute("UPDATE users SET is_admin = 0 WHERE user_id = ?", (target_user_id,))
+        conn.commit()
+
+        cursor.execute("SELECT first_name, username FROM users WHERE user_id = ?", (target_user_id,))
+        user = cursor.fetchone()
+        first_name = user[0] if user and user[0] else "Пользователь"
+        username = user[1] if user and user[1] else "без username"
+
+        await callback.message.answer(
+            f"❌ Админские права отозваны!\n"
+            f"👤 {first_name} (@{username})\n"
+            f"🆔 ID: {target_user_id}"
+        )
+
+        try:
+            await bot.send_message(
+                target_user_id,
+                "❌ Ваши права администратора были отозваны."
+            )
+        except Exception as e:
+            logger.error(f"Не удалось уведомить пользователя {target_user_id}: {e}")
+
+        await callback.answer()
+        await log_action(admin_id, "Снятие прав администратора", f"ID: {target_user_id}")
+
+    except Exception as e:
+        logger.error(f"Ошибка при снятии прав администратора: {e}")
+        await callback.answer("❌ Ошибка при снятии прав администратора")
+
+
+@dp.callback_query(F.data.startswith("ban_"))
+async def ban_user_callback(callback: types.CallbackQuery):
+    try:
+        target_user_id = int(callback.data.split("_")[1])
+        admin_id = callback.from_user.id
+
+        if target_user_id == MAIN_ADMIN_ID:
+            await callback.answer("❌ Нельзя заблокировать главного администратора")
+            return
+
+        cursor.execute("UPDATE users SET is_banned = 1 WHERE user_id = ?", (target_user_id,))
+        conn.commit()
+
+        cursor.execute("SELECT first_name, username FROM users WHERE user_id = ?", (target_user_id,))
+        user = cursor.fetchone()
+        first_name = user[0] if user and user[0] else "Пользователь"
+        username = user[1] if user and user[1] else "без username"
+
+        await callback.message.answer(
+            f"🚫 Пользователь заблокирован!\n"
+            f"👤 {first_name} (@{username})\n"
+            f"🆔 ID: {target_user_id}"
+        )
+
+        try:
+            await bot.send_message(
+                target_user_id,
+                "🚫 Ваш доступ к боту был заблокирован администратором."
+            )
+        except Exception as e:
+            logger.error(f"Не удалось уведомить пользователя {target_user_id}: {e}")
+
+        await callback.answer()
+        await log_action(admin_id, "Блокировка пользователя", f"ID: {target_user_id}")
+
+    except Exception as e:
+        logger.error(f"Ошибка при блокировке пользователя: {e}")
+        await callback.answer("❌ Ошибка при блокировке пользователя")
+
+
+@dp.callback_query(F.data.startswith("unban_"))
+async def unban_user_callback(callback: types.CallbackQuery):
+    try:
+        target_user_id = int(callback.data.split("_")[1])
+        admin_id = callback.from_user.id
+
+        cursor.execute("UPDATE users SET is_banned = 0 WHERE user_id = ?", (target_user_id,))
+        conn.commit()
+
+        cursor.execute("SELECT first_name, username FROM users WHERE user_id = ?", (target_user_id,))
+        user = cursor.fetchone()
+        first_name = user[0] if user and user[0] else "Пользователь"
+        username = user[1] if user and user[1] else "без username"
+
+        await callback.message.answer(
+            f"✅ Пользователь разблокирован!\n"
+            f"👤 {first_name} (@{username})\n"
+            f"🆔 ID: {target_user_id}"
+        )
+
+        try:
+            await bot.send_message(
+                target_user_id,
+                "✅ Ваш доступ к боту был восстановлен администратором."
+            )
+        except Exception as e:
+            logger.error(f"Не удалось уведомить пользователя {target_user_id}: {e}")
+
+        await callback.answer()
+        await log_action(admin_id, "Разблокировка пользователя", f"ID: {target_user_id}")
+
+    except Exception as e:
+        logger.error(f"Ошибка при разблокировке пользователя: {e}")
+        await callback.answer("❌ Ошибка при разблокировке пользователя")
 
 
 @dp.message(F.text == "👥 Управление пользователями")
@@ -448,48 +1269,13 @@ async def user_management(message: types.Message):
 @dp.message(F.text == "👀 Список пользователей")
 @admin_required
 async def list_users(message: types.Message):
-    try:
-        cursor.execute(
-            "SELECT user_id, username, first_name, is_admin, is_banned, added_date FROM users ORDER BY added_date DESC")
-        users = cursor.fetchall()
-
-        if not users:
-            await message.answer("👥 Пользователей нет в базе данных.")
-            return
-
-        response = "👥 Список пользователей:\n\n"
-        for user in users:
-            status = ""
-            if user[3]:  # is_admin
-                status += "👑"
-            if user[4]:  # is_banned
-                status += "🚫"
-            if not status:
-                status = "👤"
-
-            response += (
-                f"{status} {user[2] or 'Без имени'}\n"
-                f"@{user[1] or 'без username'}\n"
-                f"ID: {user[0]}\n"
-                f"Дата регистрации: {user[5]}\n\n"
-            )
-
-        if len(response) > 4000:
-            for i in range(0, len(response), 4000):
-                await message.answer(response[i:i + 4000])
-        else:
-            await message.answer(response)
-
-    except Exception as e:
-        logger.error(f"Ошибка при получении списка пользователей: {e}")
-        await message.answer("❌ Ошибка при получении списка пользователей.")
+    await list_all_users(message)
 
 
 @dp.message(F.text == "📊 Статистика")
 @admin_required
 async def admin_stats(message: types.Message):
     try:
-        # Статистика пользователей
         cursor.execute("SELECT COUNT(*) FROM users")
         total_users = cursor.fetchone()[0]
 
@@ -499,18 +1285,21 @@ async def admin_stats(message: types.Message):
         cursor.execute("SELECT COUNT(*) FROM users WHERE is_banned = 1")
         banned_count = cursor.fetchone()[0]
 
-        # Статистика товаров
+        cursor.execute("SELECT COUNT(*) FROM users WHERE is_approved = 1")
+        approved_count = cursor.fetchone()[0]
+
+        cursor.execute("SELECT COUNT(*) FROM users WHERE is_approved = 0 AND is_banned = 0")
+        pending_count = cursor.fetchone()[0]
+
         cursor.execute("SELECT COUNT(*) FROM products")
         total_products = cursor.fetchone()[0]
 
         cursor.execute("SELECT COUNT(*) FROM products WHERE quantity < 10")
         low_stock = cursor.fetchone()[0]
 
-        # Статистика отчетов
         cursor.execute("SELECT COUNT(*) FROM shift_reports")
         total_reports = cursor.fetchone()[0]
 
-        # Статистика действий за последние 24 часа
         cursor.execute("SELECT COUNT(*) FROM action_logs WHERE timestamp > datetime('now', '-1 day')")
         actions_24h = cursor.fetchone()[0]
 
@@ -519,6 +1308,8 @@ async def admin_stats(message: types.Message):
             f"👥 Пользователи:\n"
             f"├ Всего: {total_users}\n"
             f"├ Администраторы: {admin_count}\n"
+            f"├ Одобренные: {approved_count}\n"
+            f"├ Ожидают одобрения: {pending_count}\n"
             f"└ Заблокированы: {banned_count}\n\n"
             f"📦 Товары:\n"
             f"├ Всего: {total_products}\n"
@@ -634,7 +1425,6 @@ async def promote_user_execute(message: types.Message):
             await log_action(admin_id, "Назначение администратора",
                              f"Пользователь ID {target_user_id} назначен админом")
 
-            # Уведомляем пользователя
             try:
                 await bot.send_message(target_user_id, "🎉 Вам предоставлены права администратора!")
             except:
@@ -681,7 +1471,6 @@ async def ban_user_execute(message: types.Message):
                                  reply_markup=get_user_management_keyboard())
             await log_action(admin_id, "Блокировка пользователя", f"Пользователь ID {target_user_id} заблокирован")
 
-            # Уведомляем пользователя
             try:
                 await bot.send_message(target_user_id, "🚫 Ваш доступ к боту заблокирован администратором.")
             except:
@@ -723,7 +1512,6 @@ async def unban_user_execute(message: types.Message):
                                  reply_markup=get_user_management_keyboard())
             await log_action(admin_id, "Разблокировка пользователя", f"Пользователь ID {target_user_id} разблокирован")
 
-            # Уведомляем пользователя
             try:
                 await bot.send_message(target_user_id, "✅ Ваш доступ к боту восстановлен!")
             except:
@@ -771,7 +1559,6 @@ async def demote_user_execute(message: types.Message):
             await log_action(admin_id, "Снятие прав администратора",
                              f"У пользователя ID {target_user_id} сняты права админа")
 
-            # Уведомляем пользователя
             try:
                 await bot.send_message(target_user_id, "❌ Ваши права администратора отозваны.")
             except:
@@ -1016,7 +1803,7 @@ async def edit_product_selected(message: types.Message):
                     [KeyboardButton(text="🖊 Изменить название")],
                     [KeyboardButton(text="🔢 Изменить количество")],
                     [KeyboardButton(text="🏷 Изменить категорию")],
-                    [KeyboardButton(text="🔙 К списку товаров")]  # Измененная кнопка
+                    [KeyboardButton(text="🔙 К списку товаров")]
                 ],
                 resize_keyboard=True
             )
@@ -1027,10 +1814,8 @@ async def edit_product_selected(message: types.Message):
         await message.answer("❌ Ошибка при выборе товара!", reply_markup=get_warehouse_keyboard())
 
 
-# ===== ОБРАБОТЧИК ДЛЯ КНОПКИ "🔙 К СПИСКУ ТОВАРОВ" =====
 @dp.message(F.text == "🔙 К списку товаров")
 async def back_to_products_list(message: types.Message):
-    # Вызываем функцию выбора товара для редактирования
     await edit_product_start(message)
 
 
@@ -1281,7 +2066,7 @@ async def export_to_excel(message: types.Message):
         )
 
     except Exception as e:
-        logger.error(f"Ошибка при экспорте: {str(e)}", exc_info=True)
+        logger.error(f"❌ Ошибка при экспорте: {str(e)}", exc_info=True)
         await message.answer(
             "❌ Произошла ошибка при экспорте данных!\n"
             f"Ошибка: {str(e)}",
@@ -1318,16 +2103,15 @@ async def create_report_start(message: types.Message):
     user_data[user_id] = {
         'report': {
             'report_date': today,
-            'fields': ['total', 'cash', 'card', 'bar', 'hookah', 'expenses', 'balance'],
+            'fields': ['total', 'cash', 'card', 'bar', 'hookah_count', 'expenses'],
             'current_field': 0,
             'labels': [
                 "общую сумму выручки",
                 "сумму наличных",
                 "сумму безналичных",
                 "выручку по бару",
-                "выручку по кальянам",
-                "сумму расходов",
-                "остаток в кассе"
+                "количество проданных кальянов",
+                "сумму расходов"
             ]
         }
     }
@@ -1346,7 +2130,7 @@ async def update_report_start(message: types.Message):
     today = datetime.now().strftime('%Y-%m-%d')
 
     cursor.execute(
-        "SELECT total, cash, card, bar, hookah, expenses, balance "
+        "SELECT total, cash, card, bar, hookah_count, expenses "
         "FROM shift_reports WHERE user_id = ? AND report_date = ?",
         (user_id, today)
     )
@@ -1360,7 +2144,7 @@ async def update_report_start(message: types.Message):
     user_data[user_id] = {
         'report': {
             'report_date': today,
-            'fields': ['total', 'cash', 'card', 'bar', 'hookah', 'expenses', 'balance'],
+            'fields': ['total', 'cash', 'card', 'bar', 'hookah_count', 'expenses'],
             'current_field': 0,
             'values': list(report),
             'labels': [
@@ -1368,9 +2152,8 @@ async def update_report_start(message: types.Message):
                 "сумму наличных",
                 "сумму безналичных",
                 "выручку по бару",
-                "выручку по кальянам",
-                "сумму расходов",
-                "остаток в кассе"
+                "количество проданных кальянов",
+                "сумму расходов"
             ]
         }
     }
@@ -1379,82 +2162,126 @@ async def update_report_start(message: types.Message):
         f"🔄 Обновление отчёта за {today}\n"
         f"Текущее значение {user_data[user_id]['report']['labels'][0]}: "
         f"{user_data[user_id]['report']['values'][0]}\n"
-        f"Введите новое значение:",
-        reply_markup=get_cancel_keyboard()
+        f"Введите новое значение или нажмите '⏭ Пропустить':",
+        reply_markup=get_skip_keyboard()
     )
 
 
 @dp.message(F.text, lambda message: user_states.get(message.from_user.id) in ["report_date", "update_report"])
 async def process_report_data(message: types.Message):
+    user_id = message.from_user.id
+    state = user_states[user_id]
+    report_data = user_data[user_id]['report']
+    current_field = report_data['current_field']
+    field_name = report_data['fields'][current_field]
+
+    # Обработка отмены
     if message.text == "❌ Отмена":
-        user_id = message.from_user.id
         user_states[user_id] = None
         if 'report' in user_data[user_id]:
             del user_data[user_id]['report']
         await message.answer("❌ Создание отчета отменено", reply_markup=get_report_keyboard())
         return
 
-    user_id = message.from_user.id
-    state = user_states[user_id]
-    report_data = user_data[user_id]['report']
-    current_field = report_data['current_field']
+    # Обработка пропуска (только для обновления)
+    if state == "update_report" and message.text == "⏭ Пропустить":
+        report_data['current_field'] += 1
 
+        if report_data['current_field'] < len(report_data['fields']):
+            next_index = report_data['current_field']
+            next_label = report_data['labels'][next_index]
+            current_value = report_data['values'][next_index]
+
+            await message.answer(
+                f"Текущее значение {next_label}: {current_value}\n"
+                f"Введите новое значение или нажмите '⏭ Пропустить':",
+                reply_markup=get_skip_keyboard()
+            )
+        else:
+            await save_report(message, user_id, state, report_data)
+        return
+
+    # Проверка введенных данных
     try:
-        value = float(message.text.replace(',', '.'))
+        if field_name == 'hookah_count':
+            value = int(message.text)
+        else:
+            value = float(message.text.replace(',', '.'))
+
         if value < 0:
             raise ValueError("Отрицательное значение")
     except:
-        await message.answer("❌ Ошибка! Введите корректное положительное число.", reply_markup=get_cancel_keyboard())
+        error_msg = "❌ Ошибка! Введите корректное положительное число."
+        if state == "update_report":
+            error_msg += "\nИли нажмите '⏭ Пропустить' чтобы оставить текущее значение."
+            await message.answer(error_msg, reply_markup=get_skip_keyboard())
+        else:
+            await message.answer(error_msg, reply_markup=get_cancel_keyboard())
         return
 
     if state == "report_date":
-        report_data[report_data['fields'][current_field]] = value
+        report_data[field_name] = value
     else:
         report_data['values'][current_field] = value
 
     report_data['current_field'] += 1
 
     if report_data['current_field'] < len(report_data['fields']):
-        current_index = report_data['current_field']
-        field_label = report_data['labels'][current_index]
-        await message.answer(f"Введите {field_label}:", reply_markup=get_cancel_keyboard())
-        return
+        next_index = report_data['current_field']
+        next_label = report_data['labels'][next_index]
 
+        if state == "update_report":
+            current_value = report_data['values'][next_index]
+            await message.answer(
+                f"Текущее значение {next_label}: {current_value}\n"
+                f"Введите новое значение или нажмите '⏭ Пропустить':",
+                reply_markup=get_skip_keyboard()
+            )
+        else:
+            await message.answer(f"Введите {next_label}:", reply_markup=get_cancel_keyboard())
+    else:
+        await save_report(message, user_id, state, report_data)
+
+
+async def save_report(message: types.Message, user_id: int, state: str, report_data: dict):
     try:
+        # Рассчитываем баланс: initial_cash + cash - expenses
+        initial_cash = 4000
+        cash = report_data['cash'] if state == "report_date" else report_data['values'][1]
+        expenses = report_data['expenses'] if state == "report_date" else report_data['values'][5]
+        balance = initial_cash + cash - expenses
+
         if state == "report_date":
             cursor.execute(
                 "INSERT INTO shift_reports "
-                "(user_id, report_date, total, cash, card, bar, hookah, expenses, balance) "
-                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                "(user_id, report_date, total, cash, card, bar, hookah_count, expenses, initial_cash, balance) "
+                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
                 (user_id, report_data['report_date'],
                  report_data['total'], report_data['cash'], report_data['card'],
-                 report_data['bar'], report_data['hookah'], report_data['expenses'],
-                 report_data['balance'])
+                 report_data['bar'], report_data['hookah_count'], report_data['expenses'],
+                 initial_cash, balance)
             )
             action = "создан"
+            report_values = [
+                report_data['total'], report_data['cash'], report_data['card'],
+                report_data['bar'], report_data['hookah_count'], report_data['expenses'],
+                balance
+            ]
         else:
             cursor.execute(
                 "UPDATE shift_reports SET "
                 "total = ?, cash = ?, card = ?, bar = ?, "
-                "hookah = ?, expenses = ?, balance = ? "
+                "hookah_count = ?, expenses = ?, balance = ? "
                 "WHERE user_id = ? AND report_date = ?",
                 (report_data['values'][0], report_data['values'][1],
                  report_data['values'][2], report_data['values'][3],
                  report_data['values'][4], report_data['values'][5],
-                 report_data['values'][6], user_id, report_data['report_date'])
+                 balance, user_id, report_data['report_date'])
             )
             action = "обновлен"
+            report_values = report_data['values'] + [balance]
 
         conn.commit()
-
-        if state == "report_date":
-            report_values = [
-                report_data['total'], report_data['cash'], report_data['card'],
-                report_data['bar'], report_data['hookah'], report_data['expenses'],
-                report_data['balance']
-            ]
-        else:
-            report_values = report_data['values']
 
         report_text = (
             f"📝 Отчёт по смене {report_data['report_date']} {action}:\n\n"
@@ -1462,14 +2289,44 @@ async def process_report_data(message: types.Message):
             f"• Наличные: {report_values[1]} ₽\n"
             f"• Безналичные: {report_values[2]} ₽\n"
             f"• Бар: {report_values[3]} ₽\n"
-            f"• Кальян: {report_values[4]} ₽\n"
+            f"• Кальяны: {report_values[4]} шт.\n"
             f"• Расходы: {report_values[5]} ₽\n"
+            f"• Начальная касса: 4000 ₽\n"
             f"• Остаток: {report_values[6]} ₽\n\n"
             f"💸 Чистая прибыль: {report_values[0] - report_values[5]} ₽"
         )
 
         await message.answer(report_text, reply_markup=get_report_keyboard())
         await log_action(user_id, f"Отчёт {action}", f"Дата: {report_data['report_date']}")
+
+        # Отправка отчета в настроенную группу
+        report_chat_id = get_notification_chat("reports")
+        if report_chat_id:
+            try:
+                cursor.execute("SELECT first_name, username FROM users WHERE user_id = ?", (user_id,))
+                user_info = cursor.fetchone()
+                first_name = user_info[0] if user_info and user_info[0] else "Неизвестный"
+                username = f"@{user_info[1]}" if user_info and user_info[1] else "без username"
+
+                group_report = (
+                    f"📊 Отчет по смене за {report_data['report_date']}\n"
+                    f"👤 Ответственный: {first_name} ({username})\n\n"
+                    f"💰 Общая выручка: {report_values[0]} ₽\n"
+                    f"💵 Наличные: {report_values[1]} ₽\n"
+                    f"💳 Безналичные: {report_values[2]} ₽\n"
+                    f"🍻 Выручка по бару: {report_values[3]} ₽\n"
+                    f"🚬 Количество кальянов: {report_values[4]} шт.\n"
+                    f"📦 Расходы: {report_values[5]} ₽\n"
+                    f"🏦 Начальная касса: 4000 ₽\n"
+                    f"💸 Остаток в кассе: {report_values[6]} ₽\n\n"
+                    f"💵 Чистая прибыль: {report_values[0] - report_values[5]} ₽"
+                )
+
+                await bot.send_message(report_chat_id, group_report)
+                await log_action(user_id, "Отправка отчета в группу", f"Группа: {report_chat_id}")
+            except Exception as e:
+                logger.error(f"Ошибка отправки отчета в группу: {e}")
+                await message.answer("❌ Не удалось отправить отчет в группу", reply_markup=get_report_keyboard())
 
     except Exception as e:
         logger.error(f"Ошибка сохранения отчёта: {e}")
@@ -1488,7 +2345,7 @@ async def report_history(message: types.Message):
 
     try:
         cursor.execute(
-            "SELECT report_date, total, cash, card, bar, hookah, expenses, balance "
+            "SELECT report_date, total, cash, card, bar, hookah_count, expenses, balance "
             "FROM shift_reports WHERE user_id = ? ORDER BY report_date DESC LIMIT 10",
             (user_id,)
         )
@@ -1506,7 +2363,7 @@ async def report_history(message: types.Message):
                 f"├ Наличные: {report[2]} ₽\n"
                 f"├ Безнал: {report[3]} ₽\n"
                 f"├ Бар: {report[4]} ₽\n"
-                f"├ Кальян: {report[5]} ₽\n"
+                f"├ Кальяны: {report[5]} шт.\n"
                 f"├ Расходы: {report[6]} ₽\n"
                 f"└ Остаток: {report[7]} ₽\n\n"
             )
@@ -1526,21 +2383,17 @@ async def cancel_action(message: types.Message):
     state = user_states.get(user_id)
 
     if state:
-        # Определяем, в каком состоянии находится пользователь
         if state.startswith(("adding_", "searching", "editing_")):
-            # Для операций со складом
             user_states[user_id] = None
             if user_id in user_data:
                 user_data[user_id] = {}
             await message.answer("❌ Действие отменено", reply_markup=get_warehouse_keyboard())
         elif state in ["report_date", "update_report"]:
-            # Для операций с отчетами
             user_states[user_id] = None
             if user_id in user_data and 'report' in user_data[user_id]:
                 del user_data[user_id]['report']
             await message.answer("❌ Действие отменено", reply_markup=get_report_keyboard())
         elif state.endswith(("_user")):
-            # Для операций управления пользователями
             user_states[user_id] = None
             await message.answer("❌ Действие отменено", reply_markup=get_user_management_keyboard())
     else:
@@ -1552,19 +2405,15 @@ async def cancel_action(message: types.Message):
 async def back_handler(message: types.Message):
     user_id = message.from_user.id
 
-    # Если пользователь в процессе редактирования товара
     if user_states.get(user_id) in ["editing_name", "editing_quantity", "editing_category"]:
         user_states[user_id] = None
         await message.answer("❌ Изменение товара отменено", reply_markup=get_warehouse_keyboard())
         return
 
-    # Если пользователь в меню выбора действия для товара
     if user_data.get(user_id) and "edit_id" in user_data[user_id]:
-        # Возвращаем к списку товаров для редактирования
         await edit_product_start(message)
         return
 
-    # По умолчанию возвращаем в главное меню
     await message.answer("Главное меню:", reply_markup=get_main_keyboard(user_id))
 
 
@@ -1593,22 +2442,19 @@ async def unknown_command(message: types.Message):
 
 # ===== ЗАПУСК БОТА =====
 async def main():
-    # Логирование информации о запуске
     logger.info("=" * 50)
     logger.info(f"🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot")
     logger.info(f"⏰ Время запуска: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     logger.info(f"🔑 ID главного администратора: {MAIN_ADMIN_ID}")
 
-    # Проверка и создание главного администратора
     if not is_registered(MAIN_ADMIN_ID):
         cursor.execute(
-            "INSERT INTO users (user_id, username, first_name, is_admin) VALUES (?, ?, ?, ?)",
-            (MAIN_ADMIN_ID, "sora_admin", "Sora Admin", 1)
+            "INSERT INTO users (user_id, username, first_name, is_admin, is_approved) VALUES (?, ?, ?, ?, ?)",
+            (MAIN_ADMIN_ID, "sora_admin", "Sora Admin", 1, 1)
         )
         conn.commit()
         logger.info("✅ Главный администратор зарегистрирован")
 
-    # Статистика системы
     try:
         cursor.execute("SELECT COUNT(*) FROM users")
         user_count = cursor.fetchone()[0]
@@ -1617,14 +2463,20 @@ async def main():
         cursor.execute("SELECT COUNT(*) FROM action_logs")
         log_count = cursor.fetchone()[0]
 
+        cursor.execute("SELECT COUNT(*) FROM users WHERE is_approved = 1")
+        approved_count = cursor.fetchone()[0]
+        cursor.execute("SELECT COUNT(*) FROM users WHERE is_approved = 0 AND is_banned = 0")
+        pending_count = cursor.fetchone()[0]
+
         logger.info(f"👥 Пользователей в системе: {user_count}")
+        logger.info(f"├ Одобренные: {approved_count}")
+        logger.info(f"└ Ожидают одобрения: {pending_count}")
         logger.info(f"📦 Товаров на складе: {product_count}")
         logger.info(f"📝 Лог-записей действий: {log_count}")
         logger.info("=" * 50)
     except Exception as e:
         logger.error(f"Ошибка при получении статистики: {e}")
 
-    # Запуск бота
     logger.info("🟢 Бот запущен и готов к работе")
     try:
         await dp.start_polling(bot)
@@ -1633,7 +2485,6 @@ async def main():
     except Exception as e:
         logger.error(f"❌ Критическая ошибка при работе бота: {e}")
     finally:
-        # Логирование завершения работы
         logger.info("=" * 50)
         logger.info(f"🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot")
         logger.info(f"⏰ Время остановки: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")

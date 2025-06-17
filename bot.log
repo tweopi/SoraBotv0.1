@@ -37,3 +37,1699 @@
 2025-06-17 15:13:27,140 - __main__ - INFO - 🟢 Бот запущен и готов к работе
 2025-06-17 15:13:27,140 - aiogram.dispatcher - INFO - Start polling
 2025-06-17 15:13:27,723 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 15:20:22,201 - __main__ - WARNING - Попытка доступа незарегистрированного пользователя: 7964903129
+2025-06-17 15:20:22,202 - aiogram.event - INFO - Update id=729245969 is handled. Duration 745 ms by bot id=8143304952
+2025-06-17 15:21:02,656 - __main__ - WARNING - Попытка доступа незарегистрированного пользователя: 7964903129
+2025-06-17 15:21:02,656 - aiogram.event - INFO - Update id=729245970 is handled. Duration 175 ms by bot id=8143304952
+2025-06-17 15:35:15,743 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-06-17 15:35:15,743 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8143304952)
+2025-06-17 15:35:19,166 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-17 15:35:19,166 - aiogram.dispatcher - WARNING - Sleep for 1.268356 seconds and try again... (tryings = 1, bot id = 8143304952)
+2025-06-17 15:35:22,893 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-17 15:35:22,893 - aiogram.dispatcher - WARNING - Sleep for 1.743813 seconds and try again... (tryings = 2, bot id = 8143304952)
+2025-06-17 15:35:27,065 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-17 15:35:27,065 - aiogram.dispatcher - WARNING - Sleep for 2.287413 seconds and try again... (tryings = 3, bot id = 8143304952)
+2025-06-17 15:35:39,560 - aiogram.dispatcher - INFO - Connection established (tryings = 4, bot id = 8143304952)
+2025-06-17 15:52:29,405 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-17 15:52:29,659 - __main__ - INFO - ==================================================
+2025-06-17 15:52:29,659 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-17 15:52:29,659 - __main__ - INFO - ⏰ Время остановки: 2025-06-17 15:52:29
+2025-06-17 15:52:29,660 - __main__ - INFO - ⚡ Активность за 24 часа: 18 действий
+2025-06-17 15:52:29,660 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-17 15:52:29,660 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-17 15:52:29,660 - __main__ - INFO - ==================================================
+2025-06-17 15:52:29,660 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-17 15:52:29,660 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 15:52:29,661 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-17 15:52:29,661 - __main__ - INFO - 👋 Программа завершена
+2025-06-17 15:52:31,975 - __main__ - INFO - ==================================================
+2025-06-17 15:52:31,975 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-17 15:52:31,975 - __main__ - INFO - ⏰ Время запуска: 2025-06-17 15:52:31
+2025-06-17 15:52:31,975 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-17 15:52:31,975 - __main__ - INFO - 👥 Пользователей в системе: 2
+2025-06-17 15:52:31,976 - __main__ - INFO - 📦 Товаров на складе: 5
+2025-06-17 15:52:31,976 - __main__ - INFO - 📝 Лог-записей действий: 29
+2025-06-17 15:52:31,976 - __main__ - INFO - ==================================================
+2025-06-17 15:52:31,976 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-17 15:52:31,976 - aiogram.dispatcher - INFO - Start polling
+2025-06-17 15:52:32,786 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 15:52:44,944 - __main__ - WARNING - Попытка доступа незарегистрированного пользователя: 7964903129
+2025-06-17 15:52:44,944 - aiogram.event - INFO - Update id=729245971 is handled. Duration 430 ms by bot id=8143304952
+2025-06-17 15:52:51,599 - __main__ - ERROR - Ошибка логирования действия: no such column: last_action
+2025-06-17 15:52:51,721 - aiogram.event - INFO - Update id=729245972 is handled. Duration 122 ms by bot id=8143304952
+2025-06-17 15:52:54,042 - __main__ - ERROR - Ошибка логирования действия: no such column: last_action
+2025-06-17 15:52:54,171 - aiogram.event - INFO - Update id=729245973 is handled. Duration 129 ms by bot id=8143304952
+2025-06-17 15:52:55,721 - __main__ - ERROR - Ошибка логирования действия: no such column: last_action
+2025-06-17 15:52:55,721 - __main__ - ERROR - Ошибка при получении списка пользователей: no such column: last_action
+2025-06-17 15:52:55,935 - aiogram.event - INFO - Update id=729245974 is handled. Duration 214 ms by bot id=8143304952
+2025-06-17 15:52:59,635 - __main__ - ERROR - Ошибка логирования действия: no such column: last_action
+2025-06-17 15:52:59,819 - aiogram.event - INFO - Update id=729245975 is handled. Duration 186 ms by bot id=8143304952
+2025-06-17 15:53:01,483 - __main__ - ERROR - Ошибка логирования действия: no such column: last_action
+2025-06-17 15:53:01,639 - aiogram.event - INFO - Update id=729245976 is handled. Duration 157 ms by bot id=8143304952
+2025-06-17 15:53:05,937 - aiogram.event - INFO - Update id=729245977 is handled. Duration 137 ms by bot id=8143304952
+2025-06-17 15:53:07,169 - __main__ - ERROR - Ошибка логирования действия: no such column: last_action
+2025-06-17 15:53:07,307 - aiogram.event - INFO - Update id=729245978 is handled. Duration 138 ms by bot id=8143304952
+2025-06-17 15:53:09,651 - __main__ - ERROR - Ошибка логирования действия: no such column: last_action
+2025-06-17 15:53:09,786 - aiogram.event - INFO - Update id=729245979 is handled. Duration 134 ms by bot id=8143304952
+2025-06-17 15:53:23,825 - aiogram.event - INFO - Update id=729245980 is handled. Duration 136 ms by bot id=8143304952
+2025-06-17 15:53:25,244 - __main__ - ERROR - Ошибка логирования действия: no such column: last_action
+2025-06-17 15:53:25,369 - aiogram.event - INFO - Update id=729245981 is handled. Duration 125 ms by bot id=8143304952
+2025-06-17 15:53:26,604 - __main__ - ERROR - Ошибка логирования действия: no such column: last_action
+2025-06-17 15:53:26,732 - aiogram.event - INFO - Update id=729245982 is handled. Duration 128 ms by bot id=8143304952
+2025-06-17 15:53:28,347 - __main__ - ERROR - Ошибка логирования действия: no such column: last_action
+2025-06-17 15:53:28,471 - aiogram.event - INFO - Update id=729245983 is handled. Duration 125 ms by bot id=8143304952
+2025-06-17 15:53:33,539 - __main__ - ERROR - Ошибка логирования действия: no such column: last_action
+2025-06-17 15:53:33,666 - aiogram.event - INFO - Update id=729245984 is handled. Duration 127 ms by bot id=8143304952
+2025-06-17 15:53:35,601 - __main__ - ERROR - Ошибка логирования действия: no such column: last_action
+2025-06-17 15:53:35,601 - __main__ - ERROR - Ошибка при получении списка пользователей: no such column: last_action
+2025-06-17 15:53:35,731 - aiogram.event - INFO - Update id=729245985 is handled. Duration 131 ms by bot id=8143304952
+2025-06-17 15:54:44,881 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-17 15:54:45,146 - __main__ - INFO - ==================================================
+2025-06-17 15:54:45,146 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-17 15:54:45,146 - __main__ - INFO - ⏰ Время остановки: 2025-06-17 15:54:45
+2025-06-17 15:54:45,146 - __main__ - INFO - ⚡ Активность за 24 часа: 18 действий
+2025-06-17 15:54:45,147 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-17 15:54:45,147 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-17 15:54:45,147 - __main__ - INFO - ==================================================
+2025-06-17 15:54:45,147 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-17 15:54:45,147 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 15:54:45,148 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-17 15:54:45,148 - __main__ - INFO - 👋 Программа завершена
+2025-06-17 15:54:47,265 - __main__ - INFO - ==================================================
+2025-06-17 15:54:47,265 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-17 15:54:47,265 - __main__ - INFO - ⏰ Время запуска: 2025-06-17 15:54:47
+2025-06-17 15:54:47,265 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-17 15:54:47,265 - __main__ - INFO - 👥 Пользователей в системе: 2
+2025-06-17 15:54:47,266 - __main__ - INFO - 📦 Товаров на складе: 5
+2025-06-17 15:54:47,266 - __main__ - INFO - 📝 Лог-записей действий: 29
+2025-06-17 15:54:47,266 - __main__ - INFO - ==================================================
+2025-06-17 15:54:47,266 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-17 15:54:47,266 - aiogram.dispatcher - INFO - Start polling
+2025-06-17 15:54:47,780 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 15:54:48,612 - aiogram.event - INFO - Update id=729245986 is handled. Duration 502 ms by bot id=8143304952
+2025-06-17 15:54:49,899 - aiogram.event - INFO - Update id=729245987 is handled. Duration 133 ms by bot id=8143304952
+2025-06-17 15:54:52,456 - aiogram.event - INFO - Update id=729245988 is handled. Duration 131 ms by bot id=8143304952
+2025-06-17 15:54:53,413 - aiogram.event - INFO - Update id=729245989 is handled. Duration 141 ms by bot id=8143304952
+2025-06-17 15:54:55,501 - aiogram.event - INFO - Update id=729245990 is handled. Duration 162 ms by bot id=8143304952
+2025-06-17 15:54:58,550 - aiogram.event - INFO - Update id=729245991 is handled. Duration 176 ms by bot id=8143304952
+2025-06-17 15:54:59,947 - aiogram.event - INFO - Update id=729245992 is handled. Duration 221 ms by bot id=8143304952
+2025-06-17 15:55:01,058 - aiogram.event - INFO - Update id=729245993 is handled. Duration 135 ms by bot id=8143304952
+2025-06-17 15:55:03,257 - aiogram.event - INFO - Update id=729245994 is handled. Duration 175 ms by bot id=8143304952
+2025-06-17 16:07:30,395 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-17 16:07:30,654 - __main__ - INFO - ==================================================
+2025-06-17 16:07:30,654 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-17 16:07:30,654 - __main__ - INFO - ⏰ Время остановки: 2025-06-17 16:07:30
+2025-06-17 16:07:30,655 - __main__ - INFO - ⚡ Активность за 24 часа: 16 действий
+2025-06-17 16:07:30,655 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-17 16:07:30,655 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-17 16:07:30,655 - __main__ - INFO - ==================================================
+2025-06-17 16:07:30,655 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-17 16:07:30,655 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 16:07:30,656 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-17 16:07:30,656 - __main__ - INFO - 👋 Программа завершена
+2025-06-17 16:07:33,599 - __main__ - INFO - ==================================================
+2025-06-17 16:07:33,599 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-17 16:07:33,599 - __main__ - INFO - ⏰ Время запуска: 2025-06-17 16:07:33
+2025-06-17 16:07:33,599 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-17 16:07:33,599 - __main__ - INFO - 👥 Пользователей в системе: 2
+2025-06-17 16:07:33,599 - __main__ - INFO - 📦 Товаров на складе: 5
+2025-06-17 16:07:33,599 - __main__ - INFO - 📝 Лог-записей действий: 29
+2025-06-17 16:07:33,599 - __main__ - INFO - ==================================================
+2025-06-17 16:07:33,599 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-17 16:07:33,599 - aiogram.dispatcher - INFO - Start polling
+2025-06-17 16:07:34,110 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 16:12:15,607 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-17 16:12:15,867 - __main__ - INFO - ==================================================
+2025-06-17 16:12:15,867 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-17 16:12:15,867 - __main__ - INFO - ⏰ Время остановки: 2025-06-17 16:12:15
+2025-06-17 16:12:15,867 - __main__ - INFO - ⚡ Активность за 24 часа: 16 действий
+2025-06-17 16:12:15,867 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-17 16:12:15,867 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-17 16:12:15,867 - __main__ - INFO - ==================================================
+2025-06-17 16:12:15,867 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-17 16:12:15,868 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 16:12:15,868 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-17 16:12:15,868 - __main__ - INFO - 👋 Программа завершена
+2025-06-17 16:12:18,763 - __main__ - INFO - ==================================================
+2025-06-17 16:12:18,763 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-17 16:12:18,763 - __main__ - INFO - ⏰ Время запуска: 2025-06-17 16:12:18
+2025-06-17 16:12:18,763 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-17 16:12:18,763 - __main__ - INFO - 👥 Пользователей в системе: 2
+2025-06-17 16:12:18,763 - __main__ - INFO - 📦 Товаров на складе: 5
+2025-06-17 16:12:18,763 - __main__ - INFO - 📝 Лог-записей действий: 29
+2025-06-17 16:12:18,763 - __main__ - INFO - ==================================================
+2025-06-17 16:12:18,763 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-17 16:12:18,764 - aiogram.dispatcher - INFO - Start polling
+2025-06-17 16:12:19,266 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 16:12:27,679 - aiogram.event - INFO - Update id=729245995 is handled. Duration 414 ms by bot id=8143304952
+2025-06-17 16:12:29,122 - aiogram.event - INFO - Update id=729245996 is handled. Duration 172 ms by bot id=8143304952
+2025-06-17 16:12:30,242 - aiogram.event - INFO - Update id=729245997 is handled. Duration 119 ms by bot id=8143304952
+2025-06-17 16:12:31,155 - __main__ - ERROR - Ошибка при получении списка пользователей: no such column: last_action
+2025-06-17 16:12:31,274 - aiogram.event - INFO - Update id=729245998 is handled. Duration 119 ms by bot id=8143304952
+2025-06-17 16:12:32,686 - __main__ - ERROR - Ошибка при получении списка пользователей: no such column: last_action
+2025-06-17 16:12:32,817 - aiogram.event - INFO - Update id=729245999 is handled. Duration 132 ms by bot id=8143304952
+2025-06-17 16:12:34,172 - aiogram.event - INFO - Update id=729246000 is handled. Duration 133 ms by bot id=8143304952
+2025-06-17 16:12:35,534 - aiogram.event - INFO - Update id=729246001 is handled. Duration 129 ms by bot id=8143304952
+2025-06-17 16:12:37,340 - aiogram.event - INFO - Update id=729246002 is handled. Duration 125 ms by bot id=8143304952
+2025-06-17 16:12:38,806 - aiogram.event - INFO - Update id=729246003 is handled. Duration 122 ms by bot id=8143304952
+2025-06-17 16:12:40,952 - aiogram.event - INFO - Update id=729246004 is handled. Duration 139 ms by bot id=8143304952
+2025-06-17 16:12:56,792 - aiogram.event - INFO - Update id=729246005 is handled. Duration 149 ms by bot id=8143304952
+2025-06-17 16:13:03,243 - aiogram.event - INFO - Update id=729246006 is handled. Duration 121 ms by bot id=8143304952
+2025-06-17 16:13:08,205 - aiogram.event - INFO - Update id=729246007 is handled. Duration 252 ms by bot id=8143304952
+2025-06-17 16:13:09,590 - aiogram.event - INFO - Update id=729246008 is handled. Duration 124 ms by bot id=8143304952
+2025-06-17 16:13:10,373 - aiogram.event - INFO - Update id=729246009 is handled. Duration 135 ms by bot id=8143304952
+2025-06-17 16:13:11,786 - aiogram.event - INFO - Update id=729246010 is handled. Duration 126 ms by bot id=8143304952
+2025-06-17 16:13:12,608 - __main__ - ERROR - Ошибка при получении списка пользователей: no such column: last_action
+2025-06-17 16:13:12,726 - aiogram.event - INFO - Update id=729246011 is handled. Duration 119 ms by bot id=8143304952
+2025-06-17 16:17:27,732 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-17 16:17:27,992 - __main__ - INFO - ==================================================
+2025-06-17 16:17:27,992 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-17 16:17:27,992 - __main__ - INFO - ⏰ Время остановки: 2025-06-17 16:17:27
+2025-06-17 16:17:27,992 - __main__ - INFO - ⚡ Активность за 24 часа: 16 действий
+2025-06-17 16:17:27,993 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-17 16:17:27,993 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-17 16:17:27,993 - __main__ - INFO - ==================================================
+2025-06-17 16:17:27,993 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-17 16:17:27,993 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 16:17:27,994 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-17 16:17:27,994 - __main__ - INFO - 👋 Программа завершена
+2025-06-17 16:17:30,728 - __main__ - INFO - ==================================================
+2025-06-17 16:17:30,728 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-17 16:17:30,728 - __main__ - INFO - ⏰ Время запуска: 2025-06-17 16:17:30
+2025-06-17 16:17:30,728 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-17 16:17:30,729 - __main__ - INFO - 👥 Пользователей в системе: 2
+2025-06-17 16:17:30,729 - __main__ - INFO - 📦 Товаров на складе: 5
+2025-06-17 16:17:30,729 - __main__ - INFO - 📝 Лог-записей действий: 29
+2025-06-17 16:17:30,729 - __main__ - INFO - ==================================================
+2025-06-17 16:17:30,729 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-17 16:17:30,729 - aiogram.dispatcher - INFO - Start polling
+2025-06-17 16:17:31,262 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 16:17:33,329 - __main__ - ERROR - Ошибка при получении списка пользователей: no such column: last_action
+2025-06-17 16:17:33,722 - aiogram.event - INFO - Update id=729246012 is handled. Duration 393 ms by bot id=8143304952
+2025-06-17 17:06:23,099 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-17 17:06:23,354 - __main__ - INFO - ==================================================
+2025-06-17 17:06:23,354 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-17 17:06:23,354 - __main__ - INFO - ⏰ Время остановки: 2025-06-17 17:06:23
+2025-06-17 17:06:23,354 - __main__ - INFO - ⚡ Активность за 24 часа: 16 действий
+2025-06-17 17:06:23,354 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-17 17:06:23,354 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-17 17:06:23,354 - __main__ - INFO - ==================================================
+2025-06-17 17:06:23,354 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-17 17:06:23,354 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 17:06:23,355 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-17 17:06:23,355 - __main__ - INFO - 👋 Программа завершена
+2025-06-17 17:10:27,134 - __main__ - INFO - ==================================================
+2025-06-17 17:10:27,134 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-17 17:10:27,134 - __main__ - INFO - ⏰ Время запуска: 2025-06-17 17:10:27
+2025-06-17 17:10:27,134 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-17 17:10:27,134 - __main__ - INFO - 👥 Пользователей в системе: 2
+2025-06-17 17:10:27,134 - __main__ - INFO - 📦 Товаров на складе: 5
+2025-06-17 17:10:27,134 - __main__ - INFO - 📝 Лог-записей действий: 29
+2025-06-17 17:10:27,134 - __main__ - INFO - ==================================================
+2025-06-17 17:10:27,134 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-17 17:10:27,134 - aiogram.dispatcher - INFO - Start polling
+2025-06-17 17:10:27,643 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 17:17:43,381 - aiogram.event - INFO - Update id=729246013 is handled. Duration 861 ms by bot id=8143304952
+2025-06-17 17:24:26,412 - __main__ - ERROR - Ошибка при обработке выбора пользователя: no such column: last_action
+2025-06-17 17:24:26,527 - aiogram.event - INFO - Update id=729246014 is handled. Duration 116 ms by bot id=8143304952
+2025-06-17 17:24:29,518 - __main__ - ERROR - Ошибка при обработке выбора пользователя: no such column: last_action
+2025-06-17 17:24:29,622 - aiogram.event - INFO - Update id=729246015 is handled. Duration 104 ms by bot id=8143304952
+2025-06-17 17:24:31,135 - __main__ - ERROR - Ошибка при обработке выбора пользователя: no such column: last_action
+2025-06-17 17:24:31,244 - aiogram.event - INFO - Update id=729246016 is handled. Duration 109 ms by bot id=8143304952
+2025-06-17 17:24:33,377 - aiogram.event - INFO - Update id=729246017 is handled. Duration 126 ms by bot id=8143304952
+2025-06-17 17:24:34,245 - __main__ - ERROR - Ошибка при обработке выбора пользователя: no such column: last_action
+2025-06-17 17:24:34,365 - aiogram.event - INFO - Update id=729246018 is handled. Duration 119 ms by bot id=8143304952
+2025-06-17 17:24:34,997 - __main__ - ERROR - Ошибка при обработке выбора пользователя: no such column: last_action
+2025-06-17 17:24:35,103 - aiogram.event - INFO - Update id=729246019 is handled. Duration 105 ms by bot id=8143304952
+2025-06-17 17:24:37,340 - __main__ - ERROR - Ошибка при обработке выбора пользователя: no such column: last_action
+2025-06-17 17:24:37,478 - aiogram.event - INFO - Update id=729246020 is handled. Duration 138 ms by bot id=8143304952
+2025-06-17 17:24:43,815 - aiogram.event - INFO - Update id=729246021 is handled. Duration 140 ms by bot id=8143304952
+2025-06-17 17:24:46,393 - __main__ - ERROR - Ошибка при обработке выбора пользователя: no such column: last_action
+2025-06-17 17:24:46,558 - aiogram.event - INFO - Update id=729246022 is handled. Duration 165 ms by bot id=8143304952
+2025-06-17 17:24:48,105 - aiogram.event - INFO - Update id=729246023 is handled. Duration 162 ms by bot id=8143304952
+2025-06-17 17:28:59,631 - aiogram.event - INFO - Update id=729246024 is handled. Duration 123 ms by bot id=8143304952
+2025-06-17 17:29:00,401 - __main__ - ERROR - Ошибка при обработке выбора пользователя: no such column: last_action
+2025-06-17 17:29:00,507 - aiogram.event - INFO - Update id=729246025 is handled. Duration 106 ms by bot id=8143304952
+2025-06-17 17:29:29,556 - __main__ - ERROR - Ошибка при обработке выбора пользователя: no such column: last_action
+2025-06-17 17:29:29,668 - aiogram.event - INFO - Update id=729246026 is handled. Duration 113 ms by bot id=8143304952
+2025-06-17 17:30:25,386 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 1236] Подключение к сети было разорвано локальной системой
+2025-06-17 17:30:25,386 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8143304952)
+2025-06-17 17:30:36,586 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8143304952)
+2025-06-17 17:32:18,709 - aiogram.event - INFO - Update id=729246027 is handled. Duration 551 ms by bot id=8143304952
+2025-06-17 17:32:20,406 - aiogram.event - INFO - Update id=729246028 is handled. Duration 245 ms by bot id=8143304952
+2025-06-17 17:32:22,529 - aiogram.event - INFO - Update id=729246029 is handled. Duration 136 ms by bot id=8143304952
+2025-06-17 17:32:25,283 - aiogram.event - INFO - Update id=729246030 is handled. Duration 87 ms by bot id=8143304952
+2025-06-17 17:32:27,231 - aiogram.event - INFO - Update id=729246031 is handled. Duration 124 ms by bot id=8143304952
+2025-06-17 17:32:28,777 - aiogram.event - INFO - Update id=729246032 is handled. Duration 90 ms by bot id=8143304952
+2025-06-17 17:32:30,596 - aiogram.event - INFO - Update id=729246033 is handled. Duration 168 ms by bot id=8143304952
+2025-06-17 17:32:31,658 - aiogram.event - INFO - Update id=729246034 is handled. Duration 88 ms by bot id=8143304952
+2025-06-17 17:32:33,310 - aiogram.event - INFO - Update id=729246035 is handled. Duration 249 ms by bot id=8143304952
+2025-06-17 17:32:34,551 - aiogram.event - INFO - Update id=729246036 is handled. Duration 104 ms by bot id=8143304952
+2025-06-17 17:34:05,282 - aiogram.event - INFO - Update id=729246037 is handled. Duration 269 ms by bot id=8143304952
+2025-06-17 17:34:06,382 - aiogram.event - INFO - Update id=729246038 is handled. Duration 142 ms by bot id=8143304952
+2025-06-17 17:34:08,689 - aiogram.event - INFO - Update id=729246039 is handled. Duration 147 ms by bot id=8143304952
+2025-06-17 17:34:09,468 - __main__ - ERROR - Ошибка при обработке выбора пользователя: no such column: last_action
+2025-06-17 17:34:09,550 - aiogram.event - INFO - Update id=729246040 is handled. Duration 82 ms by bot id=8143304952
+2025-06-17 17:34:17,026 - __main__ - ERROR - Ошибка при обработке выбора пользователя: no such column: last_action
+2025-06-17 17:34:17,142 - aiogram.event - INFO - Update id=729246041 is handled. Duration 119 ms by bot id=8143304952
+2025-06-17 17:37:06,389 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-06-17 17:37:06,389 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8143304952)
+2025-06-17 17:37:11,617 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-06-17 17:37:11,617 - aiogram.dispatcher - WARNING - Sleep for 1.217332 seconds and try again... (tryings = 1, bot id = 8143304952)
+2025-06-17 17:37:17,037 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-06-17 17:37:17,037 - aiogram.dispatcher - WARNING - Sleep for 1.384055 seconds and try again... (tryings = 2, bot id = 8143304952)
+2025-06-17 17:37:23,050 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-06-17 17:37:23,050 - aiogram.dispatcher - WARNING - Sleep for 1.900660 seconds and try again... (tryings = 3, bot id = 8143304952)
+2025-06-17 17:37:25,264 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-17 17:37:25,525 - __main__ - INFO - ==================================================
+2025-06-17 17:37:25,525 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-17 17:37:25,525 - __main__ - INFO - ⏰ Время остановки: 2025-06-17 17:37:25
+2025-06-17 17:37:25,525 - __main__ - INFO - ⚡ Активность за 24 часа: 16 действий
+2025-06-17 17:37:25,525 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-17 17:37:25,526 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-17 17:37:25,526 - __main__ - INFO - ==================================================
+2025-06-17 17:37:25,526 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-17 17:37:25,526 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 17:37:25,527 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-17 17:37:25,527 - __main__ - INFO - 👋 Программа завершена
+2025-06-17 17:46:32,754 - __main__ - INFO - ==================================================
+2025-06-17 17:46:32,754 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-17 17:46:32,754 - __main__ - INFO - ⏰ Время запуска: 2025-06-17 17:46:32
+2025-06-17 17:46:32,754 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-17 17:46:32,757 - __main__ - INFO - ✅ Главный администратор зарегистрирован
+2025-06-17 17:46:32,757 - __main__ - INFO - 👥 Пользователей в системе: 1
+2025-06-17 17:46:32,757 - __main__ - INFO - 📦 Товаров на складе: 0
+2025-06-17 17:46:32,757 - __main__ - INFO - 📝 Лог-записей действий: 0
+2025-06-17 17:46:32,757 - __main__ - INFO - ==================================================
+2025-06-17 17:46:32,757 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-17 17:46:32,757 - aiogram.dispatcher - INFO - Start polling
+2025-06-17 17:46:33,365 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 17:46:37,039 - aiogram.event - INFO - Update id=729246049 is handled. Duration 516 ms by bot id=8143304952
+2025-06-17 17:46:38,361 - aiogram.event - INFO - Update id=729246050 is handled. Duration 442 ms by bot id=8143304952
+2025-06-17 17:46:40,995 - aiogram.event - INFO - Update id=729246051 is handled. Duration 124 ms by bot id=8143304952
+2025-06-17 17:47:11,078 - aiogram.event - INFO - Update id=729246052 is handled. Duration 214 ms by bot id=8143304952
+2025-06-17 17:47:12,748 - aiogram.event - INFO - Update id=729246053 is handled. Duration 139 ms by bot id=8143304952
+2025-06-17 17:47:13,951 - aiogram.event - INFO - Update id=729246054 is handled. Duration 134 ms by bot id=8143304952
+2025-06-17 17:47:14,547 - aiogram.event - INFO - Update id=729246055 is handled. Duration 124 ms by bot id=8143304952
+2025-06-17 17:47:15,735 - aiogram.event - INFO - Update id=729246056 is handled. Duration 159 ms by bot id=8143304952
+2025-06-17 17:47:17,250 - aiogram.event - INFO - Update id=729246057 is handled. Duration 333 ms by bot id=8143304952
+2025-06-17 17:48:09,616 - aiogram.event - INFO - Update id=729246058 is handled. Duration 184 ms by bot id=8143304952
+2025-06-17 17:48:10,648 - aiogram.event - INFO - Update id=729246059 is handled. Duration 199 ms by bot id=8143304952
+2025-06-17 17:48:11,350 - aiogram.event - INFO - Update id=729246060 is handled. Duration 254 ms by bot id=8143304952
+2025-06-17 17:48:13,526 - aiogram.event - INFO - Update id=729246061 is handled. Duration 134 ms by bot id=8143304952
+2025-06-17 17:48:15,020 - aiogram.event - INFO - Update id=729246062 is handled. Duration 120 ms by bot id=8143304952
+2025-06-17 17:48:16,370 - aiogram.event - INFO - Update id=729246063 is handled. Duration 121 ms by bot id=8143304952
+2025-06-17 17:48:18,973 - aiogram.event - INFO - Update id=729246064 is handled. Duration 127 ms by bot id=8143304952
+2025-06-17 17:48:20,400 - aiogram.event - INFO - Update id=729246065 is handled. Duration 123 ms by bot id=8143304952
+2025-06-17 17:48:21,313 - aiogram.event - INFO - Update id=729246066 is handled. Duration 124 ms by bot id=8143304952
+2025-06-17 17:48:23,811 - aiogram.event - INFO - Update id=729246067 is handled. Duration 130 ms by bot id=8143304952
+2025-06-17 17:48:24,752 - aiogram.event - INFO - Update id=729246068 is handled. Duration 141 ms by bot id=8143304952
+2025-06-17 17:48:27,143 - aiogram.event - INFO - Update id=729246069 is handled. Duration 150 ms by bot id=8143304952
+2025-06-17 17:48:31,407 - aiogram.event - INFO - Update id=729246070 is handled. Duration 164 ms by bot id=8143304952
+2025-06-17 17:48:33,353 - __main__ - INFO - Действие пользователя 7873867301: Добавление товара - w (кол-во: 111111)
+2025-06-17 17:48:33,355 - aiogram.event - INFO - Update id=729246071 is handled. Duration 135 ms by bot id=8143304952
+2025-06-17 17:48:36,431 - aiogram.event - INFO - Update id=729246072 is handled. Duration 210 ms by bot id=8143304952
+2025-06-17 17:48:39,339 - aiogram.event - INFO - Update id=729246073 is handled. Duration 126 ms by bot id=8143304952
+2025-06-17 17:48:40,317 - aiogram.event - INFO - Update id=729246074 is handled. Duration 132 ms by bot id=8143304952
+2025-06-17 17:49:00,118 - aiogram.event - INFO - Update id=729246075 is handled. Duration 177 ms by bot id=8143304952
+2025-06-17 17:49:04,524 - aiogram.event - INFO - Update id=729246076 is handled. Duration 140 ms by bot id=8143304952
+2025-06-17 17:55:17,104 - aiogram.event - INFO - Update id=729246077 is handled. Duration 142 ms by bot id=8143304952
+2025-06-17 17:55:18,979 - aiogram.event - INFO - Update id=729246078 is handled. Duration 130 ms by bot id=8143304952
+2025-06-17 17:55:21,475 - aiogram.event - INFO - Update id=729246079 is handled. Duration 127 ms by bot id=8143304952
+2025-06-17 17:55:22,277 - aiogram.event - INFO - Update id=729246080 is handled. Duration 128 ms by bot id=8143304952
+2025-06-17 17:55:23,432 - aiogram.event - INFO - Update id=729246081 is handled. Duration 279 ms by bot id=8143304952
+2025-06-17 17:55:28,326 - aiogram.event - INFO - Update id=729246082 is handled. Duration 140 ms by bot id=8143304952
+2025-06-17 17:55:30,177 - aiogram.event - INFO - Update id=729246083 is handled. Duration 213 ms by bot id=8143304952
+2025-06-17 17:56:23,519 - aiogram.event - INFO - Update id=729246084 is handled. Duration 184 ms by bot id=8143304952
+2025-06-17 17:56:24,833 - aiogram.event - INFO - Update id=729246085 is handled. Duration 288 ms by bot id=8143304952
+2025-06-17 17:56:27,550 - aiogram.event - INFO - Update id=729246086 is handled. Duration 179 ms by bot id=8143304952
+2025-06-17 17:56:29,760 - aiogram.event - INFO - Update id=729246087 is handled. Duration 168 ms by bot id=8143304952
+2025-06-17 17:59:30,232 - aiogram.event - INFO - Update id=729246088 is handled. Duration 125 ms by bot id=8143304952
+2025-06-17 17:59:35,071 - aiogram.event - INFO - Update id=729246089 is handled. Duration 295 ms by bot id=8143304952
+2025-06-17 17:59:36,104 - aiogram.event - INFO - Update id=729246090 is handled. Duration 139 ms by bot id=8143304952
+2025-06-17 17:59:37,273 - aiogram.event - INFO - Update id=729246091 is handled. Duration 128 ms by bot id=8143304952
+2025-06-17 17:59:38,586 - aiogram.event - INFO - Update id=729246092 is handled. Duration 129 ms by bot id=8143304952
+2025-06-17 18:15:59,327 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-17 18:15:59,590 - __main__ - INFO - ==================================================
+2025-06-17 18:15:59,590 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-17 18:15:59,590 - __main__ - INFO - ⏰ Время остановки: 2025-06-17 18:15:59
+2025-06-17 18:15:59,591 - __main__ - INFO - ⚡ Активность за 24 часа: 1 действий
+2025-06-17 18:15:59,591 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-17 18:15:59,591 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-17 18:15:59,591 - __main__ - INFO - ==================================================
+2025-06-17 18:15:59,591 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-17 18:15:59,591 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 18:15:59,592 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-17 18:15:59,592 - __main__ - INFO - 👋 Программа завершена
+2025-06-17 18:16:04,060 - __main__ - INFO - ==================================================
+2025-06-17 18:16:04,060 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-17 18:16:04,060 - __main__ - INFO - ⏰ Время запуска: 2025-06-17 18:16:04
+2025-06-17 18:16:04,061 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-17 18:16:04,061 - __main__ - ERROR - Ошибка при получении статистики: no such column: is_approved
+2025-06-17 18:16:04,061 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-17 18:16:04,061 - aiogram.dispatcher - INFO - Start polling
+2025-06-17 18:16:04,631 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 18:17:39,745 - aiogram.event - INFO - Update id=729246093 is handled. Duration 466 ms by bot id=8143304952
+2025-06-17 18:17:45,293 - aiogram.event - INFO - Update id=729246094 is handled. Duration 138 ms by bot id=8143304952
+2025-06-17 18:17:46,869 - __main__ - ERROR - Ошибка при получении списка пользователей: no such column: is_approved
+2025-06-17 18:17:46,999 - aiogram.event - INFO - Update id=729246095 is handled. Duration 130 ms by bot id=8143304952
+2025-06-17 18:17:49,011 - __main__ - ERROR - Ошибка при получении списка пользователей: no such column: is_approved
+2025-06-17 18:17:49,278 - aiogram.event - INFO - Update id=729246096 is handled. Duration 268 ms by bot id=8143304952
+2025-06-17 18:18:19,060 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-17 18:18:19,317 - __main__ - INFO - ==================================================
+2025-06-17 18:18:19,317 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-17 18:18:19,317 - __main__ - INFO - ⏰ Время остановки: 2025-06-17 18:18:19
+2025-06-17 18:18:19,317 - __main__ - INFO - ⚡ Активность за 24 часа: 1 действий
+2025-06-17 18:18:19,317 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-17 18:18:19,318 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-17 18:18:19,318 - __main__ - INFO - ==================================================
+2025-06-17 18:18:19,318 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-17 18:18:19,318 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 18:18:19,319 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-17 18:18:19,319 - __main__ - INFO - 👋 Программа завершена
+2025-06-17 18:18:25,785 - __main__ - INFO - ==================================================
+2025-06-17 18:18:25,785 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-17 18:18:25,786 - __main__ - INFO - ⏰ Время запуска: 2025-06-17 18:18:25
+2025-06-17 18:18:25,786 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-17 18:18:25,788 - __main__ - INFO - ✅ Главный администратор зарегистрирован
+2025-06-17 18:18:25,788 - __main__ - INFO - 👥 Пользователей в системе: 1
+2025-06-17 18:18:25,788 - __main__ - INFO - ├ Одобренные: 1
+2025-06-17 18:18:25,788 - __main__ - INFO - └ Ожидают одобрения: 0
+2025-06-17 18:18:25,788 - __main__ - INFO - 📦 Товаров на складе: 0
+2025-06-17 18:18:25,788 - __main__ - INFO - 📝 Лог-записей действий: 0
+2025-06-17 18:18:25,788 - __main__ - INFO - ==================================================
+2025-06-17 18:18:25,788 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-17 18:18:25,788 - aiogram.dispatcher - INFO - Start polling
+2025-06-17 18:18:26,320 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 18:18:30,135 - aiogram.event - INFO - Update id=729246097 is handled. Duration 501 ms by bot id=8143304952
+2025-06-17 18:18:31,863 - aiogram.event - INFO - Update id=729246098 is handled. Duration 279 ms by bot id=8143304952
+2025-06-17 18:18:33,037 - aiogram.event - INFO - Update id=729246099 is handled. Duration 118 ms by bot id=8143304952
+2025-06-17 18:18:34,220 - aiogram.event - INFO - Update id=729246100 is handled. Duration 119 ms by bot id=8143304952
+2025-06-17 18:18:35,584 - aiogram.event - INFO - Update id=729246101 is handled. Duration 119 ms by bot id=8143304952
+2025-06-17 18:18:39,985 - aiogram.event - INFO - Update id=729246102 is handled. Duration 233 ms by bot id=8143304952
+2025-06-17 18:18:50,709 - aiogram.event - INFO - Update id=729246103 is handled. Duration 170 ms by bot id=8143304952
+2025-06-17 18:18:54,571 - __main__ - INFO - Действие пользователя 7873867301: Запрет доступа - ID: 7873867301
+2025-06-17 18:18:54,574 - aiogram.event - INFO - Update id=729246104 is handled. Duration 551 ms by bot id=8143304952
+2025-06-17 18:18:59,260 - aiogram.event - INFO - Update id=729246105 is handled. Duration 138 ms by bot id=8143304952
+2025-06-17 18:19:00,688 - aiogram.event - INFO - Update id=729246106 is handled. Duration 123 ms by bot id=8143304952
+2025-06-17 18:19:02,447 - aiogram.event - INFO - Update id=729246107 is handled. Duration 156 ms by bot id=8143304952
+2025-06-17 18:19:04,305 - aiogram.event - INFO - Update id=729246108 is handled. Duration 172 ms by bot id=8143304952
+2025-06-17 18:19:05,912 - aiogram.event - INFO - Update id=729246109 is handled. Duration 226 ms by bot id=8143304952
+2025-06-17 18:19:08,781 - __main__ - INFO - Действие пользователя 7873867301: Одобрение пользователя - ID: 7873867301
+2025-06-17 18:19:08,783 - aiogram.event - INFO - Update id=729246110 is handled. Duration 815 ms by bot id=8143304952
+2025-06-17 18:19:10,082 - aiogram.event - INFO - Update id=729246111 is handled. Duration 176 ms by bot id=8143304952
+2025-06-17 18:19:14,462 - aiogram.event - INFO - Update id=729246112 is handled. Duration 123 ms by bot id=8143304952
+2025-06-17 18:19:16,144 - aiogram.event - INFO - Update id=729246113 is handled. Duration 128 ms by bot id=8143304952
+2025-06-17 18:19:17,738 - aiogram.event - INFO - Update id=729246114 is handled. Duration 118 ms by bot id=8143304952
+2025-06-17 18:19:19,444 - aiogram.event - INFO - Update id=729246115 is handled. Duration 226 ms by bot id=8143304952
+2025-06-17 18:19:22,946 - __main__ - INFO - Зарегистрирован новый пользователь: ID=7964903129, Имя=Sora, Админ=0, Одобрен=0
+2025-06-17 18:19:23,138 - __main__ - INFO - Зарегистрирован новый пользователь: 7964903129
+2025-06-17 18:19:23,286 - aiogram.event - INFO - Update id=729246116 is handled. Duration 342 ms by bot id=8143304952
+2025-06-17 18:19:28,454 - __main__ - INFO - Действие пользователя 7873867301: Неизвестная команда - Введен текст: ✅ Одобрить доступ
+2025-06-17 18:19:28,456 - aiogram.event - INFO - Update id=729246117 is handled. Duration 126 ms by bot id=8143304952
+2025-06-17 18:19:30,472 - aiogram.event - INFO - Update id=729246118 is handled. Duration 131 ms by bot id=8143304952
+2025-06-17 18:19:33,740 - aiogram.event - INFO - Update id=729246119 is handled. Duration 124 ms by bot id=8143304952
+2025-06-17 18:19:34,926 - __main__ - INFO - Действие пользователя 7873867301: Неизвестная команда - Введен текст: ✅ Одобрить доступ
+2025-06-17 18:19:34,928 - aiogram.event - INFO - Update id=729246120 is handled. Duration 163 ms by bot id=8143304952
+2025-06-17 18:19:37,212 - aiogram.event - INFO - Update id=729246121 is handled. Duration 230 ms by bot id=8143304952
+2025-06-17 18:19:39,702 - aiogram.event - INFO - Update id=729246122 is handled. Duration 141 ms by bot id=8143304952
+2025-06-17 18:19:41,455 - aiogram.event - INFO - Update id=729246123 is handled. Duration 241 ms by bot id=8143304952
+2025-06-17 18:19:43,070 - aiogram.event - INFO - Update id=729246124 is handled. Duration 300 ms by bot id=8143304952
+2025-06-17 18:19:45,148 - __main__ - INFO - Действие пользователя 7873867301: Одобрение пользователя - ID: 7964903129
+2025-06-17 18:19:45,151 - aiogram.event - INFO - Update id=729246125 is handled. Duration 492 ms by bot id=8143304952
+2025-06-17 18:19:47,415 - aiogram.event - INFO - Update id=729246126 is handled. Duration 126 ms by bot id=8143304952
+2025-06-17 18:19:51,299 - __main__ - INFO - Действие пользователя 7964903129: Запуск бота - Пользователь вошел в систему
+2025-06-17 18:19:51,549 - aiogram.event - INFO - Update id=729246127 is handled. Duration 510 ms by bot id=8143304952
+2025-06-17 18:19:53,295 - aiogram.event - INFO - Update id=729246128 is handled. Duration 126 ms by bot id=8143304952
+2025-06-17 18:19:54,860 - aiogram.event - INFO - Update id=729246129 is handled. Duration 139 ms by bot id=8143304952
+2025-06-17 18:19:57,475 - aiogram.event - INFO - Update id=729246130 is handled. Duration 203 ms by bot id=8143304952
+2025-06-17 18:20:26,613 - aiogram.event - INFO - Update id=729246131 is handled. Duration 127 ms by bot id=8143304952
+2025-06-17 18:20:28,808 - aiogram.event - INFO - Update id=729246132 is handled. Duration 235 ms by bot id=8143304952
+2025-06-17 18:20:31,361 - aiogram.event - INFO - Update id=729246133 is handled. Duration 142 ms by bot id=8143304952
+2025-06-17 18:20:32,393 - aiogram.event - INFO - Update id=729246134 is handled. Duration 220 ms by bot id=8143304952
+2025-06-17 18:20:33,686 - __main__ - INFO - Действие пользователя 7873867301: Неизвестная команда - Введен текст: ✅ Одобрить доступ
+2025-06-17 18:20:33,687 - aiogram.event - INFO - Update id=729246135 is handled. Duration 233 ms by bot id=8143304952
+2025-06-17 18:20:35,219 - aiogram.event - INFO - Update id=729246136 is handled. Duration 135 ms by bot id=8143304952
+2025-06-17 18:20:36,454 - aiogram.event - INFO - Update id=729246137 is handled. Duration 121 ms by bot id=8143304952
+2025-06-17 18:20:37,327 - __main__ - INFO - Действие пользователя 7873867301: Неизвестная команда - Введен текст: 🚫 Запретить доступ
+2025-06-17 18:20:37,329 - aiogram.event - INFO - Update id=729246138 is handled. Duration 128 ms by bot id=8143304952
+2025-06-17 18:20:39,003 - aiogram.event - INFO - Update id=729246139 is handled. Duration 178 ms by bot id=8143304952
+2025-06-17 18:20:39,901 - aiogram.event - INFO - Update id=729246140 is handled. Duration 136 ms by bot id=8143304952
+2025-06-17 18:20:44,480 - aiogram.event - INFO - Update id=729246141 is handled. Duration 129 ms by bot id=8143304952
+2025-06-17 18:20:47,486 - aiogram.event - INFO - Update id=729246142 is handled. Duration 147 ms by bot id=8143304952
+2025-06-17 18:21:00,023 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-17 18:21:00,285 - __main__ - INFO - ==================================================
+2025-06-17 18:21:00,285 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-17 18:21:00,285 - __main__ - INFO - ⏰ Время остановки: 2025-06-17 18:21:00
+2025-06-17 18:21:00,285 - __main__ - INFO - ⚡ Активность за 24 часа: 8 действий
+2025-06-17 18:21:00,286 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-17 18:21:00,286 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-17 18:21:00,286 - __main__ - INFO - ==================================================
+2025-06-17 18:21:00,286 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-17 18:21:00,286 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 18:21:00,287 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-17 18:21:00,287 - __main__ - INFO - 👋 Программа завершена
+2025-06-17 18:21:03,348 - __main__ - INFO - ==================================================
+2025-06-17 18:21:03,348 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-17 18:21:03,348 - __main__ - INFO - ⏰ Время запуска: 2025-06-17 18:21:03
+2025-06-17 18:21:03,348 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-17 18:21:03,348 - __main__ - INFO - 👥 Пользователей в системе: 2
+2025-06-17 18:21:03,348 - __main__ - INFO - ├ Одобренные: 2
+2025-06-17 18:21:03,348 - __main__ - INFO - └ Ожидают одобрения: 0
+2025-06-17 18:21:03,348 - __main__ - INFO - 📦 Товаров на складе: 0
+2025-06-17 18:21:03,348 - __main__ - INFO - 📝 Лог-записей действий: 8
+2025-06-17 18:21:03,348 - __main__ - INFO - ==================================================
+2025-06-17 18:21:03,348 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-17 18:21:03,349 - aiogram.dispatcher - INFO - Start polling
+2025-06-17 18:21:03,774 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 18:38:21,349 - aiogram.event - INFO - Update id=729246143 is handled. Duration 495 ms by bot id=8143304952
+2025-06-17 19:03:38,112 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-17 19:03:38,368 - __main__ - INFO - ==================================================
+2025-06-17 19:03:38,368 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-17 19:03:38,368 - __main__ - INFO - ⏰ Время остановки: 2025-06-17 19:03:38
+2025-06-17 19:03:38,368 - __main__ - INFO - ⚡ Активность за 24 часа: 8 действий
+2025-06-17 19:03:38,368 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-17 19:03:38,368 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-17 19:03:38,368 - __main__ - INFO - ==================================================
+2025-06-17 19:03:38,368 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-17 19:03:38,369 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 19:03:38,369 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-17 19:03:38,370 - __main__ - INFO - 👋 Программа завершена
+2025-06-17 19:03:41,179 - __main__ - INFO - ==================================================
+2025-06-17 19:03:41,179 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-17 19:03:41,179 - __main__ - INFO - ⏰ Время запуска: 2025-06-17 19:03:41
+2025-06-17 19:03:41,179 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-17 19:03:41,179 - __main__ - INFO - 👥 Пользователей в системе: 2
+2025-06-17 19:03:41,179 - __main__ - INFO - ├ Одобренные: 2
+2025-06-17 19:03:41,179 - __main__ - INFO - └ Ожидают одобрения: 0
+2025-06-17 19:03:41,179 - __main__ - INFO - 📦 Товаров на складе: 0
+2025-06-17 19:03:41,179 - __main__ - INFO - 📝 Лог-записей действий: 8
+2025-06-17 19:03:41,179 - __main__ - INFO - ==================================================
+2025-06-17 19:03:41,180 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-17 19:03:41,180 - aiogram.dispatcher - INFO - Start polling
+2025-06-17 19:03:43,245 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 19:04:05,207 - aiogram.event - INFO - Update id=729246144 is handled. Duration 480 ms by bot id=8143304952
+2025-06-17 19:04:07,423 - aiogram.event - INFO - Update id=729246145 is handled. Duration 121 ms by bot id=8143304952
+2025-06-17 19:04:08,592 - aiogram.event - INFO - Update id=729246146 is handled. Duration 128 ms by bot id=8143304952
+2025-06-17 19:04:10,694 - aiogram.event - INFO - Update id=729246147 is handled. Duration 133 ms by bot id=8143304952
+2025-06-17 19:04:12,417 - aiogram.event - INFO - Update id=729246148 is handled. Duration 270 ms by bot id=8143304952
+2025-06-17 19:04:15,457 - aiogram.event - INFO - Update id=729246149 is handled. Duration 128 ms by bot id=8143304952
+2025-06-17 19:04:16,910 - aiogram.event - INFO - Update id=729246150 is handled. Duration 258 ms by bot id=8143304952
+2025-06-17 19:04:20,679 - aiogram.event - INFO - Update id=729246151 is handled. Duration 128 ms by bot id=8143304952
+2025-06-17 19:04:24,185 - aiogram.event - INFO - Update id=729246152 is handled. Duration 237 ms by bot id=8143304952
+2025-06-17 19:04:25,184 - aiogram.event - INFO - Update id=729246153 is handled. Duration 117 ms by bot id=8143304952
+2025-06-17 19:04:26,697 - aiogram.event - INFO - Update id=729246154 is handled. Duration 130 ms by bot id=8143304952
+2025-06-17 20:43:32,875 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-17 20:43:33,131 - __main__ - INFO - ==================================================
+2025-06-17 20:43:33,132 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-17 20:43:33,132 - __main__ - INFO - ⏰ Время остановки: 2025-06-17 20:43:33
+2025-06-17 20:43:33,132 - __main__ - INFO - ⚡ Активность за 24 часа: 8 действий
+2025-06-17 20:43:33,132 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-17 20:43:33,132 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-17 20:43:33,132 - __main__ - INFO - ==================================================
+2025-06-17 20:43:33,132 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-17 20:43:33,132 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 20:43:33,133 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-17 20:43:33,133 - __main__ - INFO - 👋 Программа завершена
+2025-06-17 20:43:35,978 - __main__ - INFO - ==================================================
+2025-06-17 20:43:35,978 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-17 20:43:35,978 - __main__ - INFO - ⏰ Время запуска: 2025-06-17 20:43:35
+2025-06-17 20:43:35,978 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-17 20:43:35,978 - __main__ - INFO - 👥 Пользователей в системе: 2
+2025-06-17 20:43:35,978 - __main__ - INFO - ├ Одобренные: 2
+2025-06-17 20:43:35,978 - __main__ - INFO - └ Ожидают одобрения: 0
+2025-06-17 20:43:35,978 - __main__ - INFO - 📦 Товаров на складе: 0
+2025-06-17 20:43:35,978 - __main__ - INFO - 📝 Лог-записей действий: 8
+2025-06-17 20:43:35,978 - __main__ - INFO - ==================================================
+2025-06-17 20:43:35,978 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-17 20:43:35,978 - aiogram.dispatcher - INFO - Start polling
+2025-06-17 20:43:36,964 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 20:44:40,115 - aiogram.event - INFO - Update id=729246155 is handled. Duration 776 ms by bot id=8143304952
+2025-06-17 20:44:41,165 - aiogram.event - INFO - Update id=729246156 is handled. Duration 148 ms by bot id=8143304952
+2025-06-17 20:44:58,670 - aiogram.event - INFO - Update id=729246157 is handled. Duration 178 ms by bot id=8143304952
+2025-06-17 20:45:00,105 - aiogram.event - INFO - Update id=729246158 is handled. Duration 252 ms by bot id=8143304952
+2025-06-17 20:45:01,634 - aiogram.event - INFO - Update id=729246159 is handled. Duration 497 ms by bot id=8143304952
+2025-06-17 20:45:02,432 - aiogram.event - INFO - Update id=729246160 is handled. Duration 154 ms by bot id=8143304952
+2025-06-17 20:45:03,218 - aiogram.event - INFO - Update id=729246161 is handled. Duration 169 ms by bot id=8143304952
+2025-06-17 20:45:04,563 - aiogram.event - INFO - Update id=729246162 is handled. Duration 137 ms by bot id=8143304952
+2025-06-17 20:45:05,581 - aiogram.event - INFO - Update id=729246163 is handled. Duration 136 ms by bot id=8143304952
+2025-06-17 20:45:08,496 - aiogram.event - INFO - Update id=729246164 is handled. Duration 124 ms by bot id=8143304952
+2025-06-17 20:45:18,949 - aiogram.event - INFO - Update id=729246165 is handled. Duration 235 ms by bot id=8143304952
+2025-06-17 20:45:28,343 - __main__ - INFO - Действие пользователя 7873867301: Запрет доступа - ID: 7964903129
+2025-06-17 20:45:28,345 - aiogram.event - INFO - Update id=729246166 is handled. Duration 830 ms by bot id=8143304952
+2025-06-17 20:47:19,638 - aiogram.event - INFO - Update id=729246167 is handled. Duration 135 ms by bot id=8143304952
+2025-06-17 20:47:21,253 - __main__ - INFO - Действие пользователя 7873867301: Одобрение пользователя - ID: 7964903129
+2025-06-17 20:47:21,255 - aiogram.event - INFO - Update id=729246168 is handled. Duration 520 ms by bot id=8143304952
+2025-06-17 20:47:22,943 - aiogram.event - INFO - Update id=729246169 is handled. Duration 158 ms by bot id=8143304952
+2025-06-17 20:47:24,751 - aiogram.event - INFO - Update id=729246170 is handled. Duration 222 ms by bot id=8143304952
+2025-06-17 20:47:26,530 - aiogram.event - INFO - Update id=729246171 is handled. Duration 129 ms by bot id=8143304952
+2025-06-17 20:47:28,019 - aiogram.event - INFO - Update id=729246172 is handled. Duration 366 ms by bot id=8143304952
+2025-06-17 20:47:29,642 - aiogram.event - INFO - Update id=729246173 is handled. Duration 396 ms by bot id=8143304952
+2025-06-17 20:47:33,531 - aiogram.event - INFO - Update id=729246174 is handled. Duration 127 ms by bot id=8143304952
+2025-06-17 20:47:35,011 - aiogram.event - INFO - Update id=729246175 is handled. Duration 133 ms by bot id=8143304952
+2025-06-17 20:47:36,359 - aiogram.event - INFO - Update id=729246176 is handled. Duration 160 ms by bot id=8143304952
+2025-06-17 20:47:37,720 - aiogram.event - INFO - Update id=729246177 is handled. Duration 127 ms by bot id=8143304952
+2025-06-17 20:53:11,136 - aiogram.event - INFO - Update id=729246178 is handled. Duration 165 ms by bot id=8143304952
+2025-06-17 20:53:16,143 - aiogram.event - INFO - Update id=729246179 is handled. Duration 449 ms by bot id=8143304952
+2025-06-17 20:53:17,013 - aiogram.event - INFO - Update id=729246180 is handled. Duration 132 ms by bot id=8143304952
+2025-06-17 20:53:18,148 - aiogram.event - INFO - Update id=729246181 is handled. Duration 163 ms by bot id=8143304952
+2025-06-17 20:53:20,066 - aiogram.event - INFO - Update id=729246182 is handled. Duration 137 ms by bot id=8143304952
+2025-06-17 20:53:21,806 - aiogram.event - INFO - Update id=729246183 is handled. Duration 205 ms by bot id=8143304952
+2025-06-17 20:53:22,978 - aiogram.event - INFO - Update id=729246184 is handled. Duration 197 ms by bot id=8143304952
+2025-06-17 20:53:24,226 - aiogram.event - INFO - Update id=729246185 is handled. Duration 226 ms by bot id=8143304952
+2025-06-17 20:53:25,764 - aiogram.event - INFO - Update id=729246186 is handled. Duration 182 ms by bot id=8143304952
+2025-06-17 20:53:27,095 - aiogram.event - INFO - Update id=729246187 is handled. Duration 123 ms by bot id=8143304952
+2025-06-17 20:53:31,083 - aiogram.event - INFO - Update id=729246188 is handled. Duration 138 ms by bot id=8143304952
+2025-06-17 20:53:32,682 - aiogram.event - INFO - Update id=729246189 is handled. Duration 176 ms by bot id=8143304952
+2025-06-17 20:53:36,820 - __main__ - INFO - Действие пользователя 7964903129: Добавление товара - Кальян (кол-во: 7)
+2025-06-17 20:53:37,078 - aiogram.event - INFO - Update id=729246190 is handled. Duration 646 ms by bot id=8143304952
+2025-06-17 20:53:38,989 - aiogram.event - INFO - Update id=729246191 is handled. Duration 133 ms by bot id=8143304952
+2025-06-17 20:53:40,548 - __main__ - INFO - Действие пользователя 7964903129: Поиск товара - Запрос: 'к', найдено: 1
+2025-06-17 20:53:40,667 - aiogram.event - INFO - Update id=729246192 is handled. Duration 507 ms by bot id=8143304952
+2025-06-17 20:53:46,422 - aiogram.event - INFO - Update id=729246193 is handled. Duration 125 ms by bot id=8143304952
+2025-06-17 20:53:48,053 - aiogram.event - INFO - Update id=729246194 is handled. Duration 125 ms by bot id=8143304952
+2025-06-17 20:53:49,175 - aiogram.event - INFO - Update id=729246195 is handled. Duration 144 ms by bot id=8143304952
+2025-06-17 20:53:51,685 - aiogram.event - INFO - Update id=729246196 is handled. Duration 134 ms by bot id=8143304952
+2025-06-17 20:54:01,660 - aiogram.event - INFO - Update id=729246197 is handled. Duration 140 ms by bot id=8143304952
+2025-06-17 20:54:06,517 - aiogram.event - INFO - Update id=729246198 is handled. Duration 124 ms by bot id=8143304952
+2025-06-17 20:54:08,641 - aiogram.event - INFO - Update id=729246199 is handled. Duration 231 ms by bot id=8143304952
+2025-06-17 20:54:15,032 - aiogram.event - INFO - Update id=729246200 is handled. Duration 198 ms by bot id=8143304952
+2025-06-17 20:54:23,029 - aiogram.event - INFO - Update id=729246201 is handled. Duration 142 ms by bot id=8143304952
+2025-06-17 20:54:25,473 - aiogram.event - INFO - Update id=729246202 is handled. Duration 132 ms by bot id=8143304952
+2025-06-17 20:54:28,882 - __main__ - INFO - Действие пользователя 7964903129: Отчёт создан - Дата: 2025-06-17
+2025-06-17 20:54:29,017 - aiogram.event - INFO - Update id=729246203 is handled. Duration 444 ms by bot id=8143304952
+2025-06-17 20:54:35,823 - aiogram.event - INFO - Update id=729246204 is handled. Duration 172 ms by bot id=8143304952
+2025-06-17 20:54:39,045 - aiogram.event - INFO - Update id=729246205 is handled. Duration 499 ms by bot id=8143304952
+2025-06-17 20:54:49,608 - aiogram.event - INFO - Update id=729246206 is handled. Duration 148 ms by bot id=8143304952
+2025-06-17 21:52:52,672 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-17 21:52:52,922 - __main__ - INFO - ==================================================
+2025-06-17 21:52:52,922 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-17 21:52:52,922 - __main__ - INFO - ⏰ Время остановки: 2025-06-17 21:52:52
+2025-06-17 21:52:52,923 - __main__ - INFO - ⚡ Активность за 24 часа: 13 действий
+2025-06-17 21:52:52,923 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-17 21:52:52,923 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-17 21:52:52,923 - __main__ - INFO - ==================================================
+2025-06-17 21:52:52,923 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-17 21:52:52,923 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 21:52:52,924 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-17 21:52:52,924 - __main__ - INFO - 👋 Программа завершена
+2025-06-17 21:52:57,082 - __main__ - INFO - ==================================================
+2025-06-17 21:52:57,082 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-17 21:52:57,082 - __main__ - INFO - ⏰ Время запуска: 2025-06-17 21:52:57
+2025-06-17 21:52:57,082 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-17 21:52:57,082 - __main__ - INFO - 👥 Группа для отчетов: не настроена
+2025-06-17 21:52:57,083 - __main__ - INFO - 👥 Пользователей в системе: 2
+2025-06-17 21:52:57,083 - __main__ - INFO - ├ Одобренные: 2
+2025-06-17 21:52:57,083 - __main__ - INFO - └ Ожидают одобрения: 0
+2025-06-17 21:52:57,083 - __main__ - INFO - 📦 Товаров на складе: 1
+2025-06-17 21:52:57,083 - __main__ - INFO - 📝 Лог-записей действий: 13
+2025-06-17 21:52:57,083 - __main__ - INFO - ==================================================
+2025-06-17 21:52:57,083 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-17 21:52:57,083 - aiogram.dispatcher - INFO - Start polling
+2025-06-17 21:52:59,250 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 21:53:22,390 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-17 21:53:22,655 - __main__ - INFO - ==================================================
+2025-06-17 21:53:22,655 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-17 21:53:22,656 - __main__ - INFO - ⏰ Время остановки: 2025-06-17 21:53:22
+2025-06-17 21:53:22,656 - __main__ - INFO - ⚡ Активность за 24 часа: 13 действий
+2025-06-17 21:53:22,656 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-17 21:53:22,656 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-17 21:53:22,656 - __main__ - INFO - ==================================================
+2025-06-17 21:53:22,656 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-17 21:53:22,656 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 21:53:22,657 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-17 21:53:22,657 - __main__ - INFO - 👋 Программа завершена
+2025-06-17 21:53:25,300 - __main__ - INFO - ==================================================
+2025-06-17 21:53:25,300 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-17 21:53:25,300 - __main__ - INFO - ⏰ Время запуска: 2025-06-17 21:53:25
+2025-06-17 21:53:25,300 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-17 21:53:25,300 - __main__ - INFO - 👥 Группа для отчетов: не настроена
+2025-06-17 21:53:25,301 - __main__ - INFO - 👥 Пользователей в системе: 2
+2025-06-17 21:53:25,301 - __main__ - INFO - ├ Одобренные: 2
+2025-06-17 21:53:25,301 - __main__ - INFO - └ Ожидают одобрения: 0
+2025-06-17 21:53:25,301 - __main__ - INFO - 📦 Товаров на складе: 1
+2025-06-17 21:53:25,301 - __main__ - INFO - 📝 Лог-записей действий: 13
+2025-06-17 21:53:25,301 - __main__ - INFO - ==================================================
+2025-06-17 21:53:25,301 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-17 21:53:25,301 - aiogram.dispatcher - INFO - Start polling
+2025-06-17 21:53:27,089 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 21:53:42,731 - __main__ - INFO - Действие пользователя 7873867301: Запуск бота - Пользователь вошел в систему
+2025-06-17 21:53:42,733 - aiogram.event - INFO - Update id=729246207 is handled. Duration 1663 ms by bot id=8143304952
+2025-06-17 21:53:49,045 - aiogram.event - INFO - Update id=729246208 is handled. Duration 541 ms by bot id=8143304952
+2025-06-17 21:53:51,762 - aiogram.event - INFO - Update id=729246209 is handled. Duration 217 ms by bot id=8143304952
+2025-06-17 21:53:53,285 - aiogram.event - INFO - Update id=729246210 is handled. Duration 148 ms by bot id=8143304952
+2025-06-17 21:53:56,631 - aiogram.event - INFO - Update id=729246211 is handled. Duration 199 ms by bot id=8143304952
+2025-06-17 21:54:08,381 - aiogram.event - INFO - Update id=729246212 is handled. Duration 123 ms by bot id=8143304952
+2025-06-17 21:54:10,208 - aiogram.event - INFO - Update id=729246213 is handled. Duration 433 ms by bot id=8143304952
+2025-06-17 21:54:10,837 - aiogram.event - INFO - Update id=729246214 is not handled. Duration 2 ms by bot id=8143304952
+2025-06-17 21:54:10,837 - aiogram.event - ERROR - Cause exception while process update id=729246214 by bot id=8143304952
+OperationalError: no such column: hookah_count
+Traceback (most recent call last):
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\SoraEcoSystems.py", line 430, in wrapper
+    return await func(message)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\SoraEcoSystems.py", line 1954, in update_report_start
+    cursor.execute(
+    ~~~~~~~~~~~~~~^
+        "SELECT total, cash, card, bar, hookah_count, expenses "
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "FROM shift_reports WHERE user_id = ? AND report_date = ?",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        (user_id, today)
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+sqlite3.OperationalError: no such column: hookah_count
+2025-06-17 21:54:20,661 - aiogram.event - INFO - Update id=729246215 is not handled. Duration 3 ms by bot id=8143304952
+2025-06-17 21:54:20,661 - aiogram.event - ERROR - Cause exception while process update id=729246215 by bot id=8143304952
+OperationalError: no such column: hookah_count
+Traceback (most recent call last):
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\SoraEcoSystems.py", line 430, in wrapper
+    return await func(message)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\SoraEcoSystems.py", line 1954, in update_report_start
+    cursor.execute(
+    ~~~~~~~~~~~~~~^
+        "SELECT total, cash, card, bar, hookah_count, expenses "
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "FROM shift_reports WHERE user_id = ? AND report_date = ?",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        (user_id, today)
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+sqlite3.OperationalError: no such column: hookah_count
+2025-06-17 21:54:33,430 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-17 21:54:33,686 - __main__ - INFO - ==================================================
+2025-06-17 21:54:33,687 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-17 21:54:33,687 - __main__ - INFO - ⏰ Время остановки: 2025-06-17 21:54:33
+2025-06-17 21:54:33,687 - __main__ - INFO - ⚡ Активность за 24 часа: 14 действий
+2025-06-17 21:54:33,687 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-17 21:54:33,687 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-17 21:54:33,687 - __main__ - INFO - ==================================================
+2025-06-17 21:54:33,687 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-17 21:54:33,687 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 21:54:33,688 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-17 21:54:33,688 - __main__ - INFO - 👋 Программа завершена
+2025-06-17 21:54:36,326 - __main__ - INFO - ==================================================
+2025-06-17 21:54:36,326 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-17 21:54:36,326 - __main__ - INFO - ⏰ Время запуска: 2025-06-17 21:54:36
+2025-06-17 21:54:36,326 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-17 21:54:36,326 - __main__ - INFO - 👥 Группа для отчетов: не настроена
+2025-06-17 21:54:36,327 - __main__ - INFO - 👥 Пользователей в системе: 2
+2025-06-17 21:54:36,327 - __main__ - INFO - ├ Одобренные: 2
+2025-06-17 21:54:36,327 - __main__ - INFO - └ Ожидают одобрения: 0
+2025-06-17 21:54:36,327 - __main__ - INFO - 📦 Товаров на складе: 1
+2025-06-17 21:54:36,327 - __main__ - INFO - 📝 Лог-записей действий: 14
+2025-06-17 21:54:36,327 - __main__ - INFO - ==================================================
+2025-06-17 21:54:36,327 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-17 21:54:36,327 - aiogram.dispatcher - INFO - Start polling
+2025-06-17 21:54:36,935 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 21:54:38,555 - aiogram.event - INFO - Update id=729246216 is not handled. Duration 4 ms by bot id=8143304952
+2025-06-17 21:54:38,555 - aiogram.event - ERROR - Cause exception while process update id=729246216 by bot id=8143304952
+OperationalError: no such column: hookah_count
+Traceback (most recent call last):
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\SoraEcoSystems.py", line 430, in wrapper
+    return await func(message)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\SoraEcoSystems.py", line 1954, in update_report_start
+    cursor.execute(
+    ~~~~~~~~~~~~~~^
+        "SELECT total, cash, card, bar, hookah_count, expenses "
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "FROM shift_reports WHERE user_id = ? AND report_date = ?",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        (user_id, today)
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+sqlite3.OperationalError: no such column: hookah_count
+2025-06-17 21:54:58,727 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-17 21:54:58,753 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2706)
+2025-06-17 21:54:58,753 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8143304952)
+2025-06-17 21:54:58,978 - __main__ - INFO - ==================================================
+2025-06-17 21:54:58,978 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-17 21:54:58,978 - __main__ - INFO - ⏰ Время остановки: 2025-06-17 21:54:58
+2025-06-17 21:54:58,979 - __main__ - INFO - ⚡ Активность за 24 часа: 14 действий
+2025-06-17 21:54:58,979 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-17 21:54:58,979 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-17 21:54:58,979 - __main__ - INFO - ==================================================
+2025-06-17 21:54:58,979 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-17 21:54:58,979 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 21:54:58,981 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-17 21:54:58,981 - __main__ - INFO - 👋 Программа завершена
+2025-06-17 21:55:01,620 - __main__ - INFO - ==================================================
+2025-06-17 21:55:01,621 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-17 21:55:01,621 - __main__ - INFO - ⏰ Время запуска: 2025-06-17 21:55:01
+2025-06-17 21:55:01,621 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-17 21:55:01,621 - __main__ - INFO - 👥 Группа для отчетов: не настроена
+2025-06-17 21:55:01,621 - __main__ - INFO - 👥 Пользователей в системе: 2
+2025-06-17 21:55:01,621 - __main__ - INFO - ├ Одобренные: 2
+2025-06-17 21:55:01,621 - __main__ - INFO - └ Ожидают одобрения: 0
+2025-06-17 21:55:01,621 - __main__ - INFO - 📦 Товаров на складе: 1
+2025-06-17 21:55:01,621 - __main__ - INFO - 📝 Лог-записей действий: 14
+2025-06-17 21:55:01,621 - __main__ - INFO - ==================================================
+2025-06-17 21:55:01,621 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-17 21:55:01,621 - aiogram.dispatcher - INFO - Start polling
+2025-06-17 21:55:03,128 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 21:55:03,830 - aiogram.event - INFO - Update id=729246217 is not handled. Duration 3 ms by bot id=8143304952
+2025-06-17 21:55:03,830 - aiogram.event - ERROR - Cause exception while process update id=729246217 by bot id=8143304952
+OperationalError: no such column: hookah_count
+Traceback (most recent call last):
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\SoraEcoSystems.py", line 430, in wrapper
+    return await func(message)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\SoraEcoSystems.py", line 1954, in update_report_start
+    cursor.execute(
+    ~~~~~~~~~~~~~~^
+        "SELECT total, cash, card, bar, hookah_count, expenses "
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "FROM shift_reports WHERE user_id = ? AND report_date = ?",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        (user_id, today)
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+sqlite3.OperationalError: no such column: hookah_count
+2025-06-17 21:55:05,649 - aiogram.event - INFO - Update id=729246218 is not handled. Duration 2 ms by bot id=8143304952
+2025-06-17 21:55:05,649 - aiogram.event - ERROR - Cause exception while process update id=729246218 by bot id=8143304952
+OperationalError: no such column: hookah_count
+Traceback (most recent call last):
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\SoraEcoSystems.py", line 430, in wrapper
+    return await func(message)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\SoraEcoSystems.py", line 1954, in update_report_start
+    cursor.execute(
+    ~~~~~~~~~~~~~~^
+        "SELECT total, cash, card, bar, hookah_count, expenses "
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "FROM shift_reports WHERE user_id = ? AND report_date = ?",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        (user_id, today)
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+sqlite3.OperationalError: no such column: hookah_count
+2025-06-17 21:55:30,782 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-17 21:55:31,045 - __main__ - INFO - ==================================================
+2025-06-17 21:55:31,045 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-17 21:55:31,045 - __main__ - INFO - ⏰ Время остановки: 2025-06-17 21:55:31
+2025-06-17 21:55:31,045 - __main__ - INFO - ⚡ Активность за 24 часа: 14 действий
+2025-06-17 21:55:31,045 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-17 21:55:31,045 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-17 21:55:31,045 - __main__ - INFO - ==================================================
+2025-06-17 21:55:31,045 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-17 21:55:31,046 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 21:55:31,047 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-17 21:55:31,047 - __main__ - INFO - 👋 Программа завершена
+2025-06-17 21:55:33,724 - __main__ - INFO - ==================================================
+2025-06-17 21:55:33,724 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-17 21:55:33,724 - __main__ - INFO - ⏰ Время запуска: 2025-06-17 21:55:33
+2025-06-17 21:55:33,724 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-17 21:55:33,724 - __main__ - INFO - 👥 Группа для отчетов: не настроена
+2025-06-17 21:55:33,725 - __main__ - INFO - 👥 Пользователей в системе: 2
+2025-06-17 21:55:33,725 - __main__ - INFO - ├ Одобренные: 2
+2025-06-17 21:55:33,725 - __main__ - INFO - └ Ожидают одобрения: 0
+2025-06-17 21:55:33,725 - __main__ - INFO - 📦 Товаров на складе: 1
+2025-06-17 21:55:33,725 - __main__ - INFO - 📝 Лог-записей действий: 14
+2025-06-17 21:55:33,725 - __main__ - INFO - ==================================================
+2025-06-17 21:55:33,725 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-17 21:55:33,725 - aiogram.dispatcher - INFO - Start polling
+2025-06-17 21:55:35,551 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 21:55:36,335 - aiogram.event - INFO - Update id=729246219 is not handled. Duration 3 ms by bot id=8143304952
+2025-06-17 21:55:36,335 - aiogram.event - ERROR - Cause exception while process update id=729246219 by bot id=8143304952
+OperationalError: no such column: hookah_count
+Traceback (most recent call last):
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\SoraEcoSystems.py", line 430, in wrapper
+    return await func(message)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\SoraEcoSystems.py", line 1954, in update_report_start
+    cursor.execute(
+    ~~~~~~~~~~~~~~^
+        "SELECT total, cash, card, bar, hookah_count, expenses "
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "FROM shift_reports WHERE user_id = ? AND report_date = ?",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        (user_id, today)
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+sqlite3.OperationalError: no such column: hookah_count
+2025-06-17 21:56:24,977 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-17 21:56:25,239 - __main__ - INFO - ==================================================
+2025-06-17 21:56:25,239 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-17 21:56:25,239 - __main__ - INFO - ⏰ Время остановки: 2025-06-17 21:56:25
+2025-06-17 21:56:25,239 - __main__ - INFO - ⚡ Активность за 24 часа: 14 действий
+2025-06-17 21:56:25,239 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-17 21:56:25,239 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-17 21:56:25,239 - __main__ - INFO - ==================================================
+2025-06-17 21:56:25,239 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-17 21:56:25,239 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 21:56:25,240 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-17 21:56:25,240 - __main__ - INFO - 👋 Программа завершена
+2025-06-17 21:56:32,279 - __main__ - INFO - ==================================================
+2025-06-17 21:56:32,279 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-17 21:56:32,279 - __main__ - INFO - ⏰ Время запуска: 2025-06-17 21:56:32
+2025-06-17 21:56:32,279 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-17 21:56:32,279 - __main__ - INFO - 👥 Группа для отчетов: не настроена
+2025-06-17 21:56:32,281 - __main__ - INFO - ✅ Главный администратор зарегистрирован
+2025-06-17 21:56:32,281 - __main__ - INFO - 👥 Пользователей в системе: 1
+2025-06-17 21:56:32,281 - __main__ - INFO - ├ Одобренные: 1
+2025-06-17 21:56:32,281 - __main__ - INFO - └ Ожидают одобрения: 0
+2025-06-17 21:56:32,281 - __main__ - INFO - 📦 Товаров на складе: 0
+2025-06-17 21:56:32,281 - __main__ - INFO - 📝 Лог-записей действий: 0
+2025-06-17 21:56:32,281 - __main__ - INFO - ==================================================
+2025-06-17 21:56:32,281 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-17 21:56:32,281 - aiogram.dispatcher - INFO - Start polling
+2025-06-17 21:56:33,040 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 21:56:35,307 - aiogram.event - INFO - Update id=729246220 is handled. Duration 459 ms by bot id=8143304952
+2025-06-17 21:56:47,622 - aiogram.event - INFO - Update id=729246221 is handled. Duration 118 ms by bot id=8143304952
+2025-06-17 21:56:52,196 - aiogram.event - INFO - Update id=729246222 is handled. Duration 417 ms by bot id=8143304952
+2025-06-17 21:56:56,525 - aiogram.event - INFO - Update id=729246223 is handled. Duration 160 ms by bot id=8143304952
+2025-06-17 21:57:03,749 - aiogram.event - INFO - Update id=729246224 is handled. Duration 166 ms by bot id=8143304952
+2025-06-17 21:57:07,513 - aiogram.event - INFO - Update id=729246225 is handled. Duration 126 ms by bot id=8143304952
+2025-06-17 21:57:10,365 - __main__ - ERROR - Ошибка сохранения отчёта: module 'aiogram.types.message' has no attribute 'answer'
+2025-06-17 21:57:10,365 - aiogram.event - INFO - Update id=729246226 is not handled. Duration 5 ms by bot id=8143304952
+2025-06-17 21:57:10,365 - aiogram.event - ERROR - Cause exception while process update id=729246226 by bot id=8143304952
+AttributeError: module 'aiogram.types.message' has no attribute 'answer'
+Traceback (most recent call last):
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\SoraEcoSystems.py", line 2128, in save_report
+    await message.answer(report_text, reply_markup=get_report_keyboard())
+          ^^^^^^^^^^^^^^
+AttributeError: module 'aiogram.types.message' has no attribute 'answer'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\SoraEcoSystems.py", line 2069, in process_report_data
+    await save_report(user_id, state, report_data)
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\SoraEcoSystems.py", line 2162, in save_report
+    await message.answer("❌ Ошибка сохранения отчёта!", reply_markup=get_report_keyboard())
+          ^^^^^^^^^^^^^^
+AttributeError: module 'aiogram.types.message' has no attribute 'answer'
+2025-06-17 22:12:57,836 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-06-17 22:12:57,836 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8143304952)
+2025-06-17 22:13:09,150 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8143304952)
+2025-06-17 22:19:20,387 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-17 22:19:20,647 - __main__ - INFO - ==================================================
+2025-06-17 22:19:20,647 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-17 22:19:20,647 - __main__ - INFO - ⏰ Время остановки: 2025-06-17 22:19:20
+2025-06-17 22:19:20,647 - __main__ - INFO - ⚡ Активность за 24 часа: 0 действий
+2025-06-17 22:19:20,647 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-17 22:19:20,647 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-17 22:19:20,647 - __main__ - INFO - ==================================================
+2025-06-17 22:19:20,647 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-17 22:19:20,648 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 22:19:20,649 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-17 22:19:20,649 - __main__ - INFO - 👋 Программа завершена
+2025-06-17 22:27:49,884 - __main__ - INFO - ==================================================
+2025-06-17 22:27:49,884 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-17 22:27:49,884 - __main__ - INFO - ⏰ Время запуска: 2025-06-17 22:27:49
+2025-06-17 22:27:49,884 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-17 22:27:49,884 - __main__ - INFO - 👥 Группа для отчетов: не настроена
+2025-06-17 22:27:49,884 - __main__ - INFO - 👥 Пользователей в системе: 1
+2025-06-17 22:27:49,884 - __main__ - INFO - ├ Одобренные: 1
+2025-06-17 22:27:49,884 - __main__ - INFO - └ Ожидают одобрения: 0
+2025-06-17 22:27:49,884 - __main__ - INFO - 📦 Товаров на складе: 0
+2025-06-17 22:27:49,885 - __main__ - INFO - 📝 Лог-записей действий: 0
+2025-06-17 22:27:49,885 - __main__ - INFO - ==================================================
+2025-06-17 22:27:49,885 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-17 22:27:49,885 - aiogram.dispatcher - INFO - Start polling
+2025-06-17 22:27:50,327 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 22:28:48,521 - aiogram.event - INFO - Update id=729246227 is handled. Duration 341 ms by bot id=8143304952
+2025-06-17 22:28:52,852 - aiogram.event - INFO - Update id=729246228 is handled. Duration 125 ms by bot id=8143304952
+2025-06-17 22:28:54,626 - aiogram.event - INFO - Update id=729246229 is handled. Duration 465 ms by bot id=8143304952
+2025-06-17 22:28:56,709 - aiogram.event - INFO - Update id=729246230 is handled. Duration 276 ms by bot id=8143304952
+2025-06-17 22:29:01,137 - aiogram.event - INFO - Update id=729246231 is handled. Duration 133 ms by bot id=8143304952
+2025-06-17 22:29:05,560 - aiogram.event - INFO - Update id=729246232 is handled. Duration 151 ms by bot id=8143304952
+2025-06-17 22:29:08,840 - aiogram.event - INFO - Update id=729246233 is handled. Duration 270 ms by bot id=8143304952
+2025-06-17 22:29:10,810 - aiogram.event - INFO - Update id=729246234 is handled. Duration 116 ms by bot id=8143304952
+2025-06-17 22:29:12,327 - aiogram.event - INFO - Update id=729246235 is handled. Duration 137 ms by bot id=8143304952
+2025-06-17 22:29:15,549 - __main__ - ERROR - Ошибка сохранения отчёта: module 'aiogram.types.message' has no attribute 'answer'
+2025-06-17 22:29:15,549 - aiogram.event - INFO - Update id=729246236 is not handled. Duration 3 ms by bot id=8143304952
+2025-06-17 22:29:15,549 - aiogram.event - ERROR - Cause exception while process update id=729246236 by bot id=8143304952
+AttributeError: module 'aiogram.types.message' has no attribute 'answer'
+Traceback (most recent call last):
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\SoraEcoSystems.py", line 2126, in save_report
+    await message.answer(report_text, reply_markup=get_report_keyboard())
+          ^^^^^^^^^^^^^^
+AttributeError: module 'aiogram.types.message' has no attribute 'answer'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\SoraEcoSystems.py", line 2028, in process_report_data
+    await save_report(user_id, state, report_data)
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\SoraEcoSystems.py", line 2159, in save_report
+    await message.answer("❌ Ошибка сохранения отчёта!", reply_markup=get_report_keyboard())
+          ^^^^^^^^^^^^^^
+AttributeError: module 'aiogram.types.message' has no attribute 'answer'
+2025-06-17 22:37:09,380 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-17 22:37:09,635 - __main__ - INFO - ==================================================
+2025-06-17 22:37:09,635 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-17 22:37:09,635 - __main__ - INFO - ⏰ Время остановки: 2025-06-17 22:37:09
+2025-06-17 22:37:09,635 - __main__ - INFO - ⚡ Активность за 24 часа: 0 действий
+2025-06-17 22:37:09,635 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-17 22:37:09,635 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-17 22:37:09,635 - __main__ - INFO - ==================================================
+2025-06-17 22:37:09,635 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-17 22:37:09,636 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 22:37:09,636 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-17 22:37:09,637 - __main__ - INFO - 👋 Программа завершена
+2025-06-17 22:37:36,703 - __main__ - INFO - ==================================================
+2025-06-17 22:37:36,703 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-17 22:37:36,703 - __main__ - INFO - ⏰ Время запуска: 2025-06-17 22:37:36
+2025-06-17 22:37:36,703 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-17 22:37:36,703 - __main__ - INFO - 👥 Группа для отчетов: не настроена
+2025-06-17 22:37:36,704 - __main__ - INFO - 👥 Пользователей в системе: 1
+2025-06-17 22:37:36,704 - __main__ - INFO - ├ Одобренные: 1
+2025-06-17 22:37:36,704 - __main__ - INFO - └ Ожидают одобрения: 0
+2025-06-17 22:37:36,704 - __main__ - INFO - 📦 Товаров на складе: 0
+2025-06-17 22:37:36,704 - __main__ - INFO - 📝 Лог-записей действий: 0
+2025-06-17 22:37:36,704 - __main__ - INFO - ==================================================
+2025-06-17 22:37:36,704 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-17 22:37:36,704 - aiogram.dispatcher - INFO - Start polling
+2025-06-17 22:37:37,397 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-17 22:37:39,922 - __main__ - INFO - Действие пользователя 7873867301: Неизвестная команда - Введен текст: ⏭ Пропустить
+2025-06-17 22:37:39,925 - aiogram.event - INFO - Update id=729246237 is handled. Duration 767 ms by bot id=8143304952
+2025-06-17 22:37:42,920 - aiogram.event - INFO - Update id=729246238 is handled. Duration 272 ms by bot id=8143304952
+2025-06-17 22:37:44,484 - aiogram.event - INFO - Update id=729246239 is handled. Duration 129 ms by bot id=8143304952
+2025-06-17 22:37:48,682 - aiogram.event - INFO - Update id=729246240 is handled. Duration 133 ms by bot id=8143304952
+2025-06-17 22:37:50,161 - aiogram.event - INFO - Update id=729246241 is handled. Duration 363 ms by bot id=8143304952
+2025-06-17 22:37:51,266 - aiogram.event - INFO - Update id=729246242 is handled. Duration 128 ms by bot id=8143304952
+2025-06-17 22:37:53,398 - aiogram.event - INFO - Update id=729246243 is handled. Duration 149 ms by bot id=8143304952
+2025-06-17 22:37:54,317 - aiogram.event - INFO - Update id=729246244 is handled. Duration 160 ms by bot id=8143304952
+2025-06-17 22:37:55,412 - __main__ - ERROR - Ошибка сохранения отчёта: name 'message' is not defined
+2025-06-17 22:37:55,413 - aiogram.event - INFO - Update id=729246245 is not handled. Duration 4 ms by bot id=8143304952
+2025-06-17 22:37:55,413 - aiogram.event - ERROR - Cause exception while process update id=729246245 by bot id=8143304952
+NameError: name 'message' is not defined
+Traceback (most recent call last):
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\SoraEcoSystems.py", line 2126, in save_report
+    await message.answer(report_text, reply_markup=get_report_keyboard())
+          ^^^^^^^
+NameError: name 'message' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\SoraEcoSystems.py", line 2028, in process_report_data
+    await save_report(user_id, state, report_data)
+  File "C:\Users\tweopi\PycharmProjects\PythonProject\SoraEcoSystems.py", line 2159, in save_report
+    await message.answer("❌ Ошибка сохранения отчёта!", reply_markup=get_report_keyboard())
+          ^^^^^^^
+NameError: name 'message' is not defined
+2025-06-18 00:29:26,766 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-06-18 00:29:26,766 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8143304952)
+2025-06-18 00:29:38,002 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8143304952)
+2025-06-18 01:05:58,963 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-18 01:05:59,225 - __main__ - INFO - ==================================================
+2025-06-18 01:05:59,226 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-18 01:05:59,226 - __main__ - INFO - ⏰ Время остановки: 2025-06-18 01:05:59
+2025-06-18 01:05:59,226 - __main__ - INFO - ⚡ Активность за 24 часа: 1 действий
+2025-06-18 01:05:59,226 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-18 01:05:59,226 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-18 01:05:59,226 - __main__ - INFO - ==================================================
+2025-06-18 01:05:59,226 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-18 01:05:59,226 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-18 01:05:59,227 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-18 01:05:59,227 - __main__ - INFO - 👋 Программа завершена
+2025-06-18 01:06:03,469 - __main__ - INFO - ==================================================
+2025-06-18 01:06:03,469 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-18 01:06:03,469 - __main__ - INFO - ⏰ Время запуска: 2025-06-18 01:06:03
+2025-06-18 01:06:03,469 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-18 01:06:03,469 - __main__ - INFO - 👥 Группа для отчетов: не настроена
+2025-06-18 01:06:03,470 - __main__ - INFO - 👥 Пользователей в системе: 1
+2025-06-18 01:06:03,470 - __main__ - INFO - ├ Одобренные: 1
+2025-06-18 01:06:03,470 - __main__ - INFO - └ Ожидают одобрения: 0
+2025-06-18 01:06:03,470 - __main__ - INFO - 📦 Товаров на складе: 0
+2025-06-18 01:06:03,470 - __main__ - INFO - 📝 Лог-записей действий: 1
+2025-06-18 01:06:03,470 - __main__ - INFO - ==================================================
+2025-06-18 01:06:03,470 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-18 01:06:03,470 - aiogram.dispatcher - INFO - Start polling
+2025-06-18 01:06:03,997 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-18 01:06:15,705 - __main__ - INFO - Действие пользователя 7873867301: Неизвестная команда - Введен текст: ⏭ Пропустить
+2025-06-18 01:06:15,708 - aiogram.event - INFO - Update id=729246246 is handled. Duration 418 ms by bot id=8143304952
+2025-06-18 01:06:17,185 - aiogram.event - INFO - Update id=729246247 is handled. Duration 116 ms by bot id=8143304952
+2025-06-18 01:06:19,366 - aiogram.event - INFO - Update id=729246248 is handled. Duration 120 ms by bot id=8143304952
+2025-06-18 01:06:21,820 - aiogram.event - INFO - Update id=729246249 is handled. Duration 115 ms by bot id=8143304952
+2025-06-18 01:06:23,153 - aiogram.event - INFO - Update id=729246250 is handled. Duration 115 ms by bot id=8143304952
+2025-06-18 01:06:24,249 - aiogram.event - INFO - Update id=729246251 is handled. Duration 122 ms by bot id=8143304952
+2025-06-18 01:06:26,117 - aiogram.event - INFO - Update id=729246252 is handled. Duration 116 ms by bot id=8143304952
+2025-06-18 01:06:28,221 - aiogram.event - INFO - Update id=729246253 is handled. Duration 117 ms by bot id=8143304952
+2025-06-18 01:06:29,286 - aiogram.event - INFO - Update id=729246254 is handled. Duration 114 ms by bot id=8143304952
+2025-06-18 01:06:35,892 - aiogram.event - INFO - Update id=729246255 is handled. Duration 119 ms by bot id=8143304952
+2025-06-18 01:06:39,570 - aiogram.event - INFO - Update id=729246256 is handled. Duration 115 ms by bot id=8143304952
+2025-06-18 01:06:42,014 - aiogram.event - INFO - Update id=729246257 is handled. Duration 133 ms by bot id=8143304952
+2025-06-18 01:06:47,230 - aiogram.event - INFO - Update id=729246258 is handled. Duration 113 ms by bot id=8143304952
+2025-06-18 01:06:51,510 - aiogram.event - INFO - Update id=729246259 is handled. Duration 117 ms by bot id=8143304952
+2025-06-18 01:06:53,049 - aiogram.event - INFO - Update id=729246260 is handled. Duration 136 ms by bot id=8143304952
+2025-06-18 01:06:55,168 - __main__ - INFO - Действие пользователя 7873867301: Отчёт создан - Дата: 2025-06-18
+2025-06-18 01:06:55,172 - aiogram.event - INFO - Update id=729246261 is handled. Duration 225 ms by bot id=8143304952
+2025-06-18 01:07:04,322 - aiogram.event - INFO - Update id=729246262 is handled. Duration 143 ms by bot id=8143304952
+2025-06-18 01:07:05,012 - aiogram.event - INFO - Update id=729246263 is handled. Duration 119 ms by bot id=8143304952
+2025-06-18 01:07:05,627 - aiogram.event - INFO - Update id=729246264 is handled. Duration 119 ms by bot id=8143304952
+2025-06-18 01:07:06,111 - aiogram.event - INFO - Update id=729246265 is handled. Duration 114 ms by bot id=8143304952
+2025-06-18 01:07:06,476 - aiogram.event - INFO - Update id=729246266 is handled. Duration 116 ms by bot id=8143304952
+2025-06-18 01:07:06,874 - aiogram.event - INFO - Update id=729246267 is handled. Duration 136 ms by bot id=8143304952
+2025-06-18 01:07:07,241 - __main__ - INFO - Действие пользователя 7873867301: Отчёт обновлен - Дата: 2025-06-18
+2025-06-18 01:07:07,243 - aiogram.event - INFO - Update id=729246268 is handled. Duration 121 ms by bot id=8143304952
+2025-06-18 01:07:07,605 - aiogram.event - INFO - Update id=729246269 is handled. Duration 123 ms by bot id=8143304952
+2025-06-18 01:13:02,349 - __main__ - INFO - Действие пользователя 7873867301: Запуск бота - Пользователь вошел в систему
+2025-06-18 01:13:02,352 - aiogram.event - INFO - Update id=729246270 is handled. Duration 115 ms by bot id=8143304952
+2025-06-18 01:13:05,106 - aiogram.event - INFO - Update id=729246271 is handled. Duration 116 ms by bot id=8143304952
+2025-06-18 01:13:07,642 - aiogram.event - INFO - Update id=729246272 is handled. Duration 111 ms by bot id=8143304952
+2025-06-18 01:13:09,417 - aiogram.event - INFO - Update id=729246273 is handled. Duration 112 ms by bot id=8143304952
+2025-06-18 01:13:16,991 - aiogram.event - INFO - Update id=729246274 is handled. Duration 131 ms by bot id=8143304952
+2025-06-18 01:13:17,938 - aiogram.event - INFO - Update id=729246275 is handled. Duration 119 ms by bot id=8143304952
+2025-06-18 01:13:18,445 - aiogram.event - INFO - Update id=729246276 is handled. Duration 120 ms by bot id=8143304952
+2025-06-18 01:13:18,616 - aiogram.event - INFO - Update id=729246277 is handled. Duration 122 ms by bot id=8143304952
+2025-06-18 01:13:19,454 - aiogram.event - INFO - Update id=729246278 is handled. Duration 193 ms by bot id=8143304952
+2025-06-18 01:13:21,572 - aiogram.event - INFO - Update id=729246279 is handled. Duration 199 ms by bot id=8143304952
+2025-06-18 01:13:22,568 - __main__ - INFO - Действие пользователя 7873867301: Отчёт обновлен - Дата: 2025-06-18
+2025-06-18 01:13:22,570 - aiogram.event - INFO - Update id=729246280 is handled. Duration 154 ms by bot id=8143304952
+2025-06-18 01:18:57,548 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-18 01:18:57,805 - __main__ - INFO - ==================================================
+2025-06-18 01:18:57,805 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-18 01:18:57,805 - __main__ - INFO - ⏰ Время остановки: 2025-06-18 01:18:57
+2025-06-18 01:18:57,806 - __main__ - INFO - ⚡ Активность за 24 часа: 6 действий
+2025-06-18 01:18:57,806 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-18 01:18:57,806 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-18 01:18:57,806 - __main__ - INFO - ==================================================
+2025-06-18 01:18:57,806 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-18 01:18:57,806 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-18 01:18:57,807 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-18 01:18:57,807 - __main__ - INFO - 👋 Программа завершена
+2025-06-18 01:19:22,248 - __main__ - INFO - ==================================================
+2025-06-18 01:19:22,248 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-18 01:19:22,248 - __main__ - INFO - ⏰ Время запуска: 2025-06-18 01:19:22
+2025-06-18 01:19:22,248 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-18 01:19:22,248 - __main__ - INFO - 👥 Группа для отчетов: не настроена
+2025-06-18 01:19:22,249 - __main__ - INFO - 👥 Пользователей в системе: 1
+2025-06-18 01:19:22,249 - __main__ - INFO - ├ Одобренные: 1
+2025-06-18 01:19:22,249 - __main__ - INFO - └ Ожидают одобрения: 0
+2025-06-18 01:19:22,249 - __main__ - INFO - 📦 Товаров на складе: 0
+2025-06-18 01:19:22,249 - __main__ - INFO - 📝 Лог-записей действий: 6
+2025-06-18 01:19:22,249 - __main__ - INFO - ==================================================
+2025-06-18 01:19:22,249 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-18 01:19:22,249 - aiogram.dispatcher - INFO - Start polling
+2025-06-18 01:19:22,759 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-18 01:25:37,083 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 1236] Подключение к сети было разорвано локальной системой
+2025-06-18 01:25:37,083 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8143304952)
+2025-06-18 01:25:48,295 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8143304952)
+2025-06-18 01:36:41,737 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-18 01:36:41,995 - __main__ - INFO - ==================================================
+2025-06-18 01:36:41,995 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-18 01:36:41,995 - __main__ - INFO - ⏰ Время остановки: 2025-06-18 01:36:41
+2025-06-18 01:36:41,995 - __main__ - INFO - ⚡ Активность за 24 часа: 6 действий
+2025-06-18 01:36:41,995 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-18 01:36:41,995 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-18 01:36:41,995 - __main__ - INFO - ==================================================
+2025-06-18 01:36:41,995 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-18 01:36:41,996 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-18 01:36:41,997 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-18 01:36:41,997 - __main__ - INFO - 👋 Программа завершена
+2025-06-18 01:36:45,151 - __main__ - INFO - ==================================================
+2025-06-18 01:36:45,151 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-18 01:36:45,151 - __main__ - INFO - ⏰ Время запуска: 2025-06-18 01:36:45
+2025-06-18 01:36:45,151 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-18 01:36:45,151 - __main__ - INFO - 👥 Группа для отчетов: не настроена
+2025-06-18 01:36:45,152 - __main__ - INFO - 👥 Пользователей в системе: 1
+2025-06-18 01:36:45,152 - __main__ - INFO - ├ Одобренные: 1
+2025-06-18 01:36:45,152 - __main__ - INFO - └ Ожидают одобрения: 0
+2025-06-18 01:36:45,152 - __main__ - INFO - 📦 Товаров на складе: 0
+2025-06-18 01:36:45,152 - __main__ - INFO - 📝 Лог-записей действий: 6
+2025-06-18 01:36:45,152 - __main__ - INFO - ==================================================
+2025-06-18 01:36:45,152 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-18 01:36:45,152 - aiogram.dispatcher - INFO - Start polling
+2025-06-18 01:36:45,641 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-18 01:36:54,503 - aiogram.event - INFO - Update id=729246281 is handled. Duration 428 ms by bot id=8143304952
+2025-06-18 01:36:55,141 - aiogram.event - INFO - Update id=729246282 is handled. Duration 116 ms by bot id=8143304952
+2025-06-18 01:36:57,617 - aiogram.event - INFO - Update id=729246283 is handled. Duration 169 ms by bot id=8143304952
+2025-06-18 01:36:59,215 - aiogram.event - INFO - Update id=729246284 is handled. Duration 161 ms by bot id=8143304952
+2025-06-18 01:37:00,020 - aiogram.event - INFO - Update id=729246285 is handled. Duration 216 ms by bot id=8143304952
+2025-06-18 01:37:00,784 - aiogram.event - INFO - Update id=729246286 is handled. Duration 124 ms by bot id=8143304952
+2025-06-18 01:37:01,525 - aiogram.event - INFO - Update id=729246287 is handled. Duration 118 ms by bot id=8143304952
+2025-06-18 01:37:05,281 - aiogram.event - INFO - Update id=729246288 is handled. Duration 118 ms by bot id=8143304952
+2025-06-18 01:37:06,457 - aiogram.event - INFO - Update id=729246289 is handled. Duration 116 ms by bot id=8143304952
+2025-06-18 01:37:18,884 - aiogram.event - INFO - Update id=729246290 is handled. Duration 2 ms by bot id=8143304952
+2025-06-18 01:37:35,343 - aiogram.event - INFO - Update id=729246291 is handled. Duration 7 ms by bot id=8143304952
+2025-06-18 01:37:37,876 - aiogram.event - INFO - Update id=729246292 is handled. Duration 168 ms by bot id=8143304952
+2025-06-18 01:37:38,787 - aiogram.event - INFO - Update id=729246293 is handled. Duration 185 ms by bot id=8143304952
+2025-06-18 01:37:39,788 - aiogram.event - INFO - Update id=729246294 is handled. Duration 187 ms by bot id=8143304952
+2025-06-18 01:37:40,449 - aiogram.event - INFO - Update id=729246295 is handled. Duration 127 ms by bot id=8143304952
+2025-06-18 02:02:08,747 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-18 02:02:08,999 - __main__ - INFO - ==================================================
+2025-06-18 02:02:08,999 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-18 02:02:08,999 - __main__ - INFO - ⏰ Время остановки: 2025-06-18 02:02:08
+2025-06-18 02:02:09,000 - __main__ - INFO - ⚡ Активность за 24 часа: 6 действий
+2025-06-18 02:02:09,000 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-18 02:02:09,000 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-18 02:02:09,000 - __main__ - INFO - ==================================================
+2025-06-18 02:02:09,000 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-18 02:02:09,000 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-18 02:02:09,001 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-18 02:02:09,001 - __main__ - INFO - 👋 Программа завершена
+2025-06-18 02:02:13,265 - __main__ - INFO - ==================================================
+2025-06-18 02:02:13,265 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-18 02:02:13,265 - __main__ - INFO - ⏰ Время запуска: 2025-06-18 02:02:13
+2025-06-18 02:02:13,266 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-18 02:02:13,266 - __main__ - INFO - 👥 Пользователей в системе: 1
+2025-06-18 02:02:13,266 - __main__ - INFO - ├ Одобренные: 1
+2025-06-18 02:02:13,266 - __main__ - INFO - └ Ожидают одобрения: 0
+2025-06-18 02:02:13,266 - __main__ - INFO - 📦 Товаров на складе: 0
+2025-06-18 02:02:13,266 - __main__ - INFO - 📝 Лог-записей действий: 6
+2025-06-18 02:02:13,266 - __main__ - INFO - ==================================================
+2025-06-18 02:02:13,266 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-18 02:02:13,266 - aiogram.dispatcher - INFO - Start polling
+2025-06-18 02:02:13,811 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-18 02:02:27,266 - __main__ - INFO - Действие пользователя 7873867301: Запуск бота - Пользователь вошел в систему
+2025-06-18 02:02:27,270 - aiogram.event - INFO - Update id=729246296 is handled. Duration 440 ms by bot id=8143304952
+2025-06-18 02:02:29,355 - aiogram.event - INFO - Update id=729246297 is handled. Duration 117 ms by bot id=8143304952
+2025-06-18 02:02:30,650 - aiogram.event - INFO - Update id=729246298 is handled. Duration 130 ms by bot id=8143304952
+2025-06-18 02:02:34,937 - aiogram.event - INFO - Update id=729246299 is handled. Duration 215 ms by bot id=8143304952
+2025-06-18 02:02:43,092 - aiogram.event - INFO - Update id=729246300 is handled. Duration 4 ms by bot id=8143304952
+2025-06-18 02:04:01,900 - aiogram.event - INFO - Update id=729246301 is handled. Duration 219 ms by bot id=8143304952
+2025-06-18 02:06:40,956 - aiogram.event - INFO - Update id=729246302 is handled. Duration 217 ms by bot id=8143304952
+2025-06-18 02:07:47,743 - aiogram.event - INFO - Update id=729246303 is handled. Duration 5 ms by bot id=8143304952
+2025-06-18 02:07:47,743 - aiogram.event - INFO - Update id=729246304 is handled. Duration 5 ms by bot id=8143304952
+2025-06-18 02:07:55,773 - __main__ - INFO - Действие пользователя 7873867301: Запуск бота - Пользователь вошел в систему
+2025-06-18 02:07:55,776 - aiogram.event - INFO - Update id=729246305 is handled. Duration 136 ms by bot id=8143304952
+2025-06-18 02:07:57,281 - aiogram.event - INFO - Update id=729246306 is handled. Duration 125 ms by bot id=8143304952
+2025-06-18 02:07:58,062 - aiogram.event - INFO - Update id=729246307 is handled. Duration 125 ms by bot id=8143304952
+2025-06-18 02:08:10,083 - __main__ - INFO - Действие пользователя 7873867301: Настройка уведомлений - Установлен чат для отчетов: -1002423269381
+2025-06-18 02:08:10,085 - aiogram.event - INFO - Update id=729246308 is handled. Duration 236 ms by bot id=8143304952
+2025-06-18 02:08:17,983 - aiogram.event - INFO - Update id=729246309 is handled. Duration 123 ms by bot id=8143304952
+2025-06-18 02:08:18,946 - aiogram.event - INFO - Update id=729246310 is handled. Duration 129 ms by bot id=8143304952
+2025-06-18 02:08:19,537 - aiogram.event - INFO - Update id=729246311 is handled. Duration 121 ms by bot id=8143304952
+2025-06-18 02:08:20,221 - aiogram.event - INFO - Update id=729246312 is handled. Duration 137 ms by bot id=8143304952
+2025-06-18 02:08:20,611 - aiogram.event - INFO - Update id=729246313 is handled. Duration 125 ms by bot id=8143304952
+2025-06-18 02:08:20,981 - aiogram.event - INFO - Update id=729246314 is handled. Duration 128 ms by bot id=8143304952
+2025-06-18 02:08:21,263 - aiogram.event - INFO - Update id=729246315 is handled. Duration 122 ms by bot id=8143304952
+2025-06-18 02:08:24,247 - aiogram.event - INFO - Update id=729246316 is handled. Duration 122 ms by bot id=8143304952
+2025-06-18 02:08:26,400 - __main__ - INFO - Действие пользователя 7873867301: Отчёт обновлен - Дата: 2025-06-18
+2025-06-18 02:08:26,534 - __main__ - INFO - Действие пользователя 7873867301: Отправка отчета в группу - Группа: -1002423269381
+2025-06-18 02:08:26,535 - aiogram.event - INFO - Update id=729246317 is handled. Duration 264 ms by bot id=8143304952
+2025-06-18 02:08:38,165 - aiogram.event - INFO - Update id=729246318 is handled. Duration 3 ms by bot id=8143304952
+2025-06-18 02:08:40,424 - aiogram.event - INFO - Update id=729246319 is handled. Duration 6 ms by bot id=8143304952
+2025-06-18 02:10:59,546 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-18 02:10:59,798 - __main__ - INFO - ==================================================
+2025-06-18 02:10:59,798 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-18 02:10:59,798 - __main__ - INFO - ⏰ Время остановки: 2025-06-18 02:10:59
+2025-06-18 02:10:59,798 - __main__ - INFO - ⚡ Активность за 24 часа: 11 действий
+2025-06-18 02:10:59,798 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-18 02:10:59,799 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-18 02:10:59,799 - __main__ - INFO - ==================================================
+2025-06-18 02:10:59,799 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-18 02:10:59,799 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-18 02:10:59,800 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-18 02:10:59,800 - __main__ - INFO - 👋 Программа завершена
+2025-06-18 02:15:45,768 - __main__ - INFO - ==================================================
+2025-06-18 02:15:45,768 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-18 02:15:45,768 - __main__ - INFO - ⏰ Время запуска: 2025-06-18 02:15:45
+2025-06-18 02:15:45,768 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-18 02:15:45,768 - __main__ - INFO - 👥 Пользователей в системе: 1
+2025-06-18 02:15:45,769 - __main__ - INFO - ├ Одобренные: 1
+2025-06-18 02:15:45,769 - __main__ - INFO - └ Ожидают одобрения: 0
+2025-06-18 02:15:45,769 - __main__ - INFO - 📦 Товаров на складе: 0
+2025-06-18 02:15:45,769 - __main__ - INFO - 📝 Лог-записей действий: 11
+2025-06-18 02:15:45,769 - __main__ - INFO - ==================================================
+2025-06-18 02:15:45,769 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-18 02:15:45,769 - aiogram.dispatcher - INFO - Start polling
+2025-06-18 02:15:46,300 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-18 02:15:53,891 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-18 02:15:54,148 - __main__ - INFO - ==================================================
+2025-06-18 02:15:54,148 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-18 02:15:54,148 - __main__ - INFO - ⏰ Время остановки: 2025-06-18 02:15:54
+2025-06-18 02:15:54,149 - __main__ - INFO - ⚡ Активность за 24 часа: 11 действий
+2025-06-18 02:15:54,149 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-18 02:15:54,149 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-18 02:15:54,149 - __main__ - INFO - ==================================================
+2025-06-18 02:15:54,149 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-18 02:15:54,149 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-18 02:15:54,150 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-18 02:15:54,150 - __main__ - INFO - 👋 Программа завершена
+2025-06-18 02:16:09,955 - __main__ - INFO - ==================================================
+2025-06-18 02:16:09,955 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-18 02:16:09,955 - __main__ - INFO - ⏰ Время запуска: 2025-06-18 02:16:09
+2025-06-18 02:16:09,955 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-18 02:16:09,955 - __main__ - INFO - 👥 Пользователей в системе: 1
+2025-06-18 02:16:09,955 - __main__ - INFO - ├ Одобренные: 1
+2025-06-18 02:16:09,955 - __main__ - INFO - └ Ожидают одобрения: 0
+2025-06-18 02:16:09,955 - __main__ - INFO - 📦 Товаров на складе: 0
+2025-06-18 02:16:09,956 - __main__ - INFO - 📝 Лог-записей действий: 11
+2025-06-18 02:16:09,956 - __main__ - INFO - ==================================================
+2025-06-18 02:16:09,956 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-18 02:16:09,956 - aiogram.dispatcher - INFO - Start polling
+2025-06-18 02:16:10,344 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-18 02:16:22,048 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-18 02:16:22,305 - __main__ - INFO - ==================================================
+2025-06-18 02:16:22,306 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-18 02:16:22,306 - __main__ - INFO - ⏰ Время остановки: 2025-06-18 02:16:22
+2025-06-18 02:16:22,306 - __main__ - INFO - ⚡ Активность за 24 часа: 11 действий
+2025-06-18 02:16:22,306 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-18 02:16:22,306 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-18 02:16:22,306 - __main__ - INFO - ==================================================
+2025-06-18 02:16:22,306 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-18 02:16:22,306 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-18 02:16:22,307 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-18 02:16:22,307 - __main__ - INFO - 👋 Программа завершена
+2025-06-18 02:16:28,732 - __main__ - INFO - ==================================================
+2025-06-18 02:16:28,732 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-18 02:16:28,732 - __main__ - INFO - ⏰ Время запуска: 2025-06-18 02:16:28
+2025-06-18 02:16:28,732 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-18 02:16:28,734 - __main__ - INFO - ✅ Главный администратор зарегистрирован
+2025-06-18 02:16:28,734 - __main__ - INFO - 👥 Пользователей в системе: 1
+2025-06-18 02:16:28,734 - __main__ - INFO - ├ Одобренные: 1
+2025-06-18 02:16:28,734 - __main__ - INFO - └ Ожидают одобрения: 0
+2025-06-18 02:16:28,734 - __main__ - INFO - 📦 Товаров на складе: 0
+2025-06-18 02:16:28,734 - __main__ - INFO - 📝 Лог-записей действий: 0
+2025-06-18 02:16:28,734 - __main__ - INFO - ==================================================
+2025-06-18 02:16:28,734 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-18 02:16:28,734 - aiogram.dispatcher - INFO - Start polling
+2025-06-18 02:16:29,133 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-18 02:18:33,538 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-18 02:18:33,793 - __main__ - INFO - ==================================================
+2025-06-18 02:18:33,793 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-18 02:18:33,793 - __main__ - INFO - ⏰ Время остановки: 2025-06-18 02:18:33
+2025-06-18 02:18:33,793 - __main__ - INFO - ⚡ Активность за 24 часа: 0 действий
+2025-06-18 02:18:33,793 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-18 02:18:33,794 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-18 02:18:33,794 - __main__ - INFO - ==================================================
+2025-06-18 02:18:33,794 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-18 02:18:33,794 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-18 02:18:33,795 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-18 02:18:33,795 - __main__ - INFO - 👋 Программа завершена
