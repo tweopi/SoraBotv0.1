@@ -121,7 +121,7 @@ python SoraEcoSystems.py
 ## 🧑‍💻 Контакты
 
 - **Разработчик**: tweopi
-- **Telegram**: [@tweopi](https://t.me/yourusername)
-- **GitHub**: [https://github.com/tweopi](https://github.com/your_username)
+- **Telegram**: [@tweopi](https://t.me/tweopi)
+- **GitHub**: [https://github.com/tweopi](https://github.com/tweopi)
 
 ---
