@@ -1753,3 +1753,291 @@ NameError: name 'message' is not defined
 2025-06-18 02:23:42,854 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
 2025-06-18 02:23:42,855 - __main__ - INFO - ⏹️ Программа прервана пользователем
 2025-06-18 02:23:42,855 - __main__ - INFO - 👋 Программа завершена
+2025-06-20 21:10:11,735 - __main__ - INFO - ==================================================
+2025-06-20 21:10:11,735 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-20 21:10:11,735 - __main__ - INFO - ⏰ Время запуска: 2025-06-20 21:10:11
+2025-06-20 21:10:11,735 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-20 21:10:11,735 - __main__ - ERROR - Ошибка при получении статистики: no such column: is_approved
+2025-06-20 21:10:11,735 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-20 21:10:11,735 - aiogram.dispatcher - INFO - Start polling
+2025-06-20 21:10:11,982 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-20 21:10:37,852 - aiogram.event - INFO - Update id=729246658 is handled. Duration 358 ms by bot id=8143304952
+2025-06-20 21:10:39,108 - aiogram.event - INFO - Update id=729246659 is handled. Duration 108 ms by bot id=8143304952
+2025-06-20 21:10:40,859 - aiogram.event - INFO - Update id=729246660 is handled. Duration 93 ms by bot id=8143304952
+2025-06-20 21:10:41,488 - aiogram.event - INFO - Update id=729246661 is handled. Duration 108 ms by bot id=8143304952
+2025-06-20 21:10:42,995 - aiogram.event - INFO - Update id=729246662 is not handled. Duration 16 ms by bot id=8143304952
+2025-06-20 21:10:42,996 - aiogram.event - ERROR - Cause exception while process update id=729246662 by bot id=8143304952
+OperationalError: no such column: hookah_count
+Traceback (most recent call last):
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\Desktop\SoraEcoSystem-PreBeta-v1.0-master\SoraEcoSystems.py", line 486, in wrapper
+    return await func(message)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\Desktop\SoraEcoSystem-PreBeta-v1.0-master\SoraEcoSystems.py", line 2132, in update_report_start
+    cursor.execute(
+sqlite3.OperationalError: no such column: hookah_count
+2025-06-20 21:10:45,065 - aiogram.event - INFO - Update id=729246663 is handled. Duration 108 ms by bot id=8143304952
+2025-06-20 21:10:54,123 - aiogram.event - INFO - Update id=729246664 is handled. Duration 141 ms by bot id=8143304952
+2025-06-20 21:35:16,399 - __main__ - INFO - ==================================================
+2025-06-20 21:35:16,399 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-20 21:35:16,399 - __main__ - INFO - ⏰ Время запуска: 2025-06-20 21:35:16
+2025-06-20 21:35:16,405 - __main__ - INFO - Зарегистрирован пользователь: ID=7873867301, Имя=Sora Admin, Админ=True, Одобрен=True
+2025-06-20 21:35:16,405 - __main__ - INFO - ✅ Главный администратор зарегистрирован
+2025-06-20 21:35:16,405 - __main__ - INFO - 👥 Пользователей в системе: 1
+2025-06-20 21:35:16,405 - __main__ - INFO - 📦 Товаров на складе: 0
+2025-06-20 21:35:16,405 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-20 21:35:16,405 - aiogram.dispatcher - INFO - Start polling
+2025-06-20 21:35:16,638 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-20 21:35:27,849 - aiogram.event - INFO - Update id=729246665 is not handled. Duration 0 ms by bot id=8143304952
+2025-06-20 21:35:27,849 - aiogram.event - ERROR - Cause exception while process update id=729246665 by bot id=8143304952
+ValidationError: 4 validation errors for ReplyKeyboardMarkup
+keyboard.0.0
+  Input should be a valid dictionary or instance of KeyboardButton [type=model_type, input_value=[KeyboardButton(text='...one, request_user=None)], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+keyboard.1.0
+  Input should be a valid dictionary or instance of KeyboardButton [type=model_type, input_value=[KeyboardButton(text='...one, request_user=None)], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+keyboard.2.0
+  Input should be a valid dictionary or instance of KeyboardButton [type=model_type, input_value=[KeyboardButton(text='...one, request_user=None)], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+keyboard.3.0
+  Input should be a valid dictionary or instance of KeyboardButton [type=model_type, input_value=[KeyboardButton(text='...one, request_user=None)], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+Traceback (most recent call last):
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\SoraEcoSystems.py", line 1167, in back_to_main_menu
+    await message.answer("Главное меню:", reply_markup=get_main_keyboard(message.from_user.id))
+                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\SoraEcoSystems.py", line 355, in get_main_keyboard
+    return create_keyboard(buttons)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\SoraEcoSystems.py", line 344, in create_keyboard
+    return ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\pydantic\main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 4 validation errors for ReplyKeyboardMarkup
+keyboard.0.0
+  Input should be a valid dictionary or instance of KeyboardButton [type=model_type, input_value=[KeyboardButton(text='...one, request_user=None)], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+keyboard.1.0
+  Input should be a valid dictionary or instance of KeyboardButton [type=model_type, input_value=[KeyboardButton(text='...one, request_user=None)], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+keyboard.2.0
+  Input should be a valid dictionary or instance of KeyboardButton [type=model_type, input_value=[KeyboardButton(text='...one, request_user=None)], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+keyboard.3.0
+  Input should be a valid dictionary or instance of KeyboardButton [type=model_type, input_value=[KeyboardButton(text='...one, request_user=None)], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+2025-06-20 21:35:38,091 - aiogram.event - INFO - Update id=729246666 is not handled. Duration 1967 ms by bot id=8143304952
+2025-06-20 21:35:38,091 - aiogram.event - ERROR - Cause exception while process update id=729246666 by bot id=8143304952
+ValidationError: 4 validation errors for ReplyKeyboardMarkup
+keyboard.0.0
+  Input should be a valid dictionary or instance of KeyboardButton [type=model_type, input_value=[KeyboardButton(text='...one, request_user=None)], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+keyboard.1.0
+  Input should be a valid dictionary or instance of KeyboardButton [type=model_type, input_value=[KeyboardButton(text='...one, request_user=None)], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+keyboard.2.0
+  Input should be a valid dictionary or instance of KeyboardButton [type=model_type, input_value=[KeyboardButton(text='...one, request_user=None)], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+keyboard.3.0
+  Input should be a valid dictionary or instance of KeyboardButton [type=model_type, input_value=[KeyboardButton(text='...one, request_user=None)], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+Traceback (most recent call last):
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\SoraEcoSystems.py", line 523, in start
+    await message.answer("🛒 Добро пожаловать в складской бот!", reply_markup=get_main_keyboard(user_id))
+                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\SoraEcoSystems.py", line 355, in get_main_keyboard
+    return create_keyboard(buttons)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\SoraEcoSystems.py", line 344, in create_keyboard
+    return ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tweopi\PycharmProjects\SoraEcoSystems\.venv1\Lib\site-packages\pydantic\main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 4 validation errors for ReplyKeyboardMarkup
+keyboard.0.0
+  Input should be a valid dictionary or instance of KeyboardButton [type=model_type, input_value=[KeyboardButton(text='...one, request_user=None)], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+keyboard.1.0
+  Input should be a valid dictionary or instance of KeyboardButton [type=model_type, input_value=[KeyboardButton(text='...one, request_user=None)], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+keyboard.2.0
+  Input should be a valid dictionary or instance of KeyboardButton [type=model_type, input_value=[KeyboardButton(text='...one, request_user=None)], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+keyboard.3.0
+  Input should be a valid dictionary or instance of KeyboardButton [type=model_type, input_value=[KeyboardButton(text='...one, request_user=None)], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+2025-06-20 21:35:53,021 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-20 21:35:53,273 - __main__ - INFO - ==================================================
+2025-06-20 21:35:53,273 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-20 21:35:53,273 - __main__ - INFO - ⏰ Время остановки: 2025-06-20 21:35:53
+2025-06-20 21:35:53,273 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-20 21:35:53,273 - __main__ - INFO - ==================================================
+2025-06-20 21:35:53,274 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-20 21:35:53,274 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-20 21:35:56,431 - __main__ - INFO - ==================================================
+2025-06-20 21:35:56,431 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-20 21:35:56,431 - __main__ - INFO - ⏰ Время запуска: 2025-06-20 21:35:56
+2025-06-20 21:35:56,431 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-20 21:35:56,431 - __main__ - INFO - 👥 Пользователей в системе: 1
+2025-06-20 21:35:56,431 - __main__ - INFO - ├ Одобренные: 1
+2025-06-20 21:35:56,431 - __main__ - INFO - └ Ожидают одобрения: 0
+2025-06-20 21:35:56,431 - __main__ - INFO - 📦 Товаров на складе: 0
+2025-06-20 21:35:56,431 - __main__ - INFO - 📝 Лог-записей действий: 0
+2025-06-20 21:35:56,431 - __main__ - INFO - ==================================================
+2025-06-20 21:35:56,431 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-20 21:35:56,431 - aiogram.dispatcher - INFO - Start polling
+2025-06-20 21:35:56,660 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-20 21:38:15,642 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-20 21:38:15,905 - __main__ - INFO - ==================================================
+2025-06-20 21:38:15,905 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-20 21:38:15,905 - __main__ - INFO - ⏰ Время остановки: 2025-06-20 21:38:15
+2025-06-20 21:38:15,905 - __main__ - INFO - ⚡ Активность за 24 часа: 0 действий
+2025-06-20 21:38:15,905 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-20 21:38:15,906 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-20 21:38:15,906 - __main__ - INFO - ==================================================
+2025-06-20 21:38:15,906 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-20 21:38:15,906 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-20 21:38:15,906 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-20 21:38:15,906 - __main__ - INFO - 👋 Программа завершена
+2025-06-20 21:38:18,316 - __main__ - INFO - ==================================================
+2025-06-20 21:38:18,316 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-20 21:38:18,316 - __main__ - INFO - ⏰ Время запуска: 2025-06-20 21:38:18
+2025-06-20 21:38:18,316 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-20 21:38:18,316 - __main__ - INFO - 👥 Пользователей в системе: 1
+2025-06-20 21:38:18,316 - __main__ - INFO - ├ Одобренные: 1
+2025-06-20 21:38:18,316 - __main__ - INFO - └ Ожидают одобрения: 0
+2025-06-20 21:38:18,316 - __main__ - INFO - 📦 Товаров на складе: 0
+2025-06-20 21:38:18,316 - __main__ - INFO - 📝 Лог-записей действий: 0
+2025-06-20 21:38:18,316 - __main__ - INFO - ==================================================
+2025-06-20 21:38:18,316 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-20 21:38:18,317 - aiogram.dispatcher - INFO - Start polling
+2025-06-20 21:38:18,555 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-20 21:44:34,446 - aiogram.event - INFO - Update id=729246667 is handled. Duration 0 ms by bot id=8143304952
+2025-06-20 21:44:43,631 - aiogram.event - INFO - Update id=729246668 is handled. Duration 0 ms by bot id=8143304952
+2025-06-20 21:48:01,521 - aiogram.event - INFO - Update id=729246669 is handled. Duration 0 ms by bot id=8143304952
+2025-06-20 21:49:52,443 - aiogram.event - INFO - Update id=729246670 is handled. Duration 0 ms by bot id=8143304952
+2025-06-20 21:50:21,798 - aiogram.event - INFO - Update id=729246671 is handled. Duration 0 ms by bot id=8143304952
+2025-06-20 21:50:27,888 - aiogram.event - INFO - Update id=729246672 is handled. Duration 15 ms by bot id=8143304952
+2025-06-20 21:55:27,043 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 1236] Подключение к сети было разорвано локальной системой
+2025-06-20 21:55:27,044 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8143304952)
+2025-06-20 21:55:38,269 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8143304952)
