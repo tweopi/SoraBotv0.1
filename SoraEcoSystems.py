@@ -353,6 +353,89 @@ async def log_action(user_id, action, details=""):
         logger.error(f"Ошибка логирования действия: {e}")
 
 
+# ===== ФУНКЦИЯ АВТОМАТИЧЕСКОЙ РЕГИСТРАЦИИ =====
+async def register_if_needed(message: types.Message) -> bool:
+    user_id = message.from_user.id
+    username = message.from_user.username
+    first_name = message.from_user.first_name
+
+    # Если пользователь не зарегистрирован
+    if not is_registered(user_id):
+        # Регистрируем нового пользователя
+        if register_user(user_id, username, first_name):
+            await message.answer(
+                "✅ Вы успешно зарегистрированы!\n"
+                "⏳ Ожидайте подтверждения доступа администратором."
+            )
+            logger.info(f"Зарегистрирован новый пользователь: {user_id}")
+
+            # Уведомляем администратора
+            admin_notification = (
+                f"👤 Новый пользователь!\n"
+                f"🆔 ID: {user_id}\n"
+                f"👨‍💼 Имя: {first_name}\n"
+                f"📎 Username: @{username}\n\n"
+                f"Для одобрения доступа используйте админ-панель."
+            )
+            try:
+                await bot.send_message(MAIN_ADMIN_ID, admin_notification)
+            except Exception as e:
+                logger.error(f"Ошибка отправки уведомления админу: {e}")
+            return True
+        else:
+            await message.answer("❌ Ошибка регистрации. Обратитесь к администратору.")
+            return False
+    return True
+
+
+# ===== ОБНОВЛЕННЫЕ MIDDLEWARE ДЛЯ ПРОВЕРКИ ДОСТУПА =====
+def access_required(func):
+    async def wrapper(message: types.Message):
+        user_id = message.from_user.id
+
+        # Автоматическая регистрация при необходимости
+        if not (await register_if_needed(message)):
+            return
+
+        # Проверка бана
+        if is_banned(user_id):
+            await message.answer("❌ Ваш доступ к боту заблокирован.")
+            return
+
+        # Проверка одобрения (главный администратор всегда одобрен)
+        if not is_approved(user_id) and user_id != MAIN_ADMIN_ID:
+            await message.answer("❌ Ваш доступ к боту еще не подтвержден администратором. Ожидайте одобрения.")
+            return
+
+        return await func(message)
+
+    return wrapper
+
+
+def admin_required(func):
+    async def wrapper(message: types.Message):
+        user_id = message.from_user.id
+
+        # Автоматическая регистрация при необходимости
+        if not (await register_if_needed(message)):
+            return
+
+        if is_banned(user_id):
+            await message.answer("❌ Ваш доступ к боту заблокирован.")
+            return
+
+        if not is_approved(user_id) and user_id != MAIN_ADMIN_ID:
+            await message.answer("❌ Ваш доступ к боту еще не подтвержден администратором.")
+            return
+
+        if not is_admin(user_id):
+            await message.answer("❌ У вас нет прав администратора для выполнения этого действия.")
+            return
+        return await func(message)
+
+    return wrapper
+
+
 # ===== КЛАВИАТУРЫ =====
 def get_main_keyboard(user_id):
     keyboard = [
@@ -462,59 +545,9 @@ def get_skip_keyboard():
     )
 
 
-# ===== ОБНОВЛЕННЫЙ MIDDLEWARE ДЛЯ ПРОВЕРКИ ДОСТУПА =====
-def access_required(func):
-    async def wrapper(message: types.Message):
-        user_id = message.from_user.id
-
-        # Проверка регистрации
-        if not is_registered(user_id):
-            await message.answer("❌ Вы не зарегистрированы в системе. Обратитесь к администратору.")
-            logger.warning(f"Попытка доступа незарегистрированного пользователя: {user_id}")
-            return
-
-        # Проверка бана
-        if is_banned(user_id):
-            await message.answer("❌ Ваш доступ к боту заблокирован.")
-            return
-
-        # Проверка одобрения (главный администратор всегда одобрен)
-        if not is_approved(user_id) and user_id != MAIN_ADMIN_ID:
-            await message.answer("❌ Ваш доступ к боту еще не подтвержден администратором. Ожидайте одобрения.")
-            return
-
-        return await func(message)
-
-    return wrapper
-
-
-def admin_required(func):
-    async def wrapper(message: types.Message):
-        user_id = message.from_user.id
-
-        # Проверка регистрации
-        if not is_registered(user_id):
-            await message.answer("❌ Вы не зарегистрированы в системе. Обратитесь к администратору.")
-            return
-
-        if is_banned(user_id):
-            await message.answer("❌ Ваш доступ к боту заблокирован.")
-            return
-
-        if not is_approved(user_id) and user_id != MAIN_ADMIN_ID:
-            await message.answer("❌ Ваш доступ к боту еще не подтвержден администратором.")
-            return
-
-        if not is_admin(user_id):
-            await message.answer("❌ У вас нет прав администратора для выполнения этого действия.")
-            return
-        return await func(message)
-
-    return wrapper
-
-
 # ===== КОМАНДА /start =====
 @dp.message(Command("start"))
+@access_required
 async def start(message: types.Message):
     user_id = message.from_user.id
     username = message.from_user.username
@@ -528,29 +561,6 @@ async def start(message: types.Message):
         )
         conn.commit()
         logger.info(f"Главный администратор зарегистрирован: {user_id}")
-
-    # Проверяем, зарегистрирован ли пользователь
-    if not is_registered(user_id):
-        # Регистрируем нового пользователя
-        register_user(user_id, username, first_name)
-        await message.answer(
-            "✅ Вы успешно зарегистрированы!\n"
-            "⏳ Ожидайте подтверждения доступа администратором."
-        )
-        logger.info(f"Зарегистрирован новый пользователь: {user_id}")
-        # Уведомляем администратора
-        admin_notification = (
-            f"👤 Новый пользователь!\n"
-            f"🆔 ID: {user_id}\n"
-            f"👨‍💼 Имя: {first_name}\n"
-            f"📎 Username: @{username}\n\n"
-            f"Для одобрения доступа используйте админ-панель."
-        )
-        try:
-            await bot.send_message(MAIN_ADMIN_ID, admin_notification)
-        except Exception as e:
-            logger.error(f"Ошибка отправки уведомления админу: {e}")
-        return
 
     # Проверяем, заблокирован ли пользователь
     if is_banned(user_id):
@@ -1802,7 +1812,7 @@ async def edit_product_selected(message: types.Message):
                 keyboard=[
                     [KeyboardButton(text="🖊 Изменить название")],
                     [KeyboardButton(text="🔢 Изменить количество")],
-                    [KeyboardButton(text="🏷 Изменить категорию")],
+                    [KeyboardButton(text="🏷 Изменить категориу")],
                     [KeyboardButton(text="🔙 К списку товаров")]
                 ],
                 resize_keyboard=True

@@ -2041,3 +2041,623 @@ keyboard.3.0
 2025-06-20 21:55:27,043 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 1236] Подключение к сети было разорвано локальной системой
 2025-06-20 21:55:27,044 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8143304952)
 2025-06-20 21:55:38,269 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8143304952)
+2025-06-20 22:08:31,950 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-20 22:08:32,201 - __main__ - INFO - ==================================================
+2025-06-20 22:08:32,201 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-20 22:08:32,201 - __main__ - INFO - ⏰ Время остановки: 2025-06-20 22:08:32
+2025-06-20 22:08:32,202 - __main__ - INFO - ⚡ Активность за 24 часа: 0 действий
+2025-06-20 22:08:32,202 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-20 22:08:32,202 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-20 22:08:32,203 - __main__ - INFO - ==================================================
+2025-06-20 22:08:32,203 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-20 22:08:32,204 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-20 22:08:32,207 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-20 22:08:32,207 - __main__ - INFO - 👋 Программа завершена
+2025-06-20 22:08:34,763 - __main__ - INFO - ==================================================
+2025-06-20 22:08:34,763 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-20 22:08:34,763 - __main__ - INFO - ⏰ Время запуска: 2025-06-20 22:08:34
+2025-06-20 22:08:34,763 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-20 22:08:34,763 - __main__ - INFO - 👥 Пользователей в системе: 1
+2025-06-20 22:08:34,763 - __main__ - INFO - ├ Одобренные: 1
+2025-06-20 22:08:34,763 - __main__ - INFO - └ Ожидают одобрения: 0
+2025-06-20 22:08:34,763 - __main__ - INFO - 📦 Товаров на складе: 0
+2025-06-20 22:08:34,763 - __main__ - INFO - 📝 Лог-записей действий: 0
+2025-06-20 22:08:34,763 - __main__ - INFO - ==================================================
+2025-06-20 22:08:34,763 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-20 22:08:34,763 - aiogram.dispatcher - INFO - Start polling
+2025-06-20 22:08:34,997 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-20 22:08:58,336 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-20 22:08:58,587 - __main__ - INFO - ==================================================
+2025-06-20 22:08:58,587 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-20 22:08:58,587 - __main__ - INFO - ⏰ Время остановки: 2025-06-20 22:08:58
+2025-06-20 22:08:58,587 - __main__ - INFO - ⚡ Активность за 24 часа: 0 действий
+2025-06-20 22:08:58,587 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-20 22:08:58,587 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-20 22:08:58,587 - __main__ - INFO - ==================================================
+2025-06-20 22:08:58,587 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-20 22:08:58,587 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-20 22:08:58,588 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-20 22:08:58,588 - __main__ - INFO - 👋 Программа завершена
+2025-06-20 22:09:07,370 - __main__ - INFO - ==================================================
+2025-06-20 22:09:07,370 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-20 22:09:07,370 - __main__ - INFO - ⏰ Время запуска: 2025-06-20 22:09:07
+2025-06-20 22:09:07,370 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-20 22:09:07,371 - __main__ - INFO - 👥 Пользователей в системе: 1
+2025-06-20 22:09:07,371 - __main__ - INFO - ├ Одобренные: 1
+2025-06-20 22:09:07,371 - __main__ - INFO - └ Ожидают одобрения: 0
+2025-06-20 22:09:07,371 - __main__ - INFO - 📦 Товаров на складе: 0
+2025-06-20 22:09:07,371 - __main__ - INFO - 📝 Лог-записей действий: 0
+2025-06-20 22:09:07,371 - __main__ - INFO - ==================================================
+2025-06-20 22:09:07,371 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-20 22:09:07,371 - aiogram.dispatcher - INFO - Start polling
+2025-06-20 22:09:07,598 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-20 22:09:43,602 - aiogram.event - INFO - Update id=729246673 is handled. Duration 16 ms by bot id=8143304952
+2025-06-20 22:10:11,083 - aiogram.event - INFO - Update id=729246674 is handled. Duration 16 ms by bot id=8143304952
+2025-06-20 22:10:19,082 - aiogram.event - INFO - Update id=729246675 is handled. Duration 0 ms by bot id=8143304952
+2025-06-20 22:10:23,550 - aiogram.event - INFO - Update id=729246676 is handled. Duration 0 ms by bot id=8143304952
+2025-06-20 22:10:26,926 - aiogram.event - INFO - Update id=729246677 is handled. Duration 0 ms by bot id=8143304952
+2025-06-20 22:10:31,612 - aiogram.event - INFO - Update id=729246678 is handled. Duration 0 ms by bot id=8143304952
+2025-06-20 22:19:06,687 - __main__ - INFO - Действие пользователя 7873867301: Запуск бота - Пользователь вошел в систему
+2025-06-20 22:19:06,691 - aiogram.event - INFO - Update id=729246679 is handled. Duration 281 ms by bot id=8143304952
+2025-06-20 22:19:07,904 - aiogram.event - INFO - Update id=729246680 is handled. Duration 108 ms by bot id=8143304952
+2025-06-20 22:44:29,723 - aiogram.event - INFO - Update id=729246681 is handled. Duration 0 ms by bot id=8143304952
+2025-06-20 22:44:34,582 - aiogram.event - INFO - Update id=729246682 is handled. Duration 0 ms by bot id=8143304952
+2025-06-20 22:44:38,590 - aiogram.event - INFO - Update id=729246683 is handled. Duration 0 ms by bot id=8143304952
+2025-06-20 22:44:42,996 - aiogram.event - INFO - Update id=729246684 is handled. Duration 16 ms by bot id=8143304952
+2025-06-20 22:47:21,690 - aiogram.event - INFO - Update id=729246685 is handled. Duration 0 ms by bot id=8143304952
+2025-06-20 23:10:47,450 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 1236] Подключение к сети было разорвано локальной системой
+2025-06-20 23:10:47,451 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8143304952)
+2025-06-20 23:10:58,700 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8143304952)
+2025-06-20 23:12:03,734 - aiogram.event - INFO - Update id=729246686 is handled. Duration 0 ms by bot id=8143304952
+2025-06-20 23:12:07,418 - aiogram.event - INFO - Update id=729246687 is handled. Duration 0 ms by bot id=8143304952
+2025-06-20 23:21:03,337 - aiogram.event - INFO - Update id=729246688 is handled. Duration 14 ms by bot id=8143304952
+2025-06-20 23:21:22,569 - aiogram.event - INFO - Update id=729246689 is handled. Duration 0 ms by bot id=8143304952
+2025-06-20 23:21:27,102 - aiogram.event - INFO - Update id=729246690 is handled. Duration 16 ms by bot id=8143304952
+2025-06-20 23:23:07,581 - aiogram.event - INFO - Update id=729246691 is handled. Duration 0 ms by bot id=8143304952
+2025-06-20 23:23:39,477 - aiogram.event - INFO - Update id=729246692 is handled. Duration 16 ms by bot id=8143304952
+2025-06-20 23:23:59,805 - aiogram.event - INFO - Update id=729246693 is handled. Duration 15 ms by bot id=8143304952
+2025-06-20 23:24:00,486 - aiogram.event - INFO - Update id=729246694 is handled. Duration 0 ms by bot id=8143304952
+2025-06-20 23:24:03,354 - aiogram.event - INFO - Update id=729246695 is handled. Duration 16 ms by bot id=8143304952
+2025-06-20 23:24:06,111 - aiogram.event - INFO - Update id=729246696 is handled. Duration 0 ms by bot id=8143304952
+2025-06-20 23:24:07,620 - aiogram.event - INFO - Update id=729246697 is handled. Duration 16 ms by bot id=8143304952
+2025-06-20 23:37:36,868 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 1236] Подключение к сети было разорвано локальной системой
+2025-06-20 23:37:36,869 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8143304952)
+2025-06-20 23:37:48,121 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8143304952)
+2025-06-21 00:10:06,307 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-06-21 00:10:06,307 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8143304952)
+2025-06-21 00:10:17,627 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8143304952)
+2025-06-21 00:13:10,765 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-06-21 00:13:10,765 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8143304952)
+2025-06-21 00:13:11,855 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:13:11,855 - aiogram.dispatcher - WARNING - Sleep for 1.221200 seconds and try again... (tryings = 1, bot id = 8143304952)
+2025-06-21 00:13:13,169 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:13:13,169 - aiogram.dispatcher - WARNING - Sleep for 1.634960 seconds and try again... (tryings = 2, bot id = 8143304952)
+2025-06-21 00:13:14,887 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:13:14,887 - aiogram.dispatcher - WARNING - Sleep for 2.271574 seconds and try again... (tryings = 3, bot id = 8143304952)
+2025-06-21 00:13:17,257 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:13:17,258 - aiogram.dispatcher - WARNING - Sleep for 2.839018 seconds and try again... (tryings = 4, bot id = 8143304952)
+2025-06-21 00:13:20,170 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:13:20,170 - aiogram.dispatcher - WARNING - Sleep for 3.654359 seconds and try again... (tryings = 5, bot id = 8143304952)
+2025-06-21 00:13:23,909 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:13:23,909 - aiogram.dispatcher - WARNING - Sleep for 4.664331 seconds and try again... (tryings = 6, bot id = 8143304952)
+2025-06-21 00:13:28,656 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:13:28,656 - aiogram.dispatcher - WARNING - Sleep for 4.925281 seconds and try again... (tryings = 7, bot id = 8143304952)
+2025-06-21 00:13:33,653 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:13:33,653 - aiogram.dispatcher - WARNING - Sleep for 5.111072 seconds and try again... (tryings = 8, bot id = 8143304952)
+2025-06-21 00:13:38,854 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:13:38,854 - aiogram.dispatcher - WARNING - Sleep for 4.863304 seconds and try again... (tryings = 9, bot id = 8143304952)
+2025-06-21 00:13:43,788 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:13:43,788 - aiogram.dispatcher - WARNING - Sleep for 5.033076 seconds and try again... (tryings = 10, bot id = 8143304952)
+2025-06-21 00:13:48,902 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:13:48,902 - aiogram.dispatcher - WARNING - Sleep for 5.046102 seconds and try again... (tryings = 11, bot id = 8143304952)
+2025-06-21 00:13:54,033 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:13:54,033 - aiogram.dispatcher - WARNING - Sleep for 4.959453 seconds and try again... (tryings = 12, bot id = 8143304952)
+2025-06-21 00:13:59,073 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:13:59,073 - aiogram.dispatcher - WARNING - Sleep for 5.087181 seconds and try again... (tryings = 13, bot id = 8143304952)
+2025-06-21 00:14:04,253 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:14:04,253 - aiogram.dispatcher - WARNING - Sleep for 5.069482 seconds and try again... (tryings = 14, bot id = 8143304952)
+2025-06-21 00:14:09,404 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:14:09,404 - aiogram.dispatcher - WARNING - Sleep for 4.847649 seconds and try again... (tryings = 15, bot id = 8143304952)
+2025-06-21 00:14:14,344 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:14:14,344 - aiogram.dispatcher - WARNING - Sleep for 5.149297 seconds and try again... (tryings = 16, bot id = 8143304952)
+2025-06-21 00:14:19,583 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:14:19,583 - aiogram.dispatcher - WARNING - Sleep for 4.891701 seconds and try again... (tryings = 17, bot id = 8143304952)
+2025-06-21 00:14:24,563 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:14:24,563 - aiogram.dispatcher - WARNING - Sleep for 5.049072 seconds and try again... (tryings = 18, bot id = 8143304952)
+2025-06-21 00:14:29,693 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:14:29,693 - aiogram.dispatcher - WARNING - Sleep for 5.010091 seconds and try again... (tryings = 19, bot id = 8143304952)
+2025-06-21 00:14:34,787 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:14:34,787 - aiogram.dispatcher - WARNING - Sleep for 4.967668 seconds and try again... (tryings = 20, bot id = 8143304952)
+2025-06-21 00:14:39,835 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:14:39,835 - aiogram.dispatcher - WARNING - Sleep for 4.942792 seconds and try again... (tryings = 21, bot id = 8143304952)
+2025-06-21 00:14:44,857 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:14:44,857 - aiogram.dispatcher - WARNING - Sleep for 5.103216 seconds and try again... (tryings = 22, bot id = 8143304952)
+2025-06-21 00:14:50,048 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:14:50,048 - aiogram.dispatcher - WARNING - Sleep for 5.125654 seconds and try again... (tryings = 23, bot id = 8143304952)
+2025-06-21 00:14:55,265 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:14:55,265 - aiogram.dispatcher - WARNING - Sleep for 4.822079 seconds and try again... (tryings = 24, bot id = 8143304952)
+2025-06-21 00:15:00,158 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:15:00,159 - aiogram.dispatcher - WARNING - Sleep for 5.130523 seconds and try again... (tryings = 25, bot id = 8143304952)
+2025-06-21 00:15:05,376 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:15:05,376 - aiogram.dispatcher - WARNING - Sleep for 5.096338 seconds and try again... (tryings = 26, bot id = 8143304952)
+2025-06-21 00:15:10,544 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:15:10,544 - aiogram.dispatcher - WARNING - Sleep for 5.006095 seconds and try again... (tryings = 27, bot id = 8143304952)
+2025-06-21 00:15:15,629 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:15:15,629 - aiogram.dispatcher - WARNING - Sleep for 5.119364 seconds and try again... (tryings = 28, bot id = 8143304952)
+2025-06-21 00:15:20,830 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:15:20,830 - aiogram.dispatcher - WARNING - Sleep for 5.079715 seconds and try again... (tryings = 29, bot id = 8143304952)
+2025-06-21 00:15:25,993 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:15:25,993 - aiogram.dispatcher - WARNING - Sleep for 5.123775 seconds and try again... (tryings = 30, bot id = 8143304952)
+2025-06-21 00:15:31,203 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:15:31,204 - aiogram.dispatcher - WARNING - Sleep for 4.999014 seconds and try again... (tryings = 31, bot id = 8143304952)
+2025-06-21 00:15:36,282 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:15:36,282 - aiogram.dispatcher - WARNING - Sleep for 4.970081 seconds and try again... (tryings = 32, bot id = 8143304952)
+2025-06-21 00:15:41,337 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:15:41,337 - aiogram.dispatcher - WARNING - Sleep for 5.096028 seconds and try again... (tryings = 33, bot id = 8143304952)
+2025-06-21 00:15:46,514 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:15:46,514 - aiogram.dispatcher - WARNING - Sleep for 5.142861 seconds and try again... (tryings = 34, bot id = 8143304952)
+2025-06-21 00:15:51,737 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:15:51,738 - aiogram.dispatcher - WARNING - Sleep for 4.935969 seconds and try again... (tryings = 35, bot id = 8143304952)
+2025-06-21 00:15:56,756 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:15:56,756 - aiogram.dispatcher - WARNING - Sleep for 5.012495 seconds and try again... (tryings = 36, bot id = 8143304952)
+2025-06-21 00:16:01,845 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:16:01,846 - aiogram.dispatcher - WARNING - Sleep for 5.008480 seconds and try again... (tryings = 37, bot id = 8143304952)
+2025-06-21 00:16:06,930 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:16:06,931 - aiogram.dispatcher - WARNING - Sleep for 5.121169 seconds and try again... (tryings = 38, bot id = 8143304952)
+2025-06-21 00:16:12,139 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:16:12,139 - aiogram.dispatcher - WARNING - Sleep for 5.139365 seconds and try again... (tryings = 39, bot id = 8143304952)
+2025-06-21 00:16:17,358 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:16:17,358 - aiogram.dispatcher - WARNING - Sleep for 4.996216 seconds and try again... (tryings = 40, bot id = 8143304952)
+2025-06-21 00:16:22,425 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:16:22,425 - aiogram.dispatcher - WARNING - Sleep for 4.887077 seconds and try again... (tryings = 41, bot id = 8143304952)
+2025-06-21 00:16:27,388 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:16:27,388 - aiogram.dispatcher - WARNING - Sleep for 5.102359 seconds and try again... (tryings = 42, bot id = 8143304952)
+2025-06-21 00:16:32,568 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:16:32,568 - aiogram.dispatcher - WARNING - Sleep for 4.721938 seconds and try again... (tryings = 43, bot id = 8143304952)
+2025-06-21 00:16:37,370 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:16:37,370 - aiogram.dispatcher - WARNING - Sleep for 4.977520 seconds and try again... (tryings = 44, bot id = 8143304952)
+2025-06-21 00:16:42,425 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:16:42,426 - aiogram.dispatcher - WARNING - Sleep for 4.909223 seconds and try again... (tryings = 45, bot id = 8143304952)
+2025-06-21 00:16:47,427 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:16:47,427 - aiogram.dispatcher - WARNING - Sleep for 5.030408 seconds and try again... (tryings = 46, bot id = 8143304952)
+2025-06-21 00:16:52,548 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:16:52,549 - aiogram.dispatcher - WARNING - Sleep for 4.828646 seconds and try again... (tryings = 47, bot id = 8143304952)
+2025-06-21 00:16:57,460 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:16:57,460 - aiogram.dispatcher - WARNING - Sleep for 5.050804 seconds and try again... (tryings = 48, bot id = 8143304952)
+2025-06-21 00:17:02,593 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:17:02,594 - aiogram.dispatcher - WARNING - Sleep for 4.871459 seconds and try again... (tryings = 49, bot id = 8143304952)
+2025-06-21 00:17:07,538 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:17:07,538 - aiogram.dispatcher - WARNING - Sleep for 5.088385 seconds and try again... (tryings = 50, bot id = 8143304952)
+2025-06-21 00:17:12,715 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:17:12,715 - aiogram.dispatcher - WARNING - Sleep for 5.016924 seconds and try again... (tryings = 51, bot id = 8143304952)
+2025-06-21 00:17:17,814 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:17:17,814 - aiogram.dispatcher - WARNING - Sleep for 5.135881 seconds and try again... (tryings = 52, bot id = 8143304952)
+2025-06-21 00:17:23,035 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:17:23,035 - aiogram.dispatcher - WARNING - Sleep for 5.086572 seconds and try again... (tryings = 53, bot id = 8143304952)
+2025-06-21 00:17:28,203 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:17:28,203 - aiogram.dispatcher - WARNING - Sleep for 5.047764 seconds and try again... (tryings = 54, bot id = 8143304952)
+2025-06-21 00:17:33,328 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:17:33,328 - aiogram.dispatcher - WARNING - Sleep for 5.075708 seconds and try again... (tryings = 55, bot id = 8143304952)
+2025-06-21 00:17:38,480 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:17:38,480 - aiogram.dispatcher - WARNING - Sleep for 5.115398 seconds and try again... (tryings = 56, bot id = 8143304952)
+2025-06-21 00:17:43,674 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:17:43,674 - aiogram.dispatcher - WARNING - Sleep for 4.980975 seconds and try again... (tryings = 57, bot id = 8143304952)
+2025-06-21 00:17:48,734 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:17:48,734 - aiogram.dispatcher - WARNING - Sleep for 5.090317 seconds and try again... (tryings = 58, bot id = 8143304952)
+2025-06-21 00:17:53,907 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:17:53,908 - aiogram.dispatcher - WARNING - Sleep for 4.867594 seconds and try again... (tryings = 59, bot id = 8143304952)
+2025-06-21 00:17:58,864 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:17:58,864 - aiogram.dispatcher - WARNING - Sleep for 4.954454 seconds and try again... (tryings = 60, bot id = 8143304952)
+2025-06-21 00:18:03,889 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 00:18:03,889 - aiogram.dispatcher - WARNING - Sleep for 4.841322 seconds and try again... (tryings = 61, bot id = 8143304952)
+2025-06-21 00:18:26,005 - aiogram.dispatcher - INFO - Connection established (tryings = 62, bot id = 8143304952)
+2025-06-21 01:04:01,304 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-06-21 01:04:01,304 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8143304952)
+2025-06-21 01:04:07,404 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Указанное сетевое имя более недоступно]
+2025-06-21 01:04:07,404 - aiogram.dispatcher - WARNING - Sleep for 1.333318 seconds and try again... (tryings = 1, bot id = 8143304952)
+2025-06-21 01:04:19,137 - aiogram.dispatcher - INFO - Connection established (tryings = 2, bot id = 8143304952)
+2025-06-21 01:31:20,096 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 1236] Подключение к сети было разорвано локальной системой
+2025-06-21 01:31:20,096 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8143304952)
+2025-06-21 01:31:31,287 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8143304952)
+2025-06-21 03:03:57,069 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-21 03:03:57,322 - __main__ - INFO - ==================================================
+2025-06-21 03:03:57,322 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-21 03:03:57,322 - __main__ - INFO - ⏰ Время остановки: 2025-06-21 03:03:57
+2025-06-21 03:03:57,323 - __main__ - INFO - ⚡ Активность за 24 часа: 1 действий
+2025-06-21 03:03:57,323 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-21 03:03:57,324 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-21 03:03:57,324 - __main__ - INFO - ==================================================
+2025-06-21 03:03:57,324 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-21 03:03:57,326 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-21 03:03:57,329 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-21 03:03:57,329 - __main__ - INFO - 👋 Программа завершена
+2025-06-21 03:04:00,033 - __main__ - INFO - ==================================================
+2025-06-21 03:04:00,033 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-21 03:04:00,033 - __main__ - INFO - ⏰ Время запуска: 2025-06-21 03:04:00
+2025-06-21 03:04:00,033 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-21 03:04:00,033 - __main__ - INFO - 👥 Пользователей в системе: 1
+2025-06-21 03:04:00,033 - __main__ - INFO - ├ Одобренные: 1
+2025-06-21 03:04:00,033 - __main__ - INFO - └ Ожидают одобрения: 0
+2025-06-21 03:04:00,033 - __main__ - INFO - 📦 Товаров на складе: 0
+2025-06-21 03:04:00,033 - __main__ - INFO - 📝 Лог-записей действий: 1
+2025-06-21 03:04:00,033 - __main__ - INFO - ==================================================
+2025-06-21 03:04:00,033 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-21 03:04:00,033 - aiogram.dispatcher - INFO - Start polling
+2025-06-21 03:04:00,282 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-21 04:04:16,551 - aiogram.event - INFO - Update id=729246698 is handled. Duration 282 ms by bot id=8143304952
+2025-06-21 04:04:18,258 - aiogram.event - INFO - Update id=729246699 is handled. Duration 108 ms by bot id=8143304952
+2025-06-21 04:04:20,767 - aiogram.event - INFO - Update id=729246700 is handled. Duration 92 ms by bot id=8143304952
+2025-06-21 04:04:21,852 - aiogram.event - INFO - Update id=729246701 is handled. Duration 108 ms by bot id=8143304952
+2025-06-21 04:04:23,299 - aiogram.event - INFO - Update id=729246702 is handled. Duration 93 ms by bot id=8143304952
+2025-06-21 07:56:17,850 - aiogram.event - INFO - Update id=729246703 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 08:47:50,913 - aiogram.event - INFO - Update id=729246704 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 08:48:32,217 - aiogram.event - INFO - Update id=729246705 is handled. Duration 14 ms by bot id=8143304952
+2025-06-21 08:48:52,324 - aiogram.event - INFO - Update id=729246706 is handled. Duration 16 ms by bot id=8143304952
+2025-06-21 10:53:52,605 - aiogram.event - INFO - Update id=729246707 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 10:53:59,521 - aiogram.event - INFO - Update id=729246708 is handled. Duration 16 ms by bot id=8143304952
+2025-06-21 10:54:07,085 - aiogram.event - INFO - Update id=729246709 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 10:54:13,047 - aiogram.event - INFO - Update id=729246710 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 10:54:19,846 - aiogram.event - INFO - Update id=729246711 is handled. Duration 16 ms by bot id=8143304952
+2025-06-21 10:54:24,195 - aiogram.event - INFO - Update id=729246712 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 10:54:31,690 - aiogram.event - INFO - Update id=729246713 is handled. Duration 14 ms by bot id=8143304952
+2025-06-21 10:54:35,575 - aiogram.event - INFO - Update id=729246714 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 10:54:44,554 - aiogram.event - INFO - Update id=729246715 is handled. Duration 16 ms by bot id=8143304952
+2025-06-21 11:42:05,479 - aiogram.event - INFO - Update id=729246716 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 11:42:20,253 - aiogram.event - INFO - Update id=729246717 is handled. Duration 16 ms by bot id=8143304952
+2025-06-21 11:42:28,591 - aiogram.event - INFO - Update id=729246718 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 11:42:30,599 - aiogram.event - INFO - Update id=729246719 is handled. Duration 16 ms by bot id=8143304952
+2025-06-21 11:42:30,952 - aiogram.event - INFO - Update id=729246720 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 11:42:35,565 - aiogram.event - INFO - Update id=729246721 is handled. Duration 14 ms by bot id=8143304952
+2025-06-21 11:42:51,141 - aiogram.event - INFO - Update id=729246722 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 12:39:13,514 - aiogram.event - INFO - Update id=729246723 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 12:39:15,612 - aiogram.event - INFO - Update id=729246724 is handled. Duration 15 ms by bot id=8143304952
+2025-06-21 15:04:42,237 - aiogram.event - INFO - Update id=729246725 is handled. Duration 15 ms by bot id=8143304952
+2025-06-21 15:17:25,535 - aiogram.event - INFO - Update id=729246726 is handled. Duration 15 ms by bot id=8143304952
+2025-06-21 15:17:33,502 - aiogram.event - INFO - Update id=729246727 is handled. Duration 16 ms by bot id=8143304952
+2025-06-21 15:18:15,922 - aiogram.event - INFO - Update id=729246728 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 15:18:20,023 - aiogram.event - INFO - Update id=729246729 is handled. Duration 16 ms by bot id=8143304952
+2025-06-21 15:18:27,426 - aiogram.event - INFO - Update id=729246730 is handled. Duration 16 ms by bot id=8143304952
+2025-06-21 15:19:11,007 - aiogram.event - INFO - Update id=729246731 is handled. Duration 16 ms by bot id=8143304952
+2025-06-21 15:19:15,371 - aiogram.event - INFO - Update id=729246732 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 16:22:10,683 - aiogram.event - INFO - Update id=729246733 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 16:22:26,733 - aiogram.event - INFO - Update id=729246734 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 16:24:57,294 - aiogram.event - INFO - Update id=729246735 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 16:25:02,650 - aiogram.event - INFO - Update id=729246736 is handled. Duration 16 ms by bot id=8143304952
+2025-06-21 16:25:12,818 - aiogram.event - INFO - Update id=729246737 is handled. Duration 14 ms by bot id=8143304952
+2025-06-21 16:25:19,232 - aiogram.event - INFO - Update id=729246738 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 18:55:06,804 - aiogram.event - INFO - Update id=729246739 is handled. Duration 16 ms by bot id=8143304952
+2025-06-21 18:55:15,892 - aiogram.event - INFO - Update id=729246740 is handled. Duration 16 ms by bot id=8143304952
+2025-06-21 18:55:19,559 - aiogram.event - INFO - Update id=729246741 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 18:55:29,324 - aiogram.event - INFO - Update id=729246742 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 18:55:35,306 - aiogram.event - INFO - Update id=729246743 is handled. Duration 16 ms by bot id=8143304952
+2025-06-21 18:55:47,501 - aiogram.event - INFO - Update id=729246744 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 18:55:51,138 - aiogram.event - INFO - Update id=729246745 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 18:56:13,882 - aiogram.event - INFO - Update id=729246746 is handled. Duration 16 ms by bot id=8143304952
+2025-06-21 18:56:29,083 - aiogram.event - INFO - Update id=729246747 is handled. Duration 16 ms by bot id=8143304952
+2025-06-21 18:56:39,758 - aiogram.event - INFO - Update id=729246748 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 18:56:45,066 - aiogram.event - INFO - Update id=729246749 is handled. Duration 14 ms by bot id=8143304952
+2025-06-21 18:57:15,816 - aiogram.event - INFO - Update id=729246750 is handled. Duration 14 ms by bot id=8143304952
+2025-06-21 18:57:20,392 - aiogram.event - INFO - Update id=729246751 is handled. Duration 16 ms by bot id=8143304952
+2025-06-21 18:57:27,034 - aiogram.event - INFO - Update id=729246752 is handled. Duration 15 ms by bot id=8143304952
+2025-06-21 18:57:30,211 - aiogram.event - INFO - Update id=729246753 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 18:57:57,650 - aiogram.event - INFO - Update id=729246754 is handled. Duration 16 ms by bot id=8143304952
+2025-06-21 19:04:00,936 - aiogram.event - INFO - Update id=729246755 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 19:07:23,802 - aiogram.event - INFO - Update id=729246756 is handled. Duration 16 ms by bot id=8143304952
+2025-06-21 19:07:34,607 - aiogram.event - INFO - Update id=729246757 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 19:07:40,584 - aiogram.event - INFO - Update id=729246758 is handled. Duration 16 ms by bot id=8143304952
+2025-06-21 19:07:44,778 - aiogram.event - INFO - Update id=729246759 is handled. Duration 16 ms by bot id=8143304952
+2025-06-21 19:08:04,316 - aiogram.event - INFO - Update id=729246760 is handled. Duration 30 ms by bot id=8143304952
+2025-06-21 19:08:04,316 - aiogram.event - INFO - Update id=729246761 is handled. Duration 30 ms by bot id=8143304952
+2025-06-21 19:08:04,316 - aiogram.event - INFO - Update id=729246762 is handled. Duration 30 ms by bot id=8143304952
+2025-06-21 19:08:06,176 - aiogram.event - INFO - Update id=729246763 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 19:11:53,713 - aiogram.event - INFO - Update id=729246764 is handled. Duration 16 ms by bot id=8143304952
+2025-06-21 19:11:56,614 - aiogram.event - INFO - Update id=729246765 is handled. Duration 15 ms by bot id=8143304952
+2025-06-21 19:12:10,391 - aiogram.event - INFO - Update id=729246766 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 19:12:51,986 - aiogram.event - INFO - Update id=729246767 is handled. Duration 15 ms by bot id=8143304952
+2025-06-21 20:06:06,357 - aiogram.event - INFO - Update id=729246768 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 20:06:23,550 - aiogram.event - INFO - Update id=729246769 is handled. Duration 16 ms by bot id=8143304952
+2025-06-21 20:07:10,020 - aiogram.event - INFO - Update id=729246770 is handled. Duration 16 ms by bot id=8143304952
+2025-06-21 20:08:25,333 - aiogram.event - INFO - Update id=729246771 is handled. Duration 16 ms by bot id=8143304952
+2025-06-21 20:15:44,198 - aiogram.event - INFO - Update id=729246772 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 20:16:24,657 - aiogram.event - INFO - Update id=729246773 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 20:16:31,951 - aiogram.event - INFO - Update id=729246774 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 20:28:38,067 - aiogram.event - INFO - Update id=729246775 is handled. Duration 14 ms by bot id=8143304952
+2025-06-21 20:28:41,333 - aiogram.event - INFO - Update id=729246776 is handled. Duration 16 ms by bot id=8143304952
+2025-06-21 20:28:54,899 - aiogram.event - INFO - Update id=729246777 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 20:31:37,291 - aiogram.event - INFO - Update id=729246778 is handled. Duration 15 ms by bot id=8143304952
+2025-06-21 20:32:01,227 - aiogram.event - INFO - Update id=729246779 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 20:32:06,712 - aiogram.event - INFO - Update id=729246780 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 21:27:59,659 - aiogram.event - INFO - Update id=729246781 is handled. Duration 15 ms by bot id=8143304952
+2025-06-21 21:28:12,668 - aiogram.event - INFO - Update id=729246782 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 21:28:20,961 - aiogram.event - INFO - Update id=729246783 is handled. Duration 30 ms by bot id=8143304952
+2025-06-21 21:28:23,744 - aiogram.event - INFO - Update id=729246784 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 21:28:28,909 - aiogram.event - INFO - Update id=729246785 is handled. Duration 15 ms by bot id=8143304952
+2025-06-21 21:28:29,727 - aiogram.event - INFO - Update id=729246786 is handled. Duration 16 ms by bot id=8143304952
+2025-06-21 21:28:40,873 - aiogram.event - INFO - Update id=729246787 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 21:29:18,133 - aiogram.event - INFO - Update id=729246788 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 21:31:13,067 - aiogram.event - INFO - Update id=729246789 is handled. Duration 14 ms by bot id=8143304952
+2025-06-21 23:01:09,662 - aiogram.event - INFO - Update id=729246790 is handled. Duration 15 ms by bot id=8143304952
+2025-06-21 23:01:12,651 - aiogram.event - INFO - Update id=729246791 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 23:01:21,104 - aiogram.event - INFO - Update id=729246792 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 23:01:29,075 - aiogram.event - INFO - Update id=729246793 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 23:14:35,487 - aiogram.event - INFO - Update id=729246794 is handled. Duration 15 ms by bot id=8143304952
+2025-06-21 23:14:51,356 - aiogram.event - INFO - Update id=729246795 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 23:17:18,402 - aiogram.event - INFO - Update id=729246796 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 23:17:26,411 - aiogram.event - INFO - Update id=729246797 is handled. Duration 15 ms by bot id=8143304952
+2025-06-21 23:17:30,259 - aiogram.event - INFO - Update id=729246798 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 23:17:34,953 - aiogram.event - INFO - Update id=729246799 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 23:17:41,318 - aiogram.event - INFO - Update id=729246800 is handled. Duration 14 ms by bot id=8143304952
+2025-06-21 23:17:43,250 - aiogram.event - INFO - Update id=729246801 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 23:17:52,648 - aiogram.event - INFO - Update id=729246802 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 23:17:59,864 - aiogram.event - INFO - Update id=729246803 is handled. Duration 15 ms by bot id=8143304952
+2025-06-21 23:24:25,895 - aiogram.event - INFO - Update id=729246804 is handled. Duration 16 ms by bot id=8143304952
+2025-06-21 23:30:50,631 - aiogram.event - INFO - Update id=729246805 is handled. Duration 16 ms by bot id=8143304952
+2025-06-21 23:31:01,171 - aiogram.event - INFO - Update id=729246806 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 23:53:19,069 - aiogram.event - INFO - Update id=729246807 is handled. Duration 14 ms by bot id=8143304952
+2025-06-21 23:53:39,051 - aiogram.event - INFO - Update id=729246808 is handled. Duration 16 ms by bot id=8143304952
+2025-06-21 23:55:25,277 - aiogram.event - INFO - Update id=729246809 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 23:55:35,108 - aiogram.event - INFO - Update id=729246810 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 23:55:53,053 - aiogram.event - INFO - Update id=729246811 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 23:55:59,022 - aiogram.event - INFO - Update id=729246812 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 23:59:17,299 - aiogram.event - INFO - Update id=729246813 is handled. Duration 16 ms by bot id=8143304952
+2025-06-21 23:59:26,090 - aiogram.event - INFO - Update id=729246814 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 23:59:27,527 - aiogram.event - INFO - Update id=729246815 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 23:59:30,095 - aiogram.event - INFO - Update id=729246816 is handled. Duration 16 ms by bot id=8143304952
+2025-06-21 23:59:32,575 - aiogram.event - INFO - Update id=729246817 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 23:59:35,827 - aiogram.event - INFO - Update id=729246818 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 23:59:39,467 - aiogram.event - INFO - Update id=729246819 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 23:59:42,757 - aiogram.event - INFO - Update id=729246820 is handled. Duration 0 ms by bot id=8143304952
+2025-06-21 23:59:44,484 - aiogram.event - INFO - Update id=729246821 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 00:00:09,598 - aiogram.event - INFO - Update id=729246822 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 00:22:09,425 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-06-22 00:22:09,426 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8143304952)
+2025-06-22 00:22:20,625 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8143304952)
+2025-06-22 01:28:52,385 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-22 01:28:52,637 - __main__ - INFO - ==================================================
+2025-06-22 01:28:52,637 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-22 01:28:52,637 - __main__ - INFO - ⏰ Время остановки: 2025-06-22 01:28:52
+2025-06-22 01:28:52,637 - __main__ - INFO - ⚡ Активность за 24 часа: 0 действий
+2025-06-22 01:28:52,637 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-22 01:28:52,639 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-22 01:28:52,639 - __main__ - INFO - ==================================================
+2025-06-22 01:28:52,639 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-22 01:28:52,639 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-22 01:28:52,642 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-22 01:28:52,642 - __main__ - INFO - 👋 Программа завершена
+2025-06-22 01:29:03,249 - __main__ - INFO - ==================================================
+2025-06-22 01:29:03,249 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-22 01:29:03,249 - __main__ - INFO - ⏰ Время запуска: 2025-06-22 01:29:03
+2025-06-22 01:29:03,249 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-22 01:29:03,251 - __main__ - INFO - 👥 Пользователей в системе: 1
+2025-06-22 01:29:03,251 - __main__ - INFO - ├ Одобренные: 1
+2025-06-22 01:29:03,251 - __main__ - INFO - └ Ожидают одобрения: 0
+2025-06-22 01:29:03,251 - __main__ - INFO - 📦 Товаров на складе: 0
+2025-06-22 01:29:03,251 - __main__ - INFO - 📝 Лог-записей действий: 1
+2025-06-22 01:29:03,251 - __main__ - INFO - ==================================================
+2025-06-22 01:29:03,251 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-22 01:29:03,251 - aiogram.dispatcher - INFO - Start polling
+2025-06-22 01:29:03,479 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-22 06:23:24,397 - aiogram.event - INFO - Update id=729246823 is handled. Duration 32 ms by bot id=8143304952
+2025-06-22 08:48:30,299 - aiogram.event - INFO - Update id=729246824 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 08:48:36,844 - aiogram.event - INFO - Update id=729246825 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 09:57:46,184 - aiogram.event - INFO - Update id=729246826 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 09:58:11,311 - aiogram.event - INFO - Update id=729246827 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 09:58:26,068 - aiogram.event - INFO - Update id=729246828 is handled. Duration 15 ms by bot id=8143304952
+2025-06-22 09:58:28,291 - aiogram.event - INFO - Update id=729246829 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 09:58:32,287 - aiogram.event - INFO - Update id=729246830 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 09:58:51,156 - aiogram.event - INFO - Update id=729246831 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 09:59:04,140 - aiogram.event - INFO - Update id=729246832 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 09:59:18,313 - aiogram.event - INFO - Update id=729246833 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 09:59:23,443 - aiogram.event - INFO - Update id=729246834 is handled. Duration 15 ms by bot id=8143304952
+2025-06-22 09:59:41,757 - aiogram.event - INFO - Update id=729246835 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 09:59:50,171 - aiogram.event - INFO - Update id=729246836 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 09:59:56,032 - aiogram.event - INFO - Update id=729246837 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 10:00:01,881 - aiogram.event - INFO - Update id=729246838 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 10:00:14,787 - aiogram.event - INFO - Update id=729246839 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 10:00:25,737 - aiogram.event - INFO - Update id=729246840 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 10:00:28,010 - aiogram.event - INFO - Update id=729246841 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 10:00:36,507 - aiogram.event - INFO - Update id=729246842 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 10:00:39,079 - aiogram.event - INFO - Update id=729246843 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 10:00:42,439 - aiogram.event - INFO - Update id=729246844 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 10:00:43,156 - aiogram.event - INFO - Update id=729246845 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 10:01:05,552 - aiogram.event - INFO - Update id=729246846 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 10:01:27,300 - aiogram.event - INFO - Update id=729246847 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 10:01:44,219 - aiogram.event - INFO - Update id=729246848 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 10:02:26,453 - aiogram.event - INFO - Update id=729246849 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 12:21:20,001 - aiogram.event - INFO - Update id=729246850 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 12:21:26,200 - aiogram.event - INFO - Update id=729246851 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 12:21:30,093 - aiogram.event - INFO - Update id=729246852 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 12:22:03,873 - aiogram.event - INFO - Update id=729246853 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 12:22:09,118 - aiogram.event - INFO - Update id=729246854 is handled. Duration 15 ms by bot id=8143304952
+2025-06-22 12:25:45,462 - aiogram.event - INFO - Update id=729246855 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 12:25:52,333 - aiogram.event - INFO - Update id=729246856 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 12:25:56,318 - aiogram.event - INFO - Update id=729246857 is handled. Duration 15 ms by bot id=8143304952
+2025-06-22 12:26:02,979 - aiogram.event - INFO - Update id=729246858 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 12:26:09,087 - aiogram.event - INFO - Update id=729246859 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 12:26:19,871 - aiogram.event - INFO - Update id=729246860 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 12:26:36,215 - aiogram.event - INFO - Update id=729246861 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 12:26:45,665 - aiogram.event - INFO - Update id=729246862 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 12:26:51,729 - aiogram.event - INFO - Update id=729246863 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 12:28:31,542 - __main__ - INFO - Зарегистрирован новый пользователь: ID=681213788, Имя=Анастасия, Админ=0, Одобрен=0
+2025-06-22 12:28:31,862 - __main__ - INFO - Зарегистрирован новый пользователь: 681213788
+2025-06-22 12:28:32,069 - aiogram.event - INFO - Update id=729246864 is handled. Duration 531 ms by bot id=8143304952
+2025-06-22 13:06:50,962 - aiogram.event - INFO - Update id=729246865 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 13:07:03,266 - aiogram.event - INFO - Update id=729246866 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 13:07:04,403 - aiogram.event - INFO - Update id=729246867 is handled. Duration 14 ms by bot id=8143304952
+2025-06-22 13:07:08,462 - aiogram.event - INFO - Update id=729246868 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 13:07:14,518 - aiogram.event - INFO - Update id=729246869 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 13:08:01,850 - aiogram.event - INFO - Update id=729246870 is handled. Duration 63 ms by bot id=8143304952
+2025-06-22 13:08:01,850 - aiogram.event - INFO - Update id=729246871 is handled. Duration 63 ms by bot id=8143304952
+2025-06-22 13:09:49,175 - aiogram.event - INFO - Update id=729246872 is handled. Duration 266 ms by bot id=8143304952
+2025-06-22 13:12:08,968 - aiogram.event - INFO - Update id=729246873 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 13:12:28,520 - aiogram.event - INFO - Update id=729246874 is handled. Duration 14 ms by bot id=8143304952
+2025-06-22 13:12:31,134 - aiogram.event - INFO - Update id=729246875 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 13:12:41,164 - aiogram.event - INFO - Update id=729246876 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 13:17:34,848 - aiogram.event - INFO - Update id=729246877 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 13:17:38,450 - aiogram.event - INFO - Update id=729246878 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 13:18:30,058 - aiogram.event - INFO - Update id=729246879 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 13:18:49,104 - aiogram.event - INFO - Update id=729246880 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 13:19:07,000 - aiogram.event - INFO - Update id=729246881 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 13:22:38,032 - aiogram.event - INFO - Update id=729246882 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 13:28:13,780 - aiogram.event - INFO - Update id=729246883 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 13:28:25,169 - aiogram.event - INFO - Update id=729246884 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 13:28:31,938 - aiogram.event - INFO - Update id=729246885 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 13:49:38,730 - aiogram.event - INFO - Update id=729246886 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 13:49:44,842 - aiogram.event - INFO - Update id=729246887 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 14:07:03,561 - aiogram.event - INFO - Update id=729246888 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 14:07:15,707 - aiogram.event - INFO - Update id=729246889 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 14:07:16,922 - aiogram.event - INFO - Update id=729246890 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 14:07:48,282 - aiogram.event - INFO - Update id=729246891 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 14:08:45,740 - aiogram.event - INFO - Update id=729246892 is handled. Duration 15 ms by bot id=8143304952
+2025-06-22 14:08:52,027 - aiogram.event - INFO - Update id=729246893 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 14:09:15,509 - aiogram.event - INFO - Update id=729246894 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 14:09:43,989 - aiogram.event - INFO - Update id=729246895 is handled. Duration 15 ms by bot id=8143304952
+2025-06-22 14:09:47,886 - aiogram.event - INFO - Update id=729246896 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 14:09:50,298 - aiogram.event - INFO - Update id=729246897 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 14:09:52,106 - aiogram.event - INFO - Update id=729246898 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 14:09:54,040 - aiogram.event - INFO - Update id=729246899 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 14:09:56,130 - aiogram.event - INFO - Update id=729246900 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 14:10:07,791 - aiogram.event - INFO - Update id=729246901 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 14:27:15,351 - aiogram.event - INFO - Update id=729246902 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 14:32:29,452 - aiogram.event - INFO - Update id=729246903 is handled. Duration 15 ms by bot id=8143304952
+2025-06-22 15:16:48,140 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-06-22 15:16:48,141 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8143304952)
+2025-06-22 15:16:59,359 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8143304952)
+2025-06-22 15:16:59,360 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-06-22 15:16:59,360 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8143304952)
+2025-06-22 15:17:10,590 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8143304952)
+2025-06-22 16:13:08,641 - aiogram.event - INFO - Update id=729246904 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:13:21,171 - aiogram.event - INFO - Update id=729246905 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:13:34,366 - aiogram.event - INFO - Update id=729246906 is handled. Duration 15 ms by bot id=8143304952
+2025-06-22 16:13:36,931 - aiogram.event - INFO - Update id=729246907 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:14:52,025 - aiogram.event - INFO - Update id=729246908 is handled. Duration 14 ms by bot id=8143304952
+2025-06-22 16:15:01,774 - aiogram.event - INFO - Update id=729246909 is handled. Duration 14 ms by bot id=8143304952
+2025-06-22 16:15:09,099 - aiogram.event - INFO - Update id=729246910 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 16:17:21,030 - aiogram.event - INFO - Update id=729246911 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:23:35,353 - aiogram.event - INFO - Update id=729246912 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:24:34,485 - aiogram.event - INFO - Update id=729246913 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:32:08,802 - aiogram.event - INFO - Update id=729246914 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 16:32:16,860 - aiogram.event - INFO - Update id=729246915 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:32:22,343 - aiogram.event - INFO - Update id=729246916 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:32:23,457 - aiogram.event - INFO - Update id=729246917 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 16:32:30,485 - aiogram.event - INFO - Update id=729246918 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:32:42,728 - aiogram.event - INFO - Update id=729246919 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:32:45,518 - aiogram.event - INFO - Update id=729246920 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:32:53,641 - aiogram.event - INFO - Update id=729246921 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:32:58,282 - aiogram.event - INFO - Update id=729246922 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:33:08,218 - aiogram.event - INFO - Update id=729246923 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:33:13,343 - aiogram.event - INFO - Update id=729246924 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:33:22,608 - aiogram.event - INFO - Update id=729246925 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 16:33:31,881 - aiogram.event - INFO - Update id=729246926 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 16:33:36,544 - aiogram.event - INFO - Update id=729246927 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:33:45,445 - aiogram.event - INFO - Update id=729246928 is handled. Duration 15 ms by bot id=8143304952
+2025-06-22 16:33:53,708 - aiogram.event - INFO - Update id=729246929 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 16:34:08,547 - aiogram.event - INFO - Update id=729246930 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 16:34:33,686 - aiogram.event - INFO - Update id=729246931 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:34:38,688 - aiogram.event - INFO - Update id=729246932 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 16:34:49,930 - aiogram.event - INFO - Update id=729246933 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:35:08,155 - aiogram.event - INFO - Update id=729246934 is handled. Duration 14 ms by bot id=8143304952
+2025-06-22 16:35:20,172 - aiogram.event - INFO - Update id=729246935 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:35:25,629 - aiogram.event - INFO - Update id=729246936 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 16:35:30,829 - aiogram.event - INFO - Update id=729246937 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:35:36,277 - aiogram.event - INFO - Update id=729246938 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:35:39,411 - aiogram.event - INFO - Update id=729246939 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 16:35:53,877 - aiogram.event - INFO - Update id=729246940 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:36:05,699 - aiogram.event - INFO - Update id=729246941 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:36:06,342 - aiogram.event - INFO - Update id=729246942 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:36:14,497 - aiogram.event - INFO - Update id=729246943 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:36:25,801 - aiogram.event - INFO - Update id=729246944 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 16:36:53,615 - aiogram.event - INFO - Update id=729246945 is handled. Duration 15 ms by bot id=8143304952
+2025-06-22 16:37:00,455 - aiogram.event - INFO - Update id=729246946 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:37:13,890 - aiogram.event - INFO - Update id=729246947 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:37:30,135 - aiogram.event - INFO - Update id=729246948 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 16:37:42,151 - aiogram.event - INFO - Update id=729246949 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:37:45,780 - aiogram.event - INFO - Update id=729246950 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:37:51,796 - aiogram.event - INFO - Update id=729246951 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:37:55,637 - aiogram.event - INFO - Update id=729246952 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:38:12,560 - aiogram.event - INFO - Update id=729246953 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:38:14,025 - aiogram.event - INFO - Update id=729246954 is handled. Duration 14 ms by bot id=8143304952
+2025-06-22 16:38:29,727 - aiogram.event - INFO - Update id=729246955 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 16:38:32,612 - aiogram.event - INFO - Update id=729246956 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:39:29,213 - aiogram.event - INFO - Update id=729246957 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 16:39:36,478 - aiogram.event - INFO - Update id=729246958 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:39:44,158 - aiogram.event - INFO - Update id=729246959 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:39:48,341 - aiogram.event - INFO - Update id=729246960 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 16:39:59,024 - aiogram.event - INFO - Update id=729246961 is handled. Duration 14 ms by bot id=8143304952
+2025-06-22 16:40:08,712 - aiogram.event - INFO - Update id=729246962 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 16:40:18,032 - aiogram.event - INFO - Update id=729246963 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:40:26,838 - aiogram.event - INFO - Update id=729246964 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 16:40:45,320 - aiogram.event - INFO - Update id=729246965 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:41:02,190 - aiogram.event - INFO - Update id=729246966 is handled. Duration 15 ms by bot id=8143304952
+2025-06-22 16:41:18,041 - aiogram.event - INFO - Update id=729246967 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 16:41:26,341 - aiogram.event - INFO - Update id=729246968 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:41:31,974 - aiogram.event - INFO - Update id=729246969 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 16:41:36,382 - aiogram.event - INFO - Update id=729246970 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 16:41:49,903 - aiogram.event - INFO - Update id=729246971 is handled. Duration 14 ms by bot id=8143304952
+2025-06-22 16:42:05,708 - aiogram.event - INFO - Update id=729246972 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 16:42:09,284 - aiogram.event - INFO - Update id=729246973 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:42:14,314 - aiogram.event - INFO - Update id=729246974 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 16:48:42,460 - aiogram.event - INFO - Update id=729246975 is handled. Duration 16 ms by bot id=8143304952
+2025-06-22 16:48:44,573 - aiogram.event - INFO - Update id=729246976 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:48:47,945 - aiogram.event - INFO - Update id=729246977 is handled. Duration 15 ms by bot id=8143304952
+2025-06-22 16:54:41,908 - aiogram.event - INFO - Update id=729246978 is handled. Duration 0 ms by bot id=8143304952
+2025-06-22 16:55:11,639 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-22 16:55:11,899 - __main__ - INFO - ==================================================
+2025-06-22 16:55:11,899 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-22 16:55:11,899 - __main__ - INFO - ⏰ Время остановки: 2025-06-22 16:55:11
+2025-06-22 16:55:11,900 - __main__ - INFO - ⚡ Активность за 24 часа: 0 действий
+2025-06-22 16:55:11,900 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-22 16:55:11,900 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-22 16:55:11,900 - __main__ - INFO - ==================================================
+2025-06-22 16:55:11,900 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-22 16:55:11,902 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-22 16:55:11,905 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-22 16:55:11,905 - __main__ - INFO - 👋 Программа завершена
+2025-06-23 00:03:56,272 - __main__ - INFO - ==================================================
+2025-06-23 00:03:56,273 - __main__ - INFO - 🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot
+2025-06-23 00:03:56,273 - __main__ - INFO - ⏰ Время запуска: 2025-06-23 00:03:56
+2025-06-23 00:03:56,273 - __main__ - INFO - 🔑 ID главного администратора: 7873867301
+2025-06-23 00:03:56,273 - __main__ - INFO - 👥 Пользователей в системе: 2
+2025-06-23 00:03:56,273 - __main__ - INFO - ├ Одобренные: 1
+2025-06-23 00:03:56,273 - __main__ - INFO - └ Ожидают одобрения: 1
+2025-06-23 00:03:56,273 - __main__ - INFO - 📦 Товаров на складе: 0
+2025-06-23 00:03:56,273 - __main__ - INFO - 📝 Лог-записей действий: 1
+2025-06-23 00:03:56,273 - __main__ - INFO - ==================================================
+2025-06-23 00:03:56,273 - __main__ - INFO - 🟢 Бот запущен и готов к работе
+2025-06-23 00:03:56,273 - aiogram.dispatcher - INFO - Start polling
+2025-06-23 00:03:56,528 - aiogram.dispatcher - INFO - Run polling for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-23 00:29:25,273 - __main__ - INFO - Действие пользователя 7873867301: Запуск бота - Пользователь вошел в систему
+2025-06-23 00:29:25,276 - aiogram.event - INFO - Update id=729247138 is handled. Duration 233 ms by bot id=8143304952
+2025-06-23 00:29:35,059 - __main__ - INFO - Зарегистрирован новый пользователь: ID=8170258092, Имя=vinchi, Админ=0, Одобрен=0
+2025-06-23 00:29:35,203 - __main__ - INFO - Зарегистрирован новый пользователь: 8170258092
+2025-06-23 00:29:35,494 - aiogram.event - INFO - Update id=729247139 is handled. Duration 437 ms by bot id=8143304952
+2025-06-23 00:30:02,129 - aiogram.event - INFO - Update id=729247140 is handled. Duration 110 ms by bot id=8143304952
+2025-06-23 00:30:05,453 - aiogram.event - INFO - Update id=729247141 is handled. Duration 77 ms by bot id=8143304952
+2025-06-23 00:30:10,385 - aiogram.event - INFO - Update id=729247142 is handled. Duration 78 ms by bot id=8143304952
+2025-06-23 00:30:12,257 - aiogram.event - INFO - Update id=729247143 is handled. Duration 94 ms by bot id=8143304952
+2025-06-23 00:30:14,115 - aiogram.event - INFO - Update id=729247144 is handled. Duration 172 ms by bot id=8143304952
+2025-06-23 00:30:15,590 - __main__ - INFO - Действие пользователя 7873867301: Одобрение пользователя - ID: 681213788
+2025-06-23 00:30:15,592 - aiogram.event - INFO - Update id=729247145 is handled. Duration 483 ms by bot id=8143304952
+2025-06-23 00:30:17,824 - aiogram.event - INFO - Update id=729247146 is handled. Duration 217 ms by bot id=8143304952
+2025-06-23 00:30:19,129 - __main__ - INFO - Действие пользователя 7873867301: Одобрение пользователя - ID: 8170258092
+2025-06-23 00:30:19,131 - aiogram.event - INFO - Update id=729247147 is handled. Duration 516 ms by bot id=8143304952
+2025-06-23 00:49:41,765 - aiogram.event - INFO - Update id=729247148 is handled. Duration 0 ms by bot id=8143304952
+2025-06-23 00:49:46,124 - aiogram.event - INFO - Update id=729247149 is handled. Duration 0 ms by bot id=8143304952
+2025-06-23 00:49:50,518 - aiogram.event - INFO - Update id=729247150 is handled. Duration 0 ms by bot id=8143304952
+2025-06-23 01:14:28,739 - aiogram.event - INFO - Update id=729247151 is handled. Duration 15 ms by bot id=8143304952
+2025-06-23 01:14:30,146 - aiogram.event - INFO - Update id=729247152 is handled. Duration 14 ms by bot id=8143304952
+2025-06-23 01:14:31,661 - aiogram.event - INFO - Update id=729247153 is handled. Duration 16 ms by bot id=8143304952
+2025-06-23 01:14:42,398 - aiogram.event - INFO - Update id=729247154 is handled. Duration 0 ms by bot id=8143304952
+2025-06-23 01:24:01,984 - aiogram.event - INFO - Update id=729247155 is handled. Duration 0 ms by bot id=8143304952
+2025-06-23 01:32:42,230 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-23 01:32:42,485 - __main__ - INFO - ==================================================
+2025-06-23 01:32:42,485 - __main__ - INFO - 🛑 ЗАВЕРШЕНИЕ РАБОТЫ SoraEcoSystemBot
+2025-06-23 01:32:42,485 - __main__ - INFO - ⏰ Время остановки: 2025-06-23 01:32:42
+2025-06-23 01:32:42,485 - __main__ - INFO - ⚡ Активность за 24 часа: 3 действий
+2025-06-23 01:32:42,485 - __main__ - INFO - 📦 Закрытие соединения с базой данных...
+2025-06-23 01:32:42,485 - __main__ - INFO - ✅ Соединение с базой данных закрыто
+2025-06-23 01:32:42,485 - __main__ - INFO - ==================================================
+2025-06-23 01:32:42,485 - __main__ - INFO - 👋 Работа бота завершена
+2025-06-23 01:32:42,486 - aiogram.dispatcher - INFO - Polling stopped for bot @SoraGaming_Bot id=8143304952 - 'SoraEcoSystem'
+2025-06-23 01:32:42,487 - __main__ - INFO - ⏹️ Программа прервана пользователем
+2025-06-23 01:32:42,487 - __main__ - INFO - 👋 Программа завершена

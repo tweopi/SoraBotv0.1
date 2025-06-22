@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="SoraClub" uuid="0397ae17-1a75-4c4d-a46d-1147ce62a868">
+    <data-source source="LOCAL" name="SoraClub [2]" uuid="c4f945e7-fac2-4ea7-985b-d8d061fa2e0e">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\tweopi\PycharmProjects\SoraEcoSystems\database\SoraClub.db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\Users\tweopi\Desktop\SoraEcoSystem-PreBeta-v1.0-master\database\SoraClub.db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
       <libraries>
         <library>
@@ -16,11 +16,11 @@
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="SoraClub [2]" uuid="c4f945e7-fac2-4ea7-985b-d8d061fa2e0e">
+    <data-source source="LOCAL" name="SoraClub" uuid="c55ad51d-719c-4730-99d6-6e8a59df6f70">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\tweopi\Desktop\SoraEcoSystem-PreBeta-v1.0-master\database\SoraClub.db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\Users\tweopi\PycharmProjects\SoraEcoSystems\database\SoraClub.db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
       <libraries>
         <library>
