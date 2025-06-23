@@ -17,53 +17,6 @@ from dotenv import load_dotenv
 import logging
 import sys
 
-#=====For auto keep bot
-from http.server import HTTPServer, BaseHTTPRequestHandler
-from threading import Thread
-import json
-import time
-
-class HealthHandler(BaseHTTPRequestHandler):
-    def do_GET(self):
-        self.send_response(200)
-        self.send_header('Content-type', 'application/json')
-        self.send_header('Access-Control-Allow-Origin', '*')
-        self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
-        self.send_header('Access-Control-Allow-Headers', 'Content-Type')
-        self.end_headers()
-        response = {
-            'status': 'alive',
-            'timestamp': time.time(),
-            'bot': 'SoraEcoSystem',
-            'uptime': 'running'
-        }
-        self.wfile.write(json.dumps(response).encode())
-    
-    def do_POST(self):
-        self.do_GET()
-    
-    def do_HEAD(self):
-        self.send_response(200)
-        self.send_header('Content-type', 'application/json')
-        self.end_headers()
-    
-    def do_OPTIONS(self):
-        self.send_response(200)
-        self.send_header('Access-Control-Allow-Origin', '*')
-        self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
-        self.send_header('Access-Control-Allow-Headers', 'Content-Type')
-        self.end_headers()
-    
-    def log_message(self, format, *args):
-        pass  # Отключаем логи
-
-def keep_alive():
-    server = HTTPServer(('0.0.0.0', 8080), HealthHandler)
-    t = Thread(target=server.serve_forever)
-    t.daemon = True
-    t.start()
-#=====End auto keep bot
-
 # Загрузка токена из переменных окружения
 load_dotenv()
 TOKEN = os.getenv("BOT_TOKEN")
@@ -2270,7 +2223,7 @@ async def process_report_data(message: types.Message):
     except:
         error_msg = "❌ Ошибка! Введите корректное положительное число."
         if state == "update_report":
-            error_msg += "\nИ нажмите '⏭ Пропустить' чтобы оставить текущее значение."
+            error_msg += "\nИли нажмите '⏭ Пропустить' чтобы оставить текущее значение."
             await message.answer(error_msg, reply_markup=get_skip_keyboard())
         else:
             await message.answer(error_msg, reply_markup=get_cancel_keyboard())
@@ -2499,7 +2452,6 @@ async def unknown_command(message: types.Message):
 
 # ===== ЗАПУСК БОТА =====
 async def main():
-    keep_alive()  # Запускаем веб-сервер для поддержания активности
     logger.info("=" * 50)
     logger.info(f"🤖 ЗАПУСК СИСТЕМЫ SoraEcoSystemBot")
     logger.info(f"⏰ Время запуска: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
